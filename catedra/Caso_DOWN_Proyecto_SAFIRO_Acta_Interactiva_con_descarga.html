@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caso DOWN · Proyecto SAFIRO</title>
+<style>
+:root{
+  --bg:#f2f6f7;--paper:#fff;--paper2:#f8fafb;--ink:#18384f;--navy:#003b6f;
+  --muted:#627b8c;--line:#d6e2e6;--teal:#7faea5;--teal2:#5d988e;--teal-soft:#e4f0ed;
+  --blue-soft:#e8f0f7;--sand:#f4eee2;--rose:#f3e8e6;--gold:#c49b55;
+  --shadow:0 16px 44px rgba(35,61,76,.10)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(135deg,#f5f8f9,#edf3f2);color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.58}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+header{background:linear-gradient(135deg,#fff,#edf4f2);border-bottom:1px solid var(--line);padding:22px 4vw;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;right:-130px;top:-180px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(127,174,165,.35);box-shadow:0 0 0 70px rgba(127,174,165,.06),0 0 0 140px rgba(0,59,111,.025)}
+.hero{max-width:1500px;margin:auto;display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center;position:relative;z-index:1}
+.logo{width:165px;height:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:900;color:#6d8392;margin-bottom:6px}
+h1{font-size:clamp(32px,4vw,56px);line-height:1.02;margin:0;color:var(--navy);letter-spacing:-.04em}
+.subtitle{font-size:clamp(15px,1.6vw,20px);color:var(--muted);max-width:1050px;margin-top:10px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tag{border:1px solid #cbdadd;border-radius:999px;padding:6px 11px;background:rgba(255,255,255,.8);font-size:12px;font-weight:800;color:#31546c}
+.topbar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;gap:10px;align-items:center;padding:9px 4vw;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-actions{display:flex;gap:7px;flex-wrap:wrap}
+.btn{border:1px solid #c9dadd;background:#fff;color:#244e69;border-radius:11px;padding:9px 13px;font-weight:850}
+.btn:hover{background:#f5faf9}
+.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.green{background:var(--teal-soft);color:#174b45;border-color:#6e9d96}
+.btn.danger{color:#944a4a}
+.progress-wrap{min-width:260px}
+.progress{height:8px;border-radius:999px;background:#e7eef0;overflow:hidden}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--navy));transition:.25s}
+.progress-label{font-size:10px;color:var(--muted);margin-top:3px;text-align:right}
+.shell{max-width:1500px;margin:auto;padding:22px 4vw 60px}
+.layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:18px}
+nav{position:sticky;top:73px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:var(--shadow)}
+.nav-title{font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:900;color:var(--muted);padding:5px 7px}
+.navitem{width:100%;border:0;background:transparent;display:flex;gap:9px;padding:9px;border-radius:12px;text-align:left;color:var(--ink);margin:2px 0}
+.navitem:hover,.navitem.active{background:var(--teal-soft)}
+.navnum{width:30px;height:30px;min-width:30px;border-radius:9px;display:grid;place-items:center;background:var(--blue-soft);color:var(--navy);font-weight:900}
+.navitem.done .navnum{background:#dcefe9;color:#356c62}
+.navtxt b{display:block;font-size:11.5px} .navtxt span{display:block;font-size:9.5px;color:var(--muted);margin-top:2px}
+main{min-width:0}
+.screen{display:none;background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow);animation:fade .22s ease}
+.screen.active{display:block}
+@keyframes fade{from{opacity:.45;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2{font-size:clamp(25px,3vw,38px);line-height:1.1;margin:0 0 12px;color:var(--navy);letter-spacing:-.03em}
+h3{font-size:20px;margin:18px 0 9px;color:#244e69}
+p{margin:8px 0;color:#415e70}
+.lead{font-size:17px;color:#294e65}
+.note{border-left:4px solid var(--teal);background:var(--teal-soft);border-radius:12px;padding:13px 15px;margin:12px 0}
+.warn{border-left:4px solid var(--gold);background:var(--sand);border-radius:12px;padding:13px 15px;margin:12px 0}
+.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:14px}
+.concept{border:1px solid var(--line);border-radius:17px;padding:17px;background:var(--paper2)}
+.concept b{display:block;color:var(--navy);font-size:17px;margin-bottom:5px}
+.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.quick .card{border:1px solid var(--line);border-radius:17px;padding:17px;background:#fff}
+.quick strong{display:block;color:var(--navy);margin-bottom:5px}
+details{border:1px solid var(--line);border-radius:16px;background:#fff;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;padding:15px 18px;font-weight:900;color:var(--navy);background:linear-gradient(90deg,#f7fbfb,#eef5f4)}
+details .body{padding:16px 18px}
+.casebox{background:linear-gradient(180deg,#f9fbfb,#fff);border:1px solid var(--line);border-radius:18px;padding:20px}
+.casebox p{color:#35556a}
+.fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.fact{border-radius:15px;padding:15px;border:1px solid var(--line)}
+.fact.explicit{background:var(--teal-soft)} .fact.missing{background:var(--blue-soft)} .fact.assumption{background:var(--sand)}
+.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-top:12px}
+label{font-size:12px;font-weight:900;color:#34566b}
+input,textarea,select{width:100%;border:1px solid #c8d8dc;border-radius:11px;padding:10px 12px;background:#fcfdfd;color:var(--ink);outline:none}
+input:focus,textarea:focus,select:focus{border-color:#75a59d;box-shadow:0 0 0 3px rgba(127,174,165,.15)}
+textarea{min-height:105px;resize:vertical} textarea.tall{min-height:165px}
+.visado{margin-top:18px;padding:13px;border:1px dashed #9fbab4;border-radius:14px;background:#fbfdfd;display:grid;grid-template-columns:1fr 230px;gap:14px;align-items:end}
+.checkline{display:flex;align-items:center;gap:9px;font-weight:900;color:#31546c} .checkline input{width:19px;height:19px}
+.actions-row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:20px}
+.pdf-box{margin-top:16px;padding:15px;border-radius:15px;background:linear-gradient(135deg,var(--blue-soft),#fff);border:1px solid #cbdce8}
+.footer-note{text-align:center;color:var(--muted);font-size:11px;margin-top:16px}
+#printSheet{display:none}
+@media(max-width:950px){.layout{grid-template-columns:1fr}nav{position:static}.hero{grid-template-columns:1fr}.logo{width:150px}}
+@media(max-width:760px){.field-grid,.concept-grid,.fact-grid,.quick,.visado{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.progress-wrap{width:100%}}
+@media print{
+  body>*:not(#printSheet){display:none!important}
+  #printSheet{display:block!important;background:white;color:#111;font-family:Arial,sans-serif;padding:20px}
+  .cover{text-align:center;padding-top:80px;page-break-after:always}
+  .cover img{max-width:165px;max-height:110px;object-fit:contain;margin-bottom:18px}
+  .cover h1{font-size:25px;color:#003b6f;margin:8px 0} .cover h2{font-size:18px;color:#333}
+  .pdf-section{page-break-inside:avoid;margin:12px 0}
+  .pdf-section h3{font-size:12.5px;color:#003b6f;border-bottom:1px solid #aaa;padding-bottom:3px}
+  .answer{white-space:pre-wrap;border:1px solid #aaa;padding:8px;min-height:24px;font-size:10px;line-height:1.4}
+  .meta-table{width:100%;border-collapse:collapse;font-size:10px;margin:10px 0}
+  .meta-table th,.meta-table td{border:1px solid #777;padding:5px;text-align:left;vertical-align:top}
+  .visa-pdf{border:1px solid #777;padding:7px;margin-top:12px;font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="hero">
+  <img class="logo" src="data:image/png;base64,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" alt="Logo UCA">
+  <div>
+    <div class="eyebrow">Gerenciamiento y Evaluación de Proyectos · Laboratorio guiado</div>
+    <h1>Caso DOWN · Proyecto SAFIRO</h1>
+    <div class="subtitle">Del análisis del caso a la elaboración del Acta de Constitución del Proyecto.</div>
+    <div class="meta"><span class="tag">Caso aplicado</span><span class="tag">Acta de Constitución</span><span class="tag">Guardado local</span><span class="tag">PDF final</span><span class="tag">UCA · 2026</span></div>
+  </div>
+</div>
+</header>
+
+<div class="topbar">
+  <div class="top-actions">
+    <button class="btn" id="downloadIndexBtn" type="button">Descargar index</button>
+    <button class="btn" id="exportBtn" type="button">Exportar respaldo</button>
+    <label class="btn" style="cursor:pointer">Importar respaldo<input type="file" id="importFile" accept="application/json" hidden></label>
+    <button class="btn danger" id="resetBtn" type="button">Borrar trabajo</button>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress"><span id="progressBar"></span></div>
+    <div class="progress-label" id="progressLabel">0 % completado</div>
+  </div>
+</div>
+
+<div class="shell">
+<div class="layout">
+<nav>
+  <div class="nav-title">Recorrido</div>
+  <div id="navList"></div>
+</nav>
+
+<main>
+<section class="screen active" data-step="0">
+  <div class="eyebrow">Antes de empezar</div>
+  <h2>Apunte rápido: qué hay que recordar</h2>
+  <p class="lead">La consigna no es “llenar una plantilla”. Primero hay que comprender el proyecto y recién después formalizarlo.</p>
+
+  <div class="concept-grid">
+    <div class="concept"><b>Proyecto</b>Esfuerzo temporal orientado a producir un resultado único. SAFIRO es el proyecto; operar pedidos y despachos será parte de la operación.</div>
+    <div class="concept"><b>Acta de Constitución</b>Reconoce formalmente la existencia del proyecto, documenta sus elementos iniciales y otorga autoridad al gerente para aplicar recursos.</div>
+    <div class="concept"><b>Alto nivel</b>El Acta no es el plan completo: no reemplaza requisitos detallados, EDT/WBS, cronograma detallado, contratos ni planes subsidiarios.</div>
+  </div>
+
+  <h3>¿Qué debería permitir decidir un buen Acta?</h3>
+  <div class="quick">
+    <div class="card"><strong>Por qué se inicia</strong>Problema, oportunidad, propósito y justificación.</div>
+    <div class="card"><strong>Qué se espera lograr</strong>Objetivos, beneficios, criterios de éxito y entregables de alto nivel.</div>
+    <div class="card"><strong>Quiénes participan</strong>Sponsor, gerente, equipo, clientes, usuarios, proveedores y otros interesados.</div>
+    <div class="card"><strong>Cuáles son los límites</strong>Supuestos, restricciones, riesgos iniciales, plazo y presupuesto.</div>
+  </div>
+
+  <div class="warn"><strong>Regla de trabajo:</strong> si un dato no aparece en el caso, no debe inventarse como si fuera un hecho. Se registra como información faltante, pregunta o supuesto sujeto a validación.</div>
+
+  <details open><summary>Dato explícito, dato faltante y supuesto</summary><div class="body">
+    <p><b>Dato explícito:</b> está escrito en el caso y puede utilizarse directamente.</p>
+    <p><b>Dato faltante:</b> sería necesario para gestionar mejor el proyecto, pero el caso no lo informa.</p>
+    <p><b>Supuesto:</b> condición que se considera verdadera para poder avanzar, pero que debe validarse posteriormente.</p>
+  </div></details>
+
+  <div class="actions-row"><span></span><button class="btn primary" data-next="0" type="button">Leer el caso →</button></div>
+</section>
+
+<section class="screen" data-step="1">
+  <div class="eyebrow">Caso de estudio</div>
+  <h2>DOWN y el Proyecto SAFIRO</h2>
+  <p class="lead">Lean el caso completo antes de comenzar a escribir el Acta.</p>
+
+  <div class="casebox">
+    <p><b>Destilería Oriental de Whisky Nacional (DOWN)</b> es una empresa dedicada a la fabricación de whisky y licores, creada hace más de 100 años.</p>
+    <p>Durante el último año la empresa actualizó su tecnología informática: adquirió servidores de última generación, renovó equipamiento de comunicaciones, incorporó nuevos proveedores y mejoró significativamente la velocidad, confiabilidad y disponibilidad de su conexión a Internet.</p>
+    <p>Con esta nueva base tecnológica, la Gerencia General decidió actualizar algunos sistemas. La primera prioridad es el viejo sistema de pedidos de venta, preparación de pedidos, despacho y distribución.</p>
+    <p>El nuevo sistema se llamará <b>SAFIRO</b> y será una aplicación web. Permitirá que los clientes ingresen pedidos de venta por Internet y que los vendedores registren aquellos recibidos por correo electrónico o teléfono. Una vez aprobados, los pedidos serán procesados por Despacho según disponibilidad.</p>
+    <p>SAFIRO deberá integrarse con el sistema actual de inventario, manejar códigos de barras para el picking y la descarga de inventario, emitir Packing List, remitos y documentación de transporte, y ofrecer consultas y reportes sobre el estado de pedidos y despachos. La base de datos deberá ser <b>Oracle</b>.</p>
+    <p>La empresa espera agilizar la preparación, despacho y distribución, afianzarse en el mercado y acceder a clientes de poco volumen que antes encontraban complejo el proceso de compra. Las estimaciones indican que la inversión podría recuperarse en <b>dos años</b>.</p>
+    <p>La Gerente del Proyecto será <b>Federica González</b>, jefa del área de Ventas y con formación en Ingeniería Informática. Del lado de Sistemas habrá un líder del sector de desarrollo. La aplicación se contratará a <b>Websystem</b>, proveedor con experiencia previa en la empresa. Se asume participación de Ventas y Producción, y también estará involucrada Administración y Finanzas.</p>
+    <p>El presupuesto estimado es de <b>US$ 75.000</b> y el plazo tentativo ideal es de <b>8 meses</b>.</p>
+  </div>
+
+  <div class="note"><strong>No pasen todavía al Acta.</strong> Primero separen hechos, faltantes y supuestos. Esa lectura es parte de la actividad.</div>
+
+  <div class="actions-row"><button class="btn" data-prev="1" type="button">← Apunte</button><button class="btn primary" data-next="1" type="button">Analizar el caso →</button></div>
+</section>
+
+<section class="screen" data-step="2">
+  <div class="eyebrow">Lectura guiada</div>
+  <h2>1. Interpretar antes de formalizar</h2>
+
+  <div class="field"><label>Necesidad organizacional que da origen al proyecto</label><textarea class="tall" id="need" placeholder="¿Qué situación de DOWN explica que SAFIRO sea necesario?"></textarea></div>
+  <div class="field-grid">
+    <div class="field"><label>Problema u oportunidad</label><textarea id="problem"></textarea></div>
+    <div class="field"><label>Valor esperado</label><textarea id="value"></textarea></div>
+  </div>
+
+  <h3>Clasificación de la información</h3>
+  <div class="fact-grid">
+    <div class="fact explicit"><b>Explícito en el caso</b><textarea id="explicitFacts" placeholder="Datos que el caso afirma expresamente."></textarea></div>
+    <div class="fact missing"><b>Debe investigarse / validarse</b><textarea id="missingInfo" placeholder="Información necesaria que el caso no brinda."></textarea></div>
+    <div class="fact assumption"><b>Supuestos posibles</b><textarea id="assumptionsAnalysis" placeholder="Condiciones que podrían asumirse, siempre declaradas como tales."></textarea></div>
+  </div>
+
+  <div class="field"><label>¿Qué NO debería inventarse sin declararlo como supuesto?</label><textarea id="doNotInvent" placeholder="Por ejemplo: reducciones porcentuales, fechas definitivas, recursos garantizados, beneficios no documentados..."></textarea></div>
+
+  <div class="visado"><label class="checkline"><input type="checkbox" id="visa_2"> Visado docente</label><div class="field" style="margin:0"><label>Fecha</label><input type="date" id="visaDate_2"></div></div>
+
+  <div class="actions-row"><button class="btn" data-prev="2" type="button">← Caso</button><button class="btn primary" data-next="2" type="button">Interesados y límites →</button></div>
+</section>
+
+<section class="screen" data-step="3">
+  <div class="eyebrow">Análisis del proyecto</div>
+  <h2>2. Interesados, alcance y límites iniciales</h2>
+
+  <div class="field-grid">
+    <div class="field"><label>Sponsor / patrocinador</label><textarea id="sponsorAnalysis" placeholder="¿Quién impulsa o autoriza el proyecto?"></textarea></div>
+    <div class="field"><label>Gerente del Proyecto</label><textarea id="pmAnalysis"></textarea></div>
+  </div>
+  <div class="field"><label>Stakeholders principales</label><textarea class="tall" id="stakeholdersAnalysis" placeholder="Identifiquen personas, áreas, clientes, usuarios y proveedores involucrados o afectados."></textarea></div>
+
+  <div class="field-grid">
+    <div class="field"><label>Requisitos / características de alto nivel</label><textarea class="tall" id="highReqs"></textarea></div>
+    <div class="field"><label>Entregables principales</label><textarea class="tall" id="deliverablesAnalysis"></textarea></div>
+  </div>
+
+  <div class="field-grid">
+    <div class="field"><label>Restricciones identificables</label><textarea id="constraintsAnalysis" placeholder="Condiciones ya impuestas por el caso."></textarea></div>
+    <div class="field"><label>Riesgos iniciales</label><textarea id="risksAnalysis" placeholder="Solo riesgos razonables de alto nivel; indiquen si deben validarse."></textarea></div>
+  </div>
+
+  <div class="field-grid">
+    <div class="field"><label>Plazo informado por el caso</label><input id="termAnalysis" placeholder=""></div>
+    <div class="field"><label>Presupuesto informado por el caso</label><input id="budgetAnalysis" placeholder=""></div>
+  </div>
+
+  <div class="visado"><label class="checkline"><input type="checkbox" id="visa_3"> Visado docente</label><div class="field" style="margin:0"><label>Fecha</label><input type="date" id="visaDate_3"></div></div>
+
+  <div class="actions-row"><button class="btn" data-prev="3" type="button">← Lectura guiada</button><button class="btn primary" data-next="3" type="button">Elaborar el Acta →</button></div>
+</section>
+
+<section class="screen" data-step="4">
+  <div class="eyebrow">Documento de iniciación</div>
+  <h2>3. Acta de Constitución del Proyecto SAFIRO</h2>
+  <p class="lead">Completen el documento a partir del caso y del análisis previo. Si un dato no puede definirse con evidencia, indíquenlo como “A validar” o como supuesto.</p>
+
+  <div class="field-grid">
+    <div class="field"><label>Nombre del proyecto</label><input id="actaName" placeholder="Nombre oficial del proyecto"></div>
+    <div class="field"><label>Organización</label><input id="organization" placeholder="Organización responsable"></div>
+  </div>
+
+  <div class="field"><label>Objetivo del proyecto</label><textarea id="objective"></textarea></div>
+  <div class="field"><label>Propósito / justificación</label><textarea class="tall" id="justification"></textarea></div>
+  <div class="field"><label>Antecedentes</label><textarea class="tall" id="background"></textarea></div>
+  <div class="field"><label>Beneficios esperados</label><textarea class="tall" id="benefits"></textarea></div>
+  <div class="field"><label>Descripción del producto / solución</label><textarea class="tall" id="productDescription"></textarea></div>
+
+  <div class="field-grid">
+    <div class="field"><label>Objetivos medibles / criterios de éxito</label><textarea class="tall" id="successCriteria" placeholder="Si el caso no aporta métricas, indiquen qué debería validarse."></textarea></div>
+    <div class="field"><label>Entregables principales</label><textarea class="tall" id="deliverables"></textarea></div>
+  </div>
+
+  <div class="field"><label>Requisitos de alto nivel</label><textarea class="tall" id="requirements"></textarea></div>
+
+  <div class="field-grid">
+    <div class="field"><label>Equipo del proyecto</label><textarea class="tall" id="team"></textarea></div>
+    <div class="field"><label>Gerente del Proyecto</label><textarea class="tall" id="projectManager"></textarea></div>
+  </div>
+
+  <div class="field"><label>Autoridad asignada al Gerente del Proyecto</label><textarea class="tall" id="pmAuthority" placeholder="¿Qué autoridad debería quedar formalmente reconocida?"></textarea></div>
+  <div class="field"><label>Stakeholders principales</label><textarea class="tall" id="stakeholders"></textarea></div>
+
+  <div class="field-grid">
+    <div class="field"><label>Plazo de alto nivel</label><input id="term"></div>
+    <div class="field"><label>Presupuesto de alto nivel</label><input id="budget"></div>
+  </div>
+
+  <div class="field-grid">
+    <div class="field"><label>Supuestos</label><textarea class="tall" id="assumptions"></textarea></div>
+    <div class="field"><label>Restricciones</label><textarea class="tall" id="constraints"></textarea></div>
+  </div>
+
+  <div class="field"><label>Riesgos iniciales de alto nivel</label><textarea class="tall" id="initialRisks"></textarea></div>
+  <div class="field"><label>Criterios de aprobación / aceptación</label><textarea class="tall" id="approvalCriteria" placeholder="Qué debe verificarse y quién debería aceptar el resultado."></textarea></div>
+
+  <div class="field-grid">
+    <div class="field"><label>Sponsor / patrocinador</label><textarea id="sponsor"></textarea></div>
+    <div class="field"><label>Aprobado por</label><textarea id="approvedBy"></textarea></div>
+  </div>
+
+  <div class="visado"><label class="checkline"><input type="checkbox" id="visa_4"> Visado docente</label><div class="field" style="margin:0"><label>Fecha</label><input type="date" id="visaDate_4"></div></div>
+
+  <div class="actions-row"><button class="btn" data-prev="4" type="button">← Análisis</button><button class="btn primary" data-next="4" type="button">Revisión final →</button></div>
+</section>
+
+<section class="screen" data-step="5">
+  <div class="eyebrow">Cierre del laboratorio</div>
+  <h2>4. Revisión antes de entregar</h2>
+
+  <div class="concept-grid">
+    <div class="concept"><b>¿El Acta explica por qué?</b>Debe quedar clara la necesidad organizacional y la justificación.</div>
+    <div class="concept"><b>¿Define qué se autoriza?</b>El alcance de alto nivel, la solución, entregables y requisitos deben ser comprensibles.</div>
+    <div class="concept"><b>¿Distingue hechos de supuestos?</b>No debe presentar como certezas datos que el caso no proporciona.</div>
+    <div class="concept"><b>¿Identifica responsables?</b>Sponsor, gerente, equipo e interesados deben quedar reconocibles.</div>
+    <div class="concept"><b>¿Incluye límites iniciales?</b>Plazo, presupuesto, restricciones y riesgos deben aparecer a alto nivel.</div>
+    <div class="concept"><b>¿Evita transformarse en el plan?</b>No hace falta desarrollar aquí EDT/WBS, cronograma detallado, costos desagregados o planes subsidiarios.</div>
+  </div>
+
+  <div class="field"><label>Observaciones finales del grupo</label><textarea class="tall" id="finalNotes" placeholder="Dudas pendientes, información a validar o decisiones que el grupo considera importantes."></textarea></div>
+
+  <div class="visado"><label class="checkline"><input type="checkbox" id="visa_5"> Visado docente final</label><div class="field" style="margin:0"><label>Fecha</label><input type="date" id="visaDate_5"></div></div>
+
+  <div class="pdf-box">
+    <h3 style="margin-top:0">Documento final</h3>
+    <p>El PDF incluye portada, análisis previo y Acta de Constitución completa, junto con los visados y fechas registrados.</p>
+    <button class="btn green" id="printBtn" type="button">Generar Acta en PDF</button>
+  </div>
+
+  <div class="actions-row"><button class="btn" data-prev="5" type="button">← Volver al Acta</button><span></span></div>
+</section>
+
+<div class="footer-note">La información se guarda únicamente en este navegador. El archivo de respaldo permite trasladar el trabajo a otro equipo.</div>
+</main>
+</div>
+</div>
+
+<section id="printSheet"></section>
+
+<script>
+const STORAGE="caso_down_safiro_acta_2026_v1";
+const screens=[
+ ["Apunte rápido","Conceptos previos"],
+ ["Caso DOWN","Lectura completa"],
+ ["Interpretación","Hechos, faltantes y supuestos"],
+ ["Análisis","Stakeholders, alcance y límites"],
+ ["Acta SAFIRO","Documento de iniciación"],
+ ["Revisión final","PDF y entrega"]
+];
+const ids=[
+ "need","problem","value","explicitFacts","missingInfo","assumptionsAnalysis","doNotInvent",
+ "sponsorAnalysis","pmAnalysis","stakeholdersAnalysis","highReqs","deliverablesAnalysis","constraintsAnalysis","risksAnalysis","termAnalysis","budgetAnalysis",
+ "actaName","organization","objective","justification","background","benefits","productDescription","successCriteria","deliverables","requirements","team","projectManager","pmAuthority","stakeholders","term","budget","assumptions","constraints","initialRisks","approvalCriteria","sponsor","approvedBy","finalNotes"
+];
+let current=0;
+
+function esc(s){return String(s??"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[m]))}
+function get(id){const e=document.getElementById(id);if(!e)return "";return e.type==="checkbox"?e.checked:(e.value||"")}
+function set(id,v){const e=document.getElementById(id);if(!e)return;if(e.type==="checkbox")e.checked=!!v;else e.value=v??""}
+
+function buildNav(){
+ const nav=document.getElementById("navList");
+ nav.innerHTML=screens.map((s,i)=>`<button class="navitem ${i===0?"active":""}" data-nav="${i}" type="button"><span class="navnum">${i+1}</span><span class="navtxt"><b>${s[0]}</b><span>${s[1]}</span></span></button>`).join("");
+ nav.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.nav))));
+}
+function show(i){
+ current=Math.max(0,Math.min(screens.length-1,i));
+ document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("active",Number(s.dataset.step)===current));
+ document.querySelectorAll(".navitem").forEach(n=>n.classList.toggle("active",Number(n.dataset.nav)===current));
+ window.scrollTo({top:0,behavior:"smooth"});
+ save();
+}
+document.querySelectorAll("[data-next]").forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.next)+1)));
+document.querySelectorAll("[data-prev]").forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.prev)-1)));
+
+function collect(){
+ const d={current};
+ ids.forEach(id=>d[id]=get(id));
+ [2,3,4,5].forEach(i=>{d[`visa_${i}`]=get(`visa_${i}`);d[`visaDate_${i}`]=get(`visaDate_${i}`)});
+ return d;
+}
+function save(){localStorage.setItem(STORAGE,JSON.stringify(collect()));updateProgress()}
+function load(){
+ try{
+  const d=JSON.parse(localStorage.getItem(STORAGE)||"{}");
+  ids.forEach(id=>{if(id in d)set(id,d[id])});
+  [2,3,4,5].forEach(i=>{if(`visa_${i}` in d)set(`visa_${i}`,d[`visa_${i}`]);if(`visaDate_${i}` in d)set(`visaDate_${i}`,d[`visaDate_${i}`])});
+  current=Number.isFinite(d.current)?d.current:0;
+ }catch(e){}
+}
+document.querySelectorAll("input,textarea,select").forEach(e=>{
+ if(e.id==="importFile")return;
+ e.addEventListener("input",save);e.addEventListener("change",save);
+});
+
+function updateProgress(){
+ const groups=[
+  [],
+  [],
+  ["need","problem","value","explicitFacts","missingInfo"],
+  ["sponsorAnalysis","pmAnalysis","stakeholdersAnalysis","highReqs","constraintsAnalysis"],
+  ["actaName","objective","justification","productDescription","team","projectManager","stakeholders","term","budget","assumptions","constraints","approvedBy"],
+  ["finalNotes"]
+ ];
+ let done=2;
+ for(let i=2;i<groups.length;i++){
+   const arr=groups[i],filled=arr.filter(id=>String(get(id)).trim().length>0).length;
+   const ok=filled>=Math.ceil(arr.length*.65);
+   if(ok)done++;
+   const n=document.querySelector(`[data-nav="${i}"]`);if(n)n.classList.toggle("done",ok);
+ }
+ document.querySelector('[data-nav="0"]').classList.add("done");
+ document.querySelector('[data-nav="1"]').classList.add("done");
+ const pct=Math.round(done/screens.length*100);
+ document.getElementById("progressBar").style.width=pct+"%";
+ document.getElementById("progressLabel").textContent=`${pct} % · ${done} de ${screens.length} etapas`;
+}
+
+document.getElementById("downloadIndexBtn").addEventListener("click",()=>{
+  const source="<!doctype html>\n"+document.documentElement.outerHTML;
+  const blob=new Blob([source],{type:"text/html;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="index.html";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+});
+
+document.getElementById("exportBtn").addEventListener("click",()=>{
+ const blob=new Blob([JSON.stringify(collect(),null,2)],{type:"application/json"});
+ const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Caso_DOWN_SAFIRO_respaldo.json";a.click();URL.revokeObjectURL(a.href);
+});
+document.getElementById("importFile").addEventListener("change",e=>{
+ const f=e.target.files[0];if(!f)return;const r=new FileReader();
+ r.onload=()=>{try{const d=JSON.parse(r.result);ids.forEach(id=>{if(id in d)set(id,d[id])});[2,3,4,5].forEach(i=>{if(`visa_${i}` in d)set(`visa_${i}`,d[`visa_${i}`]);if(`visaDate_${i}` in d)set(`visaDate_${i}`,d[`visaDate_${i}`])});current=Number(d.current)||0;save();show(current);alert("Respaldo importado correctamente.")}catch(err){alert("No se pudo importar el respaldo.")}};
+ r.readAsText(f);
+});
+document.getElementById("resetBtn").addEventListener("click",()=>{if(!confirm("¿Borrar todo el trabajo guardado de este caso?"))return;localStorage.removeItem(STORAGE);location.reload()});
+
+function sec(title,id){return `<div class="pdf-section"><h3>${esc(title)}</h3><div class="answer">${esc(get(id)||"—")}</div></div>`}
+function visa(i){return `<div class="visa-pdf"><b>${get(`visa_${i}`)?"☑ Visado":"☐ Sin visar"}</b> · Fecha: ${esc(get(`visaDate_${i}`)||"—")}</div>`}
+function buildPdf(){
+ const logo=`<img src="data:image/png;base64,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" alt="Logo UCA">`;
+ let parts="";
+ parts+=`<h2>Análisis previo</h2>${sec("Necesidad organizacional","need")}${sec("Problema u oportunidad","problem")}${sec("Valor esperado","value")}${sec("Datos explícitos","explicitFacts")}${sec("Información faltante","missingInfo")}${sec("Supuestos posibles","assumptionsAnalysis")}${sec("Qué no debería inventarse","doNotInvent")}${visa(2)}`;
+ parts+=`<h2>Interesados, alcance y límites</h2>${sec("Sponsor","sponsorAnalysis")}${sec("Gerente del Proyecto","pmAnalysis")}${sec("Stakeholders","stakeholdersAnalysis")}${sec("Requisitos de alto nivel","highReqs")}${sec("Entregables","deliverablesAnalysis")}${sec("Restricciones","constraintsAnalysis")}${sec("Riesgos iniciales","risksAnalysis")}${sec("Plazo","termAnalysis")}${sec("Presupuesto","budgetAnalysis")}${visa(3)}`;
+ parts+=`<h2>Acta de Constitución del Proyecto</h2>${sec("Nombre del proyecto","actaName")}${sec("Organización","organization")}${sec("Objetivo","objective")}${sec("Propósito / justificación","justification")}${sec("Antecedentes","background")}${sec("Beneficios esperados","benefits")}${sec("Descripción del producto / solución","productDescription")}${sec("Objetivos medibles / criterios de éxito","successCriteria")}${sec("Entregables principales","deliverables")}${sec("Requisitos de alto nivel","requirements")}${sec("Equipo del proyecto","team")}${sec("Gerente del Proyecto","projectManager")}${sec("Autoridad del Gerente del Proyecto","pmAuthority")}${sec("Stakeholders","stakeholders")}${sec("Plazo","term")}${sec("Presupuesto","budget")}${sec("Supuestos","assumptions")}${sec("Restricciones","constraints")}${sec("Riesgos iniciales","initialRisks")}${sec("Criterios de aprobación / aceptación","approvalCriteria")}${sec("Sponsor","sponsor")}${sec("Aprobado por","approvedBy")}${visa(4)}`;
+ parts+=`<h2>Revisión final</h2>${sec("Observaciones finales del grupo","finalNotes")}${visa(5)}`;
+ document.getElementById("printSheet").innerHTML=`<section class="cover">${logo}<h1>Caso DOWN · Proyecto SAFIRO</h1><h2>Acta de Constitución del Proyecto</h2><p>Gerenciamiento y Evaluación de Proyectos · UCA · 2026</p></section>${parts}`;
+}
+document.getElementById("printBtn").addEventListener("click",()=>{buildPdf();setTimeout(()=>window.print(),100)});
+
+buildNav();load();show(current);updateProgress();
+</script>
+</body>
+</html>
