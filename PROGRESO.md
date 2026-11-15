@@ -4,7 +4,7 @@ Punto de entrada de cada sesión. Las dos instancias son corridas separadas y **
 
 Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `✅ aprobado`
 
-**Checkpoint actual: I-1 — Mapeo de fuentes** (siguiente comando: `/informe:fuentes`)
+**Checkpoint actual: I-1 — Mapeo de fuentes** 🟡 esperando revisión manual del equipo (siguiente, tras aprobar: `/informe:hitos`)
 
 ---
 
@@ -12,7 +12,7 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 
 | # | Checkpoint | Comando | Estado | Fecha | Revisó | Archivos generados |
 |---|---|---|---|---|---|---|
-| I-1 | Mapeo y evaluación de fuentes | `/informe:fuentes` | ⬜ | — | — | — |
+| I-1 | Mapeo y evaluación de fuentes | `/informe:fuentes` | 🟡 | 15/11/2026 | — | `evidencia/registro-fuentes.md` (20 fuentes, 6 contradicciones, 7 vacíos) |
 | I-2 | Hitos públicos y mapa de actores | `/informe:hitos` | ⬜ | — | — | — |
 | I-3 | Estructura del informe y plantillas | `/informe:estructura` | ⬜ | — | — | — |
 | I-4 | Guías metodológicas por sección | `/informe:guia <sección>` | ⬜ | — | — | — |
@@ -42,6 +42,7 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 | Fecha | Checkpoint | Qué pasó / qué decidió el equipo |
 |---|---|---|
 | 14/11/2026 | — | Inicialización del proyecto: `CLAUDE.md`, estructura de carpetas, registro de fuentes y comandos. |
+| 15/11/2026 | I-1 | Primer barrido de fuentes (web). 20 fuentes catalogadas y evaluadas, 6 contradicciones y 7 vacíos registrados. Varias cifras dependen de documentos primarios FCC/SEC aún no leídos (marcados ⚠). Hallazgo fresco: la 1ª misión Vulcan dedicada falló el 15/11/2026 (40 satélites perdidos). Esperando revisión del equipo. |
 
 ---
 
