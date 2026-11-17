@@ -36,7 +36,7 @@ Recorrido sugerido del tablero: bloque 1 (396 de 3.232) → curva S → ritmo re
 - Qué pasó con el aviso a la FCC del 14/08/2026: no encontrado.
 - Probabilidades de la matriz: son juicio del equipo. Hay que saber justificar cada una (fichas de Riesgos §4.2).
 
-## 4. Reparto sugerido en la defensa
+## 4. Propuesta de reparto en la defensa (a definir por el equipo)
 
 | Integrante | Bloques | Preguntas |
 |---|---|---|

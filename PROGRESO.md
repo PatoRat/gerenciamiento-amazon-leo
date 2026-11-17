@@ -44,7 +44,7 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 | 14 | Conclusiones y limitaciones | `14-conclusiones-y-limitaciones.md` | 🟡 borrador | Todos |
 | Anexos | A fuentes · B hitos · C actores · D cifras maestras · E código · F verificación | `evidencia/`, `informe/cifras-maestras.md` | 🟡 | D |
 
-### Reparto sugerido (4 integrantes)
+### Propuesta de reparto (A DEFINIR por el equipo; las letras no son personas asignadas)
 
 | Integrante | Revisa y defiende |
 |---|---|
