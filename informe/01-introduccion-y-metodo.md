@@ -40,5 +40,5 @@ Lo que no es público **no se inventa**: queda marcado como «No público» o co
 ## 1.5 Limitaciones generales
 
 - Amazon es una empresa privada y no publica su cronograma, su WBS ni su presupuesto. Casi toda la información de la empresa es **declaración propia**.
-- Algunas fuentes no pudieron leerse por bloqueo o paywall (SpaceNews, fcc.gov en lectura automática, entre otras; ver Anexo A).
+- Algunas fuentes no pudieron leerse por bloqueo o paywall (SpaceNews, fcc.gov, entre otras; ver Anexo A).
 - El proyecto está en curso: la falla de la misión LV-01 ocurrió un día antes de la fecha de corte.

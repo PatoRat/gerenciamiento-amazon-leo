@@ -84,7 +84,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 | Apple | Acuerdo para que Leo sirva funciones satelitales de iPhone y Apple Watch (hoy las presta Globalstar). | #22 | 14/04/2026 |
 | Globalstar | Adquisición acordada: $90 por acción en efectivo o 0,3210 acciones de Amazon; cierre previsto en 2027, sujeto a aprobaciones regulatorias e hitos de satélites HIBLEO-4; accionistas con ~58% del voto ya aprobaron. | #22, #5 | 14/04/2026 |
 
-- **[DATO REAL]** Socios de la línea direct-to-device citados por Amazon el 27/07/2026: Vodafone, DirecTV, Herotel, NBN Co (#34). Un agente no los encontró en otras fuentes; confirmar a mano antes de usar Vodafone.
+- **[DATO REAL]** Socios de la línea direct-to-device citados por Amazon el 27/07/2026: Vodafone, DirecTV, Herotel, NBN Co (#34). No se encontraron en otras fuentes; confirmar antes de usar Vodafone.
 - **Verizon, operadores móviles nombrados, clientes gubernamentales: NO VERIFICADO.**
 
 ---

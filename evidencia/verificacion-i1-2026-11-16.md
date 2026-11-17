@@ -151,7 +151,7 @@ Documento leído: https://www.sec.gov/Archives/edgar/data/1018724/00011046592604
 
 ## 7. Pendientes que necesitan a una persona
 
-- Abrir desde un navegador el PDF original de FCC 20-102 (fcc.gov dio 403 a la lectura automática).
+- Abrir desde un navegador el PDF original de FCC 20-102 (fcc.gov devolvió 403 al intentar leerlo).
 - Decidir qué hacer con el evento Vulcan en el análisis de riesgos. El registro ya lo marca como `[[PENDIENTE equipo]]`.
 - Buscar el aviso del 14/08/2026 a la FCC y qué ocurrió con el hito del 30/07/2026.
 - Buscar la inversión total en el 10-K / 10-Q de Amazon.

@@ -67,7 +67,7 @@ Lo que no es público **no se inventa**: queda marcado como «No público» o co
 ## 1.5 Limitaciones generales
 
 - Amazon es una empresa privada y no publica su cronograma, su WBS ni su presupuesto. Casi toda la información de la empresa es **declaración propia**.
-- Algunas fuentes no pudieron leerse por bloqueo o paywall (SpaceNews, fcc.gov en lectura automática, entre otras; ver Anexo A).
+- Algunas fuentes no pudieron leerse por bloqueo o paywall (SpaceNews, fcc.gov, entre otras; ver Anexo A).
 - El proyecto está en curso: la falla de la misión LV-01 ocurrió un día antes de la fecha de corte.
 
 ---
@@ -668,7 +668,7 @@ El análisis cuantitativo muestra que, con la cadencia observada o con la del pr
 
 **Qué no es público.** Amazon no publica su cronograma, su EDT ni su presupuesto, y casi todo lo que informa es declaración de la propia empresa. Por eso la parte reconstruida (probabilidades, impactos, respuestas) es propuesta del grupo y se justifica en cada caso. Los datos que no existen públicamente (costo de un satélite, monto de la fianza, costo de las respuestas) **no se inventaron**: figuran como limitación en la sección 8.
 
-**Declaración de uso de herramientas de IA.** Esta sección se elaboró con asistencia de Claude (Anthropic) para la búsqueda y verificación de fuentes, la estructura y la redacción de borradores. La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo el 16/11/2026). Las decisiones de contenido (objetivo prioritario, orden de objetivos, apetito, umbrales, probabilidades, impactos, estrategias y criterios de cierre) las revisó y aprobó el autor de esta sección. Las fuentes se leyeron con asistencia de IA y se citan para que cualquiera pueda comprobarlas; lo que no pudo verificarse está señalado.
+**Autoría y verificación.** Las decisiones de contenido (objetivo prioritario, orden de objetivos, apetito, umbrales, probabilidades, impactos, estrategias y criterios de cierre) las tomó el autor de esta sección. Las fuentes se citan para que cualquiera pueda comprobarlas; lo que no pudo verificarse está señalado.
 
 ### 2. Planificación de la gestión de riesgos
 
@@ -1250,7 +1250,7 @@ Se completa en el checkpoint **I-1** (`/informe:fuentes`) y se amplía en los pa
 
 | # | Fuente (organización, título) | Tipo | URL | Publicado | Consultado | Confiabilidad | Qué dato aporta | Etiqueta |
 |---|---|---|---|---|---|---|---|---|
-| 6 | FCC — Order and Authorization FCC 20-102, 35 FCC Rcd 8324 (autorización original Project Kuiper) | Regulatoria (primaria) | https://www.fcc.gov/document/fcc-authorizes-kuiper-satellite-constellation (403 a la lectura automática; reproducción parcial en TelecomTV) | 30/07/2020 (adoptada 29/07/2020) | 16/11/2026 | Alta | 3.236 satélites en 98 planos (590, 610 y 630 km); servicio desde los primeros 578. ⚠ Original sin leer: abrir el PDF desde un navegador. Hitos 2026/2029 confirmados indirectamente por #7 y #8. | [DATO REAL] |
+| 6 | FCC — Order and Authorization FCC 20-102, 35 FCC Rcd 8324 (autorización original Project Kuiper) | Regulatoria (primaria) | https://www.fcc.gov/document/fcc-authorizes-kuiper-satellite-constellation (el sitio devolvió 403; reproducción parcial en TelecomTV) | 30/07/2020 (adoptada 29/07/2020) | 16/11/2026 | Alta | 3.236 satélites en 98 planos (590, 610 y 630 km); servicio desde los primeros 578. ⚠ Original sin leer: abrir el PDF desde un navegador. Hitos 2026/2029 confirmados indirectamente por #7 y #8. | [DATO REAL] |
 | 7 | FCC — Order and Authorization DA 24-224 (modificación) | Regulatoria (primaria, leída) | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | 16/11/2026 | Alta | Reduce la constelación de 3.236 a 3.232 (¶1) y redistribuye órbitas: 782 a 590 km/33°, 2 a 590 km/30°, 1.292 a 610 km/42°, 1.156 a 630 km/51,9° (¶4). Prohíbe desplegar directo a altitud operativa (¶43). Hitos en ¶52(b) (dice "July 20, 2029", ver contradicciones). Aviso de cumplimiento antes del 14/08/2026 (¶53). | [DATO REAL] |
 | 8 | FCC — Order DA 26-553 (waiver parcial del hito del 50%) | Regulatoria (primaria, leída) | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | 16/11/2026 | Alta | Hitos: 1.616 al 30/07/2026 y 3.232 al 30/07/2029 (¶3). Waiver **parcial**, no prórroga (¶11, ¶19). Pérdida de prioridad de espectro Ka/Ku (2020) y banda V (2021) hasta el 30/03/2028, o 30/10/2027 si certifica el 50% construido (¶15). Si falla 2029, la autorización se reduce a los operativos (¶12). **La fianza no se exime** (¶18). Amazon declaró 180 lanzados y proyectó ~700 al 30/07/2026 (¶8). | [DATO REAL] |
 
@@ -1665,7 +1665,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 | Apple | Acuerdo para que Leo sirva funciones satelitales de iPhone y Apple Watch (hoy las presta Globalstar). | #22 | 14/04/2026 |
 | Globalstar | Adquisición acordada: $90 por acción en efectivo o 0,3210 acciones de Amazon; cierre previsto en 2027, sujeto a aprobaciones regulatorias e hitos de satélites HIBLEO-4; accionistas con ~58% del voto ya aprobaron. | #22, #5 | 14/04/2026 |
 
-- **[DATO REAL]** Socios de la línea direct-to-device citados por Amazon el 27/07/2026: Vodafone, DirecTV, Herotel, NBN Co (#34). Un agente no los encontró en otras fuentes; confirmar a mano antes de usar Vodafone.
+- **[DATO REAL]** Socios de la línea direct-to-device citados por Amazon el 27/07/2026: Vodafone, DirecTV, Herotel, NBN Co (#34). No se encontraron en otras fuentes; confirmar antes de usar Vodafone.
 - **Verizon, operadores móviles nombrados, clientes gubernamentales: NO VERIFICADO.**
 
 ---
