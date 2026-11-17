@@ -10,7 +10,7 @@ Trabajo Integrador de Investigación · Dirección de Proyectos 2026 (UCA). Esta
 |---|---|---|
 | Informe completo | `informe/Informe_Amazon_Leo.docx` (o `.md`) | Abrir en Word. Para regenerarlo: `python informe/compilar_informe.py` (requiere pandoc para el `.docx`) |
 | Secciones por separado | `informe/00-…md` a `informe/14-…md` | En VS Code, `Ctrl+Shift+V` para la vista previa |
-| Dashboard de defensa | `dashboard/amazon-leo-dashboard.html` | Doble clic: se abre en el navegador, funciona sin internet. Botón "Descargar PDF". Para regenerarlo: `python dashboard/build_dashboard.py` |
+| Tablero ejecutivo | `dashboard/amazon-leo-dashboard.html` | Doble clic: se abre en el navegador, funciona sin internet. Botón "Descargar PDF". Para regenerarlo: `python dashboard/build_dashboard.py` |
 | Guion de defensa | `dashboard/guion-defensa.md` | 16 preguntas probables y dónde está cada respuesta |
 | Evidencia | `evidencia/` | Registro de fuentes (47), hitos, actores, verificación FCC/SEC |
 | Cifras | `informe/cifras-maestras.md` | Fuente única de todos los números |

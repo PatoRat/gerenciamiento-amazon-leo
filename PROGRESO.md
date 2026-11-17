@@ -72,7 +72,7 @@ Orden de exposición. Los números de pregunta son los de `dashboard/guion-defen
 
 ---
 
-## Instancia 2 — Dashboard de defensa
+## Instancia 2 — Tablero ejecutivo
 
 Iniciada el 16/11/2026 por pedido del equipo ("avanzar todo lo posible").
 
