@@ -43,7 +43,7 @@ Se siguieron los cinco pasos de la consigna:
 | 2. Buscar evidencia | 47 fuentes evaluadas, con prioridad para las primarias (Amazon, FCC, SEC, ULA); verificación de las órdenes FCC en su texto original | Sección 3, Anexos A y F |
 | 3. Reconstruir | Caso de negocio, acta, alcance y WBS, cronograma, estimaciones, costos, riesgos y seguimiento, con el marco de la cátedra | Secciones 5 a 12 |
 | 4. Conectar | Cifras maestras únicas y mapa de coherencia entre secciones | Sección 13, Anexo D |
-| 5. Defender | Dashboard para la defensa oral y guion de preguntas probables | Dashboard |
+| 5. Defender | Tablero ejecutivo y guion de preguntas probables | Tablero ejecutivo |
 
 **Marco teórico:** el de la cátedra (Clases 1 a 6, Paneo rápido, plantillas de acta y caso de negocio). Se usan sus denominaciones (Acta de Constitución, WBS, Registro de Riesgos, Exposición al Riesgo, Valor Ganado). Cuando se usa un criterio externo, se aclara.
 
