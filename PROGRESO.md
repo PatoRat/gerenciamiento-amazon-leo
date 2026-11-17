@@ -15,7 +15,7 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 | I-1 | Mapeo y evaluación de fuentes | `/informe:fuentes` | 🟡 | 15/11/2026 · verificado 16/11/2026 | — | `evidencia/registro-fuentes.md` (20 fuentes), `evidencia/verificacion-i1-2026-11-16.md` (confirma #7, #8 y #11 contra el primario; corrige #5) |
 | I-2 | Hitos públicos y mapa de actores | `/informe:hitos` | 🟡 borrador | 16/11/2026 | — | `evidencia/hitos.md`, `evidencia/actores.md` (proponen fuentes #21 a #47) |
 | I-3 | Estructura del informe y plantillas | `/informe:estructura` | ⬜ | — | — | — |
-| I-4 | Guías metodológicas por sección | `/informe:guia <sección>` | 🔄 parcial | 16/11/2026 | — | `informe/guias/riesgos.md` |
+| I-4 | Guías metodológicas por sección | `/informe:guia <sección>` | 🔄 parcial | 16/11/2026 | — | `informe/guias/riesgos.md`, `informe/guias/seguimiento-valor-ganado.md` |
 | I-5 | Revisión de trazabilidad y coherencia | `/informe:revisar` | ⬜ | — | — | — |
 
 ### Secciones del informe
@@ -57,6 +57,7 @@ Cada rama sale de la anterior (están **apiladas**), así que se mergean a `main
 | 5 | `fix/05-operativos-y-fecha-de-corte` | Corrección urgente | Riesgos §4.1 y §5: explicita que se usan satélites **lanzados** como aproximación de **operativos** (la FCC mide operativos) y que por eso los resultados son optimistas; agrega el supuesto a la tabla de §7. Propone una **fecha de corte única** (16/11/2026) en "Decisiones pendientes". Regenera el `.docx` de Riesgos con las ramas 1 a 5. | 🟡 PR pendiente |
 | 6 | `feat/06-cifras-maestras` | Sugerencia (valor) | Nuevo `informe/cifras-maestras.md`: **fuente única de números** (C-01 a C-54) con etiqueta, fuente o cálculo y qué sección lo usa. Es el hilo conductor entre Riesgos, Tiempos, Costos, VG y el dashboard. Incluye la lista de datos no públicos que no se deben inventar. | 🟡 PR pendiente |
 | 7 | `feat/07-promesas-inicio-servicio` | Sugerencia (valor) | `evidencia/hitos.md` §5: **línea de tiempo de las promesas de inicio del servicio** (2023 → 2026, ≈ 2 años de corrimiento) con previews parciales y una inferencia que conecta con R-03 (definir un criterio verificable de inicio). Lista para el informe y el dashboard. | 🟡 PR pendiente |
+| 8 | `feat/08-valor-ganado-satelites` | Sugerencia (valor) | Guía `informe/guias/seguimiento-valor-ganado.md` + script `informe/seguimiento/valor_ganado.py` (genera `ev_serie.csv`). Valor ganado **en satélites** (BAC 3.232): SPI 0,25 (línea base FCC), 0,57 (plan de Amazon), 0,22 al corte; proyección de fin ≈ 2031 (plan) / ≈ 2038 (ritmo observado). CPI no calculable (AC no público). Valida la serie EV contra la declaración de Amazon a la FCC (180 al 30/01/2026). | 🟡 PR pendiente |
 
 ---
 
