@@ -249,7 +249,7 @@ const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).
 
 /* ---------- cabecera ---------- */
 $("meta").textContent = `Fecha de corte ${DATA.meta.corte} · ${DATA.meta.unidad}`;
-$("aviso").innerHTML = `<b>Borrador.</b> ${DATA.meta.estado}. Todas las cifras salen de <code>${DATA.meta.fuente_cifras}</code>.`;
+$("aviso").innerHTML = `<b>Datos al ${DATA.meta.corte}.</b> Todas las cifras salen de <code>${DATA.meta.fuente_cifras}</code>.`;
 
 /* ---------- 1. avance ---------- */
 (function(){
