@@ -1,0 +1,16 @@
+mision,fecha,cohete,satelites_desplegados,ev_acumulado,pv_lineabase_A
+KA-01,2025-04-28,Atlas V,27,27,
+KA-02,2025-06-23,Atlas V,27,54,
+KF-01,2025-07-16,Falcon 9,24,78,
+KF-02,2025-08-11,Falcon 9,24,102,
+KA-03,2025-09-25,Atlas V,27,129,
+KF-03,2025-10-14,Falcon 9,24,153,
+LA-04,2025-12-16,Atlas V,27,180,
+LE-01,2026-02-12,Ariane 64,32,212,
+LA-05,2026-04-04,Atlas V,29,241,
+LA-06,2026-04-28,Atlas V,29,270,
+LE-02,2026-04-30,Ariane 64,32,302,
+LA-07,2026-05-29,Atlas V,29,331,
+LE-03,2026-06-17,Ariane 64,36,367,
+LA-08,2026-07-02,Atlas V,29,396,
+LV-01,2026-11-15,Vulcan,0,396,1775

@@ -107,6 +107,20 @@ Lo que Amazon dijo en cada momento sobre el inicio del servicio a clientes:
 - 09/11/2026: "initial service rollout later this year" (#3).
 → Base: #26, #29, #30, #3. Supuestos: (a) las cuatro frases se refieren al mismo hito, el inicio del servicio comercial a clientes; (b) no hay una definición pública de qué cuenta como "inicio".
 
+**Línea de tiempo de las promesas de inicio del servicio** (agregada el 16/11/2026, para el informe y el dashboard)
+
+| Fecha de la declaración | Qué dijo Amazon (textual) | Año de inicio implícito | Corrimiento contra la primera promesa | Etiqueta | Fuente |
+|---|---|---|---|---|---|
+| 14/03/2023 | primeros clientes "later that year" | 2024 (lectura del grupo) | — (línea base) | `[DATO REAL]` + año `[INFERENCIA DEL GRUPO]` | #30 |
+| 27/06/2024 | servicio "next year" | 2025 | +1 año | `[DATO REAL]` + año `[INFERENCIA DEL GRUPO]` | #26 |
+| 24/11/2025 | *Enterprise preview* de Leo Pro y Ultra; "broader rollout next year" | 2026 | +2 años | `[DATO REAL]` + año `[INFERENCIA DEL GRUPO]` | #29 |
+| 22/09/2026 | Uzbekistán: servicio en "private preview" | — (acceso limitado, no comercial) | — | `[DATO REAL]` | #35 |
+| 09/11/2026 | "initial service rollout later this year" | 2026 (quedan ≈ 6 semanas) | +2 años, sin cumplir | `[DATO REAL]` | #3 |
+| **16/11/2026 (corte)** | **Sin anuncio de servicio comercial** | — | — | `[DATO REAL]` | #35, #24, #3 |
+
+**[INFERENCIA DEL GRUPO]** Cada promesa corrió el inicio ≈ 1 año, y entre la primera y la última hay ≈ 2 años de corrimiento. Mientras tanto, Amazon fue abriendo accesos parciales (enterprise preview en 2025, private preview en 2026), que funcionan como hitos intermedios no declarados como "inicio". Para la gestión, la lección es definir **un criterio verificable de inicio de servicio** (cobertura mínima, satélites mínimos, clientes pagos) en el acta y en el cronograma. Es la respuesta propuesta para R-03 en Riesgos.
+→ Base: tabla anterior; Riesgos R-03. Supuestos: los del bloque anterior; la "private preview" no cuenta como inicio comercial.
+
 **[INFERENCIA DEL GRUPO] 2. Brecha entre el plan presentado a la FCC y lo logrado.**
 Amazon proyectó ~700 satélites desplegados al 30/07/2026 (#8 ¶8). Antes de LV-01 había ~396 en órbita, el 24% del hito de 1.616. Con LV-01 exitoso habría llegado a ~436.
 → Base: #8, #2, #11. Supuestos: (a) "desplegados" es comparable con "lanzados y en órbita"; (b) el conteo de ~396 es el correcto.
@@ -143,7 +157,7 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 - Protoflight de 06/10/2023 (solo Wikipedia).
 - Contenido del original FCC 20-102 (ver `verificacion-i1-2026-11-16.md`); vuelto a confirmar de forma indirecta por #7 y #8.
-- Compromiso de inversión de "más de US$10 mil millones" (2020): un agente lo leyó en la página de Amazon del 30/07/2020 (#39) y otro no pudo confirmarlo. Revisar a mano.
+- ~~Compromiso de inversión de "más de US$10 mil millones" (2020)~~ **VERIFICADO el 16/11/2026** en #39: "Amazon will invest more than $10 billion in Project Kuiper" (Dave Limp, Senior Vice President de Amazon); propósito: "reliable, affordable broadband service to unserved and underserved communities around the world". También #28 (04/11/2025, act. 13/11/2025): "fast, reliable internet to customers and communities beyond the reach of existing networks"; constelación inicial de "more than 3,000 satellites".
 - Aprobación FCC de 4.500 satélites adicionales (CNBC lo menciona sin detalle) y expediente del D2D.
 - Aviso a la FCC del 14/08/2026 y qué pasó con el hito del 30/07/2026.
 - Estado del S-4 y de las aprobaciones regulatorias de Globalstar.
@@ -157,6 +171,8 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 ---
 
 ## 8. Fuentes nuevas propuestas para el registro
+
+> **16/11/2026:** estas fuentes se incorporaron a `evidencia/registro-fuentes.md` (sección E). La tabla queda acá como antecedente; la referencia oficial es el registro.
 
 Todas consultadas el 16/11/2026. Las URL de Amazon son `https://www.aboutamazon.com/...`.
 

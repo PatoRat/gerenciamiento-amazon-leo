@@ -8,7 +8,7 @@
 - `analisis_cuantitativo.py`: código de la simulación de la sección 5 (`python3 analisis_cuantitativo.py`).
 - Los demás archivos de esta carpeta son el material de trabajo del que sale esa versión.
 
-**Antes de entregar** hay que revisar que la declaración de uso de IA de la sección 1 sea cierta (dice que el docente habilitó su uso), integrar la sección al informe con el mismo formato del resto y conciliar las reservas con las áreas de costos y tiempos.
+**Antes de entregar** hay que integrar la sección al informe con el mismo formato del resto y conciliar las reservas con las áreas de costos y tiempos.
 
 ## Dónde está cada cosa
 
