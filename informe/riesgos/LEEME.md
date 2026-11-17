@@ -2,6 +2,14 @@
 
 **Estado: borradores sin revisar por el equipo.** Fueron preparados por un integrante con asistencia de IA (Claude) y revisados punto por punto por esa persona el 16/11/2026. Esta rama es para que el resto del equipo los revise antes de integrarlos a `main`.
 
+## Versión para entregar
+
+- `gestion-de-riesgos-amazon-leo.md` y `Gestion_de_Riesgos_Amazon_Leo.docx`: la sección de Riesgos en una sola versión limpia, lista para integrar al informe (el `.docx` es la misma versión en Word).
+- `analisis_cuantitativo.py`: código de la simulación de la sección 5 (`python3 analisis_cuantitativo.py`).
+- Los demás archivos de esta carpeta son el material de trabajo del que sale esa versión.
+
+**Antes de entregar** hay que revisar que la declaración de uso de IA de la sección 1 sea cierta (dice que el docente habilitó su uso), integrar la sección al informe con el mismo formato del resto y conciliar las reservas con las áreas de costos y tiempos.
+
 ## Dónde está cada cosa
 
 Dentro de los archivos hay referencias a nombres de archivo de la carpeta de trabajo original. En este repo están así:

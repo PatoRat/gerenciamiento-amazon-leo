@@ -29,7 +29,7 @@ Categorías según la RBS de la cátedra.
 | T1 | El 15/11/2026 el Vulcan falló unos 10 minutos tras el despegue: se perdieron los 40 satélites de la misión LV-01. Causa raíz no publicada. | #2, #11 | **Riesgo materializado.** ¿Cuál era el riesgo del plan original? ¿qué respuesta tenía? |
 | T2 | Hubo un hold en T-20 s antes del lanzamiento, sin explicar. | #11 | ¿Señal temprana o ruido? No se sabe si influyó. |
 | T3 | Vulcan estuvo ~9 meses en tierra antes de este vuelo por problemas en los boosters sólidos. | #12 | Antecedente: riesgo del proveedor ya visible antes de LV-01. |
-| T4 | Una fuente reporta una explosión de New Glenn en plataforma en 05/2026. Amazon tiene 24 lanzamientos New Glenn firmes y ninguno voló. | #11, #23 | Corroborar con otra fuente antes de citar. |
+| T4 | New Glenn explotó en su plataforma de Cabo Cañaveral durante una prueba de encendido el 28/05/2026. Amazon tiene 24 lanzamientos New Glenn firmes y ninguno voló. | #47, #23 | Confirmado por varios medios (verificado el 16/11/2026). |
 | T5 | Las órdenes de la FCC prohíben desplegar satélites directo a la altitud operativa. | #7 ¶43 | Restricción técnica de la secuencia de lanzamiento y operación. |
 
 ---

@@ -19,7 +19,7 @@
 → Fuente: FCC, Order DA 26-553 ¶15 — https://docs.fcc.gov/public/attachments/DA-26-553A1.txt (publicado 05/06/2026, consultado 16/11/2026).
 
 **[DATO REAL]** Si Amazon no llega al 50% de satélites operativos (1.616) para el 30/07/2026, pierde la fianza (surety bond).
-→ Fuente: FCC, Order DA 26-553 ¶18 (misma URL). `[[REVISAR]]` verificar si la FCC la ejecutó; la orden la dispone pero no confirma que haya ocurrido.
+→ Fuente: FCC, Order DA 26-553 ¶18 (misma URL). La orden la dispone; al 16/11/2026 (búsqueda en varios medios) ninguna fuente pública informa si la FCC la ejecutó, ni su monto.
 
 **[DATO REAL]** Si Amazon no llega a 3.232 satélites operativos para el 30/07/2029, le reducen la autorización a la cantidad de satélites que tenga operativos ese día.
 → Fuente: FCC, Order DA 26-553 ¶12 (misma URL). Consecuencia futura: la fecha no llegó.
@@ -110,7 +110,7 @@ La cátedra define tres actitudes: **aversión**, **búsqueda** o **indiferencia
 ---
 
 ## Pendientes de esta parte
-- `[[REVISAR]]` confirmar si la FCC ejecutó la fianza.
+- Fianza: sin información pública sobre si la FCC la ejecutó (dato desconocido; se declara como limitación).
 - `[[REVISAR]]` fecha y medio en que el docente habilitó el uso de IA.
 - Aprobación del equipo de las fuentes #21 a #46.
 - Decidir con tus compañeros de costos y tiempos si los umbrales de plazo y costo se comparten.

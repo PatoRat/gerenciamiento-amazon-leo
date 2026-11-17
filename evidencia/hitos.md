@@ -120,8 +120,8 @@ DA 26-553 ¶3 menciona Gen2 (3.212 satélites) y Polar (1.292). La suma es 4.504
 → Base: #8 ¶3, #43. Supuesto: la mención de CNBC se refiere a esos mismos sistemas. No se leyó la orden que los autoriza.
 
 **[INFERENCIA DEL GRUPO] 5. La falla de LV-01 y la caída de New Glenn concentran el riesgo en dos proveedores.**
-Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, y ambos tienen eventos de falla en 2026 (LV-01 el 15/11; explosión de New Glenn en plataforma, mencionada por Spaceflight Now, #11).
-→ Base: sección 1, #11. Supuestos: (a) los números de contratos son vigentes; (b) la explosión de New Glenn ocurrió como la describe una sola fuente leída.
+Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, y ambos tienen eventos de falla en 2026 (LV-01 el 15/11; explosión de New Glenn en su plataforma durante una prueba de encendido el 28/05/2026, #47).
+→ Base: sección 1, #11. Supuestos: (a) los números de contratos son vigentes.
 
 ---
 
@@ -188,3 +188,4 @@ Todas consultadas el 16/11/2026. Las URL de Amazon son `https://www.aboutamazon.
 | 44 | Via Satellite — FCC aprueba plan de desechos | https://www.satellitetoday.com/government-military/2023/02/09/fcc-approves-amazon-kuiper-orbital-debris-plan-clearing-way-for-deployment/ | 09/02/2023 | Secundaria |
 | 45 | Vice — SpaceX presiona contra Amazon | https://www.vice.com/en/article/spacex-is-lobbying-against-amazons-internet-beaming-satellites/ | 19/12/2019 | Secundaria |
 | 46 | Amazon — Adelanto de LE-03 | /news/amazon-leo/amazon-leo-rocket-satellite-update | 05/06/2026 | Primaria |
+| 47 | AP vía OPB — Explosión de New Glenn en plataforma | https://www.opb.org/article/2026/05/29/blue-origin-rocket-explodes-on-the-launch-pad-during-an-engine-firing-test/ | 29/05/2026 | Secundaria (confirmada por varios medios) |

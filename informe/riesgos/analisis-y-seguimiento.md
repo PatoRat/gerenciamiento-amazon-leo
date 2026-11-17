@@ -93,6 +93,45 @@ Los rojos: **R-04** y **R-02**. Ambos ya tienen estrategia y respuesta definidas
 - **Apalancamiento** (cátedra): (ER antes − ER después) ÷ costo de la alternativa. **No se puede calcular:** el costo de cada alternativa no es público. `[[PENDIENTE]]`.
 - Si el área de costos entrega un presupuesto, estas dos cuentas se completan en una hora.
 
+## 2.9 Análisis cuantitativo
+
+La cátedra propone la simulación de Monte Carlo para estimar la probabilidad de cumplir un objetivo (Clase 10, "Análisis cuantitativo"). Amazon no publica su red de actividades ni sus duraciones, así que no se puede simular el cronograma interno. Lo que sí se puede simular con datos públicos es **la cantidad de satélites operativos al 30/07/2029**, que es la medida del hito de R-04. El código está en `analisis_cuantitativo.py` y es reproducible.
+
+**Datos de entrada** `[DATO REAL]`: 396 satélites lanzados antes de LV-01 (#2); hito final de 3.232 (DA 26-553 ¶3); 32,5 meses entre el 16/11/2026 y el 30/07/2029.
+
+**Supuestos** `[PROPUESTA DE GESTIÓN]` (el grupo los define; no son datos publicados):
+- Cadencia en misiones por mes, distribución triangular: mínimo 0,5 (lanzadores clave en tierra buena parte del período, R-02), moda 0,92 (ritmo observado desde el 28/04/2026, ≈ 11 por año, #2) y máximo 2,0 (el plan de Amazon de "20+ misiones" en el año dos, #23, y algo más).
+- Satélites por misión, triangular: mínimo 24, moda 30, máximo 40 (rango de #2 y #3).
+- La cadencia se mantiene constante durante todo el período (no se modela una aceleración gradual).
+
+**Escenarios determinísticos** `[INFERENCIA DEL GRUPO]` (30 satélites por misión):
+
+| Escenario | Misiones por año | Misiones hasta el hito | Satélites al 30/07/2029 | % de 3.232 |
+|---|---|---|---|---|
+| Ritmo observado | 11 | ≈ 30 | ≈ 1.290 | 40% |
+| Plan de Amazon | 20 | ≈ 54 | ≈ 2.020 | 63% |
+| Ritmo necesario | 35 | ≈ 95 | ≈ 3.240 | 100% |
+
+Con 40 satélites por misión (el lote de Vulcan) la cuenta mejora, pero el plan de 20 por año llegaría solo a ≈ 2.560 (79%); la cadencia necesaria bajaría a ≈ 26 por año, todavía por encima del plan.
+
+**Resultado de la simulación** (100.000 corridas):
+
+| Percentil | Satélites al 30/07/2029 | % de 3.232 |
+|---|---|---|
+| P10 | ≈ 1.140 | 35% |
+| P50 | ≈ 1.510 | 47% |
+| P90 | ≈ 2.050 | 63% |
+| **Probabilidad de llegar a 3.232** | **≈ 0%** | |
+
+**Sensibilidad al máximo de cadencia:** subiendo el máximo de 2,0 a 3,5 misiones por mes (más del triple del ritmo observado), la probabilidad de llegar recién sube a ≈ 7%.
+
+**[INFERENCIA DEL GRUPO] Lectura:** con la cadencia observada o con la del propio plan de Amazon, **llegar a 3.232 satélites antes del 30/07/2029 es prácticamente imposible**. Llegar exigiría ≈ 35 misiones por año, 3 veces el ritmo observado y casi el doble del plan.
+→ Base: los datos de entrada y los supuestos de arriba. Limitaciones: (a) el modelo ignora una posible aceleración gradual de la cadencia; (b) usa un promedio de satélites por misión; (c) no incluye fallas de lanzamiento (que empeorarían el resultado); (d) las distribuciones son supuestos del grupo.
+
+**Consecuencia para R-04:** como la probabilidad de no llegar es ≈ 1, la incertidumbre de R-04 **no está en la cadencia sino en si la FCC concede otro alivio**. P = 0,70 equivale a suponer ≈ 30% de probabilidad de un nuevo waiver o prórroga `[PROPUESTA DE GESTIÓN]`; no hay un dato que lo respalde, solo el antecedente del waiver parcial de 2026 (DA 26-553 ¶11).
+
+**Uso de reservas:** este análisis no calcula reservas de costo porque falta el presupuesto; la reserva de tiempo se vincula con el área de tiempos.
+
 ---
 
 # Parte 3 — Seguimiento

@@ -41,7 +41,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 - **[DATO REAL]** Amazon declara "more than 100" misiones en su manifiesto (#23, 23/03/2026).
 - **[DATO REAL]** Blue Origin fue fundada por Jeff Bezos y es una empresa separada de Amazon (#28).
 - **[DATO REAL]** Mark Peller aparece como presidente y CEO de ULA desde el 17/08/2026 (#41, sitio de prensa de ULA).
-- **[DATO REAL]** Según Spaceflight Now, Amazon depende del regreso de New Glenn, que tuvo una explosión en plataforma en 05/2026 (#11). Es una sola fuente leída; Spaceflight Now también dice que ULA no explicó aún la causa de la falla de LV-01.
+- **[DATO REAL]** New Glenn explotó en su plataforma de Cabo Cañaveral durante una prueba de encendido el 28/05/2026 (#47, confirmado por varios medios); Spaceflight Now dice que Amazon depende de su regreso y que ULA no explicó aún la causa de la falla de LV-01 (#11).
 - **[DATO REAL]** En 2022 Amazon también había contratado 2 lanzamientos de ABL Space Systems (RS1) para prototipos (#4). Que se hayan realizado: **NO VERIFICADO**.
 
 ---
@@ -121,8 +121,8 @@ SpaceX se opuso a Amazon ante la FCC (2019, #45) y es contratista de lanzamiento
 → Base: #45, #38, #23. Supuesto: la oposición de 2019 y los contratos de 2023 en adelante son entre las mismas entidades y no hay acuerdos de por medio que los reconcilien.
 
 **[INFERENCIA DEL GRUPO] 2. Los lanzadores concentran el riesgo externo del programa.**
-Los cuatro proveedores de lanzamiento suman ~108 misiones contratadas (ver `hitos.md`, inferencia 3). Dos de ellos tuvieron una falla o un incidente grave en 2026: ULA (LV-01, 15/11) y Blue Origin (explosión de New Glenn en plataforma, 05/2026, según una fuente).
-→ Base: sección 2 y #11. Supuestos: (a) las cifras de contratos son vigentes; (b) el evento de New Glenn se confirma con otra fuente.
+Los cuatro proveedores de lanzamiento suman ~108 misiones contratadas (ver `hitos.md`, inferencia 3). Dos de ellos tuvieron una falla o un incidente grave en 2026: ULA (LV-01, 15/11) y Blue Origin (explosión de New Glenn en plataforma, 28/05/2026, #47).
+→ Base: sección 2 y #11. Supuestos: (a) las cifras de contratos son vigentes.
 
 **[INFERENCIA DEL GRUPO] 3. Amazon integra casi toda la cadena y depende de terceros en lanzamiento y en regulación.**
 Fabricación, terminales y operación son internos (#22), pero lanzamiento (proveedores externos) y espectro/licencias (FCC y reguladores locales) no.
