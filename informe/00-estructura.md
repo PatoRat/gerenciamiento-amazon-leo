@@ -1,6 +1,6 @@
 # Estructura del informe — Amazon Leo (I-3)
 
-Índice propuesto del informe de investigación. **Estado: 🟡 esperando aprobación del equipo** (no se redacta ninguna sección nueva hasta aprobar el índice). Elaborado con asistencia de IA el 16/11/2026 a partir de la consigna (`Trabajo_Integrador_Direccion_Proyectos_2026.html`) y del material de `catedra/`.
+Índice del informe de investigación. **Estado: 🟡 todas las secciones tienen borrador** (16/11/2026); el estado por sección está en `PROGRESO.md`. Elaborado con asistencia de IA el 16/11/2026 a partir de la consigna (`Trabajo_Integrador_Direccion_Proyectos_2026.html`) y del material de `catedra/`.
 
 **Lógica del índice:** sigue los cinco pasos de la consigna (ubicar → evidencia → reconstruir → conectar → defender) y, dentro de "reconstruir", el orden de la cátedra: selección (caso de negocio) → integración (acta) → alcance → tiempos → estimaciones → costos → riesgos → seguimiento y valor ganado (Paneo rápido, temas 2 a 10).
 

@@ -157,7 +157,7 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 - Protoflight de 06/10/2023 (solo Wikipedia).
 - Contenido del original FCC 20-102 (ver `verificacion-i1-2026-11-16.md`); vuelto a confirmar de forma indirecta por #7 y #8.
-- Compromiso de inversión de "más de US$10 mil millones" (2020): un agente lo leyó en la página de Amazon del 30/07/2020 (#39) y otro no pudo confirmarlo. Revisar a mano.
+- ~~Compromiso de inversión de "más de US$10 mil millones" (2020)~~ **VERIFICADO el 16/11/2026** en #39: "Amazon will invest more than $10 billion in Project Kuiper" (Dave Limp, Senior Vice President de Amazon); propósito: "reliable, affordable broadband service to unserved and underserved communities around the world". También #28 (04/11/2025, act. 13/11/2025): "fast, reliable internet to customers and communities beyond the reach of existing networks"; constelación inicial de "more than 3,000 satellites".
 - Aprobación FCC de 4.500 satélites adicionales (CNBC lo menciona sin detalle) y expediente del D2D.
 - Aviso a la FCC del 14/08/2026 y qué pasó con el hito del 30/07/2026.
 - Estado del S-4 y de las aprobaciones regulatorias de Globalstar.

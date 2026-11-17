@@ -55,6 +55,7 @@ Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar d
 | C-32 | Instalación de procesamiento en KSC | 100.000 ft²; > USD 140 millones | `[DATO REAL]` | #27 | Costos, Alcance |
 | C-33 | Inversión en Cabo Cañaveral (2026) | > USD 200 millones | `[DATO REAL]` | #23 | Costos |
 | C-34 | Estaciones terrestres | > 300 planificadas | `[DATO REAL]` (prensa) | #17 | Alcance |
+| C-35 | Compromiso de inversión inicial | > USD 10.000 millones ("more than $10 billion") | `[DATO REAL]` | #39 (30/07/2020), verificado el 16/11/2026 | Caso de negocio, Acta, Costos |
 
 ## 5. Lanzamientos contratados (vigente al 16/11/2026)
 
@@ -78,7 +79,7 @@ Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar d
 
 | Dato | Estado | Cómo se trata |
 |---|---|---|
-| Inversión total de Amazon en Leo (USD) | Solo "multibillion-dollar" (#5); "más de USD 10 mil millones" (2020) sin confirmar | `[[PENDIENTE]]`; si Costos lo necesita, rango con supuestos `[PROPUESTA DE GESTIÓN]` |
+| Inversión total **actualizada** de Amazon en Leo (USD) | Compromiso inicial **verificado**: "more than $10 billion" (#39, 30/07/2020; ver C-35). En 2026 solo "multibillion-dollar" (#5). No hay cifra actualizada. | Usar C-35 como piso declarado en 2020; el total actual queda `[[PENDIENTE]]` |
 | Costo por satélite y por lanzamiento | No público | Supuesto explícito del grupo en Costos |
 | Monto de la fianza | No público | `[[PENDIENTE]]` |
 | Satélites **operativos** | No público | Se usa lanzados (ver unidad de avance) |
