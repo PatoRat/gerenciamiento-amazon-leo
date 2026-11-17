@@ -1,13 +1,13 @@
 # Estado del trabajo — Amazon Leo
 
-Punto de entrada de cada sesión. Cada checkpoint cierra con **revisión manual** de un miembro del equipo; desde el 16/11/2026 la revisión se hace por **Pull Request** (ver "Ramas y cambios").
+Punto de entrada de cada sesión. Cada checkpoint cierra con **revisión manual** de un miembro del equipo. Desde el 16/11/2026 los cambios se integran por **Pull Request**; el 17/11/2026 la limpieza de entrega se subió directo a `main` (ver "Ramas y cambios").
 
-Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `✅ aprobado`
+Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 integrado, sin revisión de pares` · `✅ aprobado`
 
-**Estado actual (16/11/2026):** 🟡 **informe completo en borrador y dashboard funcionando, esperando revisión del equipo** en el PR de la rama `entrega/informe-y-dashboard`. Siguiente: cada integrante revisa sus secciones (ver "Reparto"), el equipo confirma los KPIs y las decisiones pendientes, y se mergea a `main`.
+**Estado actual (17/11/2026):** 🟡 **informe completo y dashboard integrados en `main`, todavía sin revisión de pares.** El PR #2 se mergeó el 17/11/2026 sin reviews registradas. Después se limpió la entrega: sin carteles de "Borrador", sin marcas internas `[[PENDIENTE]]` (ahora "No público" / "No calculable"), Word regenerado y desbordes del tablero corregidos. **Falta:** que cada integrante revise sus secciones sobre `main`, confirmar los KPIs y las decisiones pendientes, probar el tablero y su PDF en la notebook del aula, y confirmar fecha y medio de entrega.
 
 **Cómo ver todo rápido:**
-- Informe completo: `informe/Informe_Amazon_Leo.docx` (o `.md`). Se regenera con `python informe/compilar_informe.py`.
+- Informe completo: `informe/Informe_Amazon_Leo.docx` (o `.md`). Se regenera con `python informe/compilar_informe.py` (el `.docx` necesita `pandoc` instalado).
 - Dashboard: abrir `dashboard/amazon-leo-dashboard.html` con doble clic (funciona sin internet). Se regenera con `python dashboard/build_dashboard.py`.
 
 ---
@@ -20,28 +20,28 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 | I-2 | Hitos públicos y mapa de actores | 🟡 | 16/11/2026 | — | `evidencia/hitos.md`, `evidencia/actores.md` |
 | I-3 | Estructura del informe y plantillas | 🟡 | 16/11/2026 | — | `informe/00-estructura.md`, `informe/plantillas/*.md` (8) |
 | I-4 | Guías metodológicas | 🟡 | 16/11/2026 | — | `informe/guias/riesgos.md`, `seguimiento-valor-ganado.md`, `alcance-wbs.md` |
-| — | **Redacción de secciones** (borradores con IA, habilitada por la cátedra) | 🟡 | 16/11/2026 | — | `informe/00-resumen-ejecutivo.md` a `informe/14-conclusiones-y-limitaciones.md` |
+| — | **Redacción de secciones** (redactadas con IA, habilitada por la cátedra) | 🟡 | 16/11/2026 | — | `informe/00-resumen-ejecutivo.md` a `informe/14-conclusiones-y-limitaciones.md` |
 | I-5 | Revisión de trazabilidad y coherencia | 🔄 autocontrol hecho (§13.3 del informe); falta la revisión del equipo | 16/11/2026 | — | `informe/13-integracion-y-coherencia.md` |
 
 ### Secciones del informe
 
 | N.° | Sección | Archivo | Estado | Revisa |
 |---|---|---|---|---|
-| 0 | Resumen ejecutivo | `00-resumen-ejecutivo.md` | 🟡 borrador | Todos |
-| 1 | Introducción, método y declaración de IA | `01-introduccion-y-metodo.md` | 🟡 borrador | Todos |
-| 2 | Ubicación del proyecto | `02-ubicacion-del-proyecto.md` | 🟡 borrador | A |
-| 3 | Evidencia y fuentes | `03-evidencia-y-fuentes.md` | 🟡 borrador | A |
-| 4 | Actores e interesados (+ plan de comunicaciones) | `04-actores-e-interesados.md` | 🟡 borrador | A |
-| 5 | Caso de negocio | `05-caso-de-negocio.md` | 🟡 borrador | A |
-| 6 | Acta de constitución (reconstruida al 30/07/2020) | `06-acta-de-constitucion.md` | 🟡 borrador | A |
-| 7 | Alcance y WBS | `07-alcance-y-wbs.md` | 🟡 borrador | B |
-| 8 | Cronograma maestro | `08-cronograma-maestro.md` | 🟡 borrador | B |
-| 9 | Estimaciones (PERT) | `09-estimaciones.md` + `estimaciones/pert_despliegue.py` | 🟡 borrador | B |
-| 10 | Costos y presupuesto | `10-costos-y-presupuesto.md` | 🟡 borrador | C |
-| 11 | Riesgos | `riesgos/gestion-de-riesgos-amazon-leo.md` (+ `.docx`) | 🟡 corregida (ramas 2–5) | D |
-| 12 | Seguimiento y valor ganado | `12-seguimiento-y-valor-ganado.md` + `seguimiento/valor_ganado.py` | 🟡 borrador | C |
-| 13 | Integración y coherencia | `13-integracion-y-coherencia.md` | 🟡 borrador | D |
-| 14 | Conclusiones y limitaciones | `14-conclusiones-y-limitaciones.md` | 🟡 borrador | Todos |
+| 0 | Resumen ejecutivo | `00-resumen-ejecutivo.md` | 🟡 sin revisar | Todos |
+| 1 | Introducción, método y declaración de IA | `01-introduccion-y-metodo.md` | 🟡 sin revisar | Todos |
+| 2 | Ubicación del proyecto | `02-ubicacion-del-proyecto.md` | 🟡 sin revisar | A |
+| 3 | Evidencia y fuentes | `03-evidencia-y-fuentes.md` | 🟡 sin revisar | A |
+| 4 | Actores e interesados (+ plan de comunicaciones) | `04-actores-e-interesados.md` | 🟡 sin revisar | A |
+| 5 | Caso de negocio | `05-caso-de-negocio.md` | 🟡 sin revisar | A |
+| 6 | Acta de constitución (reconstruida al 30/07/2020) | `06-acta-de-constitucion.md` | 🟡 sin revisar | A |
+| 7 | Alcance y WBS | `07-alcance-y-wbs.md` | 🟡 sin revisar | B |
+| 8 | Cronograma maestro | `08-cronograma-maestro.md` | 🟡 sin revisar | B |
+| 9 | Estimaciones (PERT) | `09-estimaciones.md` + `estimaciones/pert_despliegue.py` | 🟡 sin revisar | B |
+| 10 | Costos y presupuesto | `10-costos-y-presupuesto.md` | 🟡 sin revisar | C |
+| 11 | Riesgos | `riesgos/gestion-de-riesgos-amazon-leo.md` (+ `.docx`) | 🟡 sin revisar (apéndices R-A y R-B) | D |
+| 12 | Seguimiento y valor ganado | `12-seguimiento-y-valor-ganado.md` + `seguimiento/valor_ganado.py` | 🟡 sin revisar | C |
+| 13 | Integración y coherencia | `13-integracion-y-coherencia.md` | 🟡 sin revisar | D |
+| 14 | Conclusiones y limitaciones | `14-conclusiones-y-limitaciones.md` | 🟡 sin revisar | Todos |
 | Anexos | A fuentes · B hitos · C actores · D cifras maestras · E código · F verificación | `evidencia/`, `informe/cifras-maestras.md` | 🟡 | D |
 
 ### Propuesta de reparto (A DEFINIR por el equipo; las letras no son personas asignadas)
@@ -53,6 +53,20 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 | C | 10 Costos · 12 Valor ganado |
 | D (autor/a de Riesgos) | 11 Riesgos · 13 Integración · cifras maestras · anexos |
 | Todos | 0 Resumen · 1 Método · 14 Conclusiones · guion de defensa |
+
+### Reparto de la defensa (propuesta del grupo, 17/11/2026)
+
+Orden de exposición. Los números de pregunta son los de `dashboard/guion-defensa.md` §2. Las personas de cada bloque no están asignadas en este documento.
+
+| Bloque | Pregunta que defiende | Secciones (3 cada uno) | Preguntas del guion | Exposición |
+|---|---|---|---|---|
+| 1 | ¿Qué es y por qué se hace? (abre la defensa) | 2 Ubicación · 3 Fuentes · 5 Caso de negocio | 1, 2, 3, 16 | ≈ 5 min |
+| 2 | ¿Quién lo hace y cómo se organiza? | 4 Actores · 6 Acta · 7 Alcance y WBS | 4, 11, 12, 15 | ≈ 5 min |
+| 3 | ¿Está atrasado? ¿Cuándo termina? | 8 Cronograma · 9 Estimaciones · 12 Valor ganado | 5, 7, 10, 14 | ≈ 5 min |
+| 4 | ¿Qué puede salir mal y qué haríamos? (cierra la defensa) | 10 Costos · 11 Riesgos · 13 Integración | 6, 8, 9, 13 | ≈ 5 min |
+| Todos | Resumen, método y conclusiones | 0 · 1 · 14 | — | — |
+
+> `dashboard/guion-defensa.md` §4 todavía tiene la propuesta anterior (A a D con otras preguntas). Hay que alinearlo con este reparto.
 
 **Cierre de la Instancia 1:** ⬜ informe revisado y aprobado por el equipo.
 
@@ -66,10 +80,10 @@ Iniciada el 16/11/2026 por pedido del equipo ("avanzar todo lo posible").
 |---|---|---|---|---|
 | D-1 | KPIs y modelo de datos | 🟡 **selección provisoria**, a confirmar | 16/11/2026 | `dashboard/datos/kpis.md`, `kpis.json` (12 KPIs de `kpis-sugeridos.md`) |
 | D-2 | Wireframe y jerarquía | 🟡 | 16/11/2026 | `dashboard/wireframe.md` |
-| D-3 | Construcción del HTML | 🟡 | 16/11/2026 | `dashboard/amazon-leo-dashboard.html` (generado), `plantilla-dashboard.html`, `build_dashboard.py` |
+| D-3 | Construcción del HTML | 🟡 sin cartel de borrador; desbordes corregidos | 17/11/2026 | `dashboard/amazon-leo-dashboard.html` (generado), `plantilla-dashboard.html`, `build_dashboard.py` |
 | D-4 | Guion de defensa | 🟡 | 16/11/2026 | `dashboard/guion-defensa.md` (16 preguntas probables) |
 
-Verificado: un solo archivo de 32 KB sin dependencias de red (el build lo controla), JS sin errores, capturas en claro, oscuro y celular, paleta validada para daltonismo. **Falta que el equipo pruebe el PDF y el tablero en la notebook del aula.**
+Verificado: un solo archivo de 32 KB sin dependencias de red (el build lo controla), JS sin errores, capturas en claro, oscuro y celular, paleta validada para daltonismo. El 17/11/2026 se quitó el cartel "Borrador" y se corrigieron dos desbordes (leyenda de lanzamientos restantes y eje del gráfico "Fin proyectado"); se revisó la vista de impresión (6 páginas) con Chrome sin interfaz. **Falta que el equipo pruebe el PDF y el tablero en la notebook del aula, sin internet.**
 
 **Cierre de la Instancia 2:** ⬜ dashboard probado sin internet y PDF verificado por el equipo.
 
@@ -77,7 +91,7 @@ Verificado: un solo archivo de 32 KB sin dependencias de red (el build lo contro
 
 ## Ramas y cambios
 
-Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-dashboard` para un solo PR a `main`. Se conservan como historia (un commit por cambio).
+Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-dashboard` para un solo PR a `main`. Se conservan como historia (un commit por cambio). El PR #1 (borradores de Riesgos, I-1 e I-2) se mergeó el 17/11/2026 y el PR #2 el mismo día, sin reviews registradas. Después se subieron directo a `main`, por pedido de un integrante: la limpieza de carteles y marcas internas, el `.docx` regenerado con pandoc, el cambio del tablero y esta actualización (ver `git log`).
 
 | Orden | Rama (commit) | Tipo | Qué cambia |
 |---|---|---|---|
@@ -107,6 +121,10 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 | 16/11/2026 | Decisión | **La cátedra habilitó el uso de IA para la redacción.** Se adopta "una rama por cambio" con PR. |
 | 16/11/2026 | Ramas 1–11 | Correcciones urgentes, sugerencias e I-3 (ver "Ramas y cambios"). |
 | 16/11/2026 | Entrega (rama 12) | Pedido del equipo: avanzar todo lo posible y unificar en un PR. Se redactaron las secciones 0–14 (borradores), se agregó la estimación PERT (fin ≈ 11/2035; P ≈ 0,07% de cumplir 2029), se verificó en el primario la inversión de 2020 (> USD 10.000 millones, #39) y se construyó el dashboard con KPIs provisorios y guion de defensa. |
+| 17/11/2026 | PR #1 y PR #2 | Se mergean a `main` los PR #1 y #2, sin reviews registradas. |
+| 17/11/2026 | Limpieza de entrega | Directo a `main`: se quitan los carteles de borrador y las marcas `[[PENDIENTE]]` del informe, se renombran los anexos de Riesgos a Apéndice R-A y R-B y se regenera el `.docx`. |
+| 17/11/2026 | Dashboard | Se quita el cartel "Borrador" y se corrigen dos desbordes de texto. |
+| 17/11/2026 | Reparto de la defensa | El grupo propone 4 bloques de ≈ 5 min (ver "Reparto de la defensa"). Quedan sin asignar las personas. |
 
 ---
 
@@ -117,7 +135,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 - **Uso de IA (16/11/2026):** habilitado por la cátedra. Claude redacta borradores; el equipo revisa, aprueba y defiende. Declaración en §1.5 del informe. No se inventan datos.
 - **Flujo de trabajo (16/11/2026):** un commit/rama por cambio; integración por PR.
 
-## Decisiones pendientes del equipo (revisar en el PR)
+## Decisiones pendientes del equipo
 
 - [ ] **Fecha de corte:** propuesta 16/11/2026. Si se mueve (por ejemplo, para incluir LE-04 del 23/11), se actualiza todo junto: cifras maestras → `kpis.json` → scripts → compilar.
 - [ ] **KPIs del dashboard:** confirmar o cambiar la selección provisoria de `dashboard/datos/kpis.md`.
@@ -130,7 +148,10 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 
 - [x] Cargar el material de la cátedra (14/11/2026).
 - [x] Confirmar con la cátedra el uso de IA (16/11/2026).
-- [ ] Revisar el PR por secciones (reparto) y mergear a `main`.
+- [x] Mergear a `main` el PR #1 y el PR #2 (17/11/2026).
+- [ ] Revisión por secciones sobre `main` (no hubo revisión de pares antes del merge).
+- [ ] Asignar personas a los 4 bloques de la defensa y alinear `dashboard/guion-defensa.md` §4.
+- [ ] Abrir `informe/Informe_Amazon_Leo.docx` y revisar tablas y saltos de página.
 - [ ] Probar el dashboard sin internet en la notebook del aula y generar el PDF.
 - [ ] Ensayar la defensa con `dashboard/guion-defensa.md`.
 - [ ] Confirmar fecha de entrega y de defensa.

@@ -358,7 +358,7 @@ $("aviso").innerHTML = `<b>Datos al ${DATA.meta.corte}.</b> Todas las cifras sal
 (function(){
   /* filas: una por escenario sobre un eje común 2029–2039 (sin etiquetas superpuestas) */
   const d=DATA.fin,W=360,row=40,top=4,H=d.length*row+24,l=4, t=s=>new Date(s+"T00:00:00").getTime();
-  const x0=t("2029-01-01"),x1=t("2039-01-01"),X=s=>l+(t(s)-x0)/(x1-x0)*(W-l-12);
+  const x0=t("2029-01-01"),x1=t("2039-01-01"),m=18,X=s=>m+(t(s)-x0)/(x1-x0)*(W-m-20);
   const s=svg(W,H,$("fin")), base=X("2029-07-30");
   for(let a=2029;a<=2039;a+=2){const gx=X(a+"-01-01");el("line",{x1:gx,x2:gx,y1:top,y2:H-20,stroke:css("--grid")},s);const tx=el("text",{x:gx,y:H-4,"text-anchor":"middle"},s);tx.textContent=a;}
   d.forEach((k,i)=>{
@@ -421,12 +421,12 @@ $("promesas").innerHTML=DATA.promesas.map((p,i,a)=>`<li class="${i===a.length-1?
 /* ---------- 3d. manifiesto ---------- */
 (function(){
   const d=DATA.manifiesto_restante, tot=d.reduce((a,k)=>a+k.n,0), cols=["--s1","--s2","--s3","--s4","--s5"];
-  const W=360,H=70,s=svg(W,H,$("mani"));let x=0;const gap=2,Wd=W-gap*(d.length-1);
+  const W=360,H=56,s=svg(W,H,$("mani"));let x=0;const gap=2,Wd=W-gap*(d.length-1);
   d.forEach((k,i)=>{const w=k.n/tot*Wd;const r=el("rect",{x,y:8,width:w,height:24,rx:i===0||i===d.length-1?4:0,fill:css(cols[i])},s);
     hover(r,`${k.cohete}: <b>${k.n}</b> de ${tot} (${Math.round(k.n/tot*100)}%)`);
     if(w>30){const t=el("text",{x:x+w/2,y:50,"text-anchor":"middle",class:"val"},s);t.textContent=k.n;}x+=w+gap;});
   const share=Math.round((d[0].n+d[1].n)/tot*100);
-  const t=el("text",{x:0,y:66},s);t.textContent=`Vulcan + New Glenn = ${d[0].n+d[1].n} de ${tot} (${share}%) · ambos con incidentes en 2026`;
+  $("mani").insertAdjacentHTML("beforeend",`<div class="sub" style="margin-top:2px">Vulcan + New Glenn = ${d[0].n+d[1].n} de ${tot} (${share}%) · ambos con incidentes en 2026</div>`);
   legend($("lg-mani"),d.map((k,i)=>({c:css(cols[i]),t:`${k.cohete} (${k.n})`})));
   tabla($("t-mani"),[{t:"Cohete"},{t:"Restantes",n:1},{t:"%",n:1}],d.map(k=>[k.cohete,k.n,Math.round(k.n/tot*100)+"%"]));
 })();
