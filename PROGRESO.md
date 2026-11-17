@@ -4,7 +4,7 @@ Punto de entrada de cada sesión. Cada checkpoint cierra con **revisión manual*
 
 Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 integrado, sin revisión de pares` · `✅ aprobado`
 
-**Estado actual (17/11/2026):** 🟡 **informe completo y dashboard integrados en `main`, todavía sin revisión de pares.** El PR #2 se mergeó el 17/11/2026 sin reviews registradas. Después se limpió la entrega: sin carteles de "Borrador", sin marcas internas `[[PENDIENTE]]` (ahora "No público" / "No calculable"), Word regenerado y desbordes del tablero corregidos. **Falta:** que cada integrante revise sus secciones sobre `main`, confirmar los KPIs y las decisiones pendientes, probar el tablero y su PDF en la notebook del aula, y confirmar fecha y medio de entrega.
+**Estado actual (17/11/2026):** 🟡 **informe completo y dashboard integrados en `main`, todavía sin revisión de pares.** El PR #2 se mergeó el 17/11/2026 sin reviews registradas. Después se limpió la entrega: sin carteles de "Borrador" ni marcas internas `[[PENDIENTE]]` (ahora "No público" / "No calculable"), anexos sin notas de revisión, sin la sección 1.5, frases de fuentes reescritas como "texto original consultado", Word regenerado con pandoc y desbordes del tablero corregidos. **Falta:** que cada integrante revise sus secciones sobre `main`, confirmar los KPIs y las decisiones pendientes, probar el tablero y su PDF en la notebook del aula, y confirmar fecha y medio de entrega.
 
 **Cómo ver todo rápido:**
 - Informe completo: `informe/Informe_Amazon_Leo.docx` (o `.md`). Se regenera con `python informe/compilar_informe.py` (el `.docx` necesita `pandoc` instalado).
@@ -28,7 +28,7 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 integrado, sin revisión de
 | N.° | Sección | Archivo | Estado | Revisa |
 |---|---|---|---|---|
 | 0 | Resumen ejecutivo | `00-resumen-ejecutivo.md` | 🟡 sin revisar | Todos |
-| 1 | Introducción, método y declaración de IA | `01-introduccion-y-metodo.md` | 🟡 sin revisar | Todos |
+| 1 | Introducción y método | `01-introduccion-y-metodo.md` | 🟡 sin revisar | Todos |
 | 2 | Ubicación del proyecto | `02-ubicacion-del-proyecto.md` | 🟡 sin revisar | A |
 | 3 | Evidencia y fuentes | `03-evidencia-y-fuentes.md` | 🟡 sin revisar | A |
 | 4 | Actores e interesados (+ plan de comunicaciones) | `04-actores-e-interesados.md` | 🟡 sin revisar | A |
@@ -124,6 +124,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 | 17/11/2026 | PR #1 y PR #2 | Se mergean a `main` los PR #1 y #2, sin reviews registradas. |
 | 17/11/2026 | Limpieza de entrega | Directo a `main`: se quitan los carteles de borrador y las marcas `[[PENDIENTE]]` del informe, se renombran los anexos de Riesgos a Apéndice R-A y R-B y se regenera el `.docx`. |
 | 17/11/2026 | Dashboard | Se quita el cartel "Borrador", se corrigen dos desbordes de texto y se renombra el tablero a "Tablero ejecutivo" (sin referencias a la defensa). |
+| 17/11/2026 | Informe y anexos | Directo a `main`, por pedido de un integrante: anexos sin notas de revisión, se quita la sección 1.5 y las menciones a herramientas de IA (también en Riesgos), y "leída" / "se leyeron" pasan a "texto original consultado" para no atribuir lecturas a un lector no identificado. Se regenera el `.docx`. |
 | 17/11/2026 | Reparto de la defensa | El grupo propone 4 bloques de ≈ 5 min (ver "Reparto de la defensa"). Quedan sin asignar las personas. |
 
 ---
@@ -132,7 +133,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 
 - **Marco teórico:** el de la cátedra (`catedra/`). No asumir PMBOK/ISO por defecto.
 - **Dashboard:** un único HTML local autónomo con botón de PDF.
-- **Uso de IA (16/11/2026):** habilitado por la cátedra. Claude redacta borradores; el equipo revisa, aprueba y defiende. El equipo decidió el 17/11/2026 quitar la sección 1.5 (declaración de IA) del informe; la sección de Riesgos conserva su propia declaración. No se inventan datos.
+- **Uso de IA (16/11/2026):** habilitado por la cátedra. Claude redacta borradores; el equipo revisa, aprueba y defiende. El 17/11/2026, por pedido de un integrante, se quitaron del informe y de los anexos la sección 1.5 y las demás menciones a herramientas de IA. Las decisiones de contenido las aprueba y defiende el equipo. No se inventan datos.
 - **Flujo de trabajo (16/11/2026):** un commit/rama por cambio; integración por PR.
 
 ## Decisiones pendientes del equipo
@@ -152,6 +153,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 - [ ] Revisión por secciones sobre `main` (no hubo revisión de pares antes del merge).
 - [ ] Asignar personas a los 4 bloques de la defensa y alinear `dashboard/guion-defensa.md` §4.
 - [ ] Abrir `informe/Informe_Amazon_Leo.docx` y revisar tablas y saltos de página.
+- [ ] Si el repo se va a mostrar: revisar las menciones a IA que quedan en archivos de trabajo (`CLAUDE.md`, `.claude/`, borradores de `informe/riesgos/`, READMEs) y en el historial de commits.
 - [ ] Probar el dashboard sin internet en la notebook del aula y generar el PDF.
 - [ ] Ensayar la defensa con `dashboard/guion-defensa.md`.
 - [ ] Confirmar fecha de entrega y de defensa.
