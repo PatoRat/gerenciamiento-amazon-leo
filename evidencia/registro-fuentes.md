@@ -43,9 +43,9 @@ Se completa en el checkpoint **I-1** (`/informe:fuentes`) y se amplía en los pa
 
 | # | Fuente (organización, título) | Tipo | URL | Publicado | Consultado | Confiabilidad | Qué dato aporta | Etiqueta |
 |---|---|---|---|---|---|---|---|---|
-| 6 | FCC — Order and Authorization FCC 20-102, 35 FCC Rcd 8324 (autorización original Project Kuiper) | Regulatoria (primaria) | https://www.fcc.gov/document/fcc-authorizes-kuiper-satellite-constellation (el sitio devolvió 403; reproducción parcial en TelecomTV) | 30/07/2020 (adoptada 29/07/2020) | 16/11/2026 | Alta | 3.236 satélites en 98 planos (590, 610 y 630 km); servicio desde los primeros 578. ⚠ Original sin leer: abrir el PDF desde un navegador. Hitos 2026/2029 confirmados indirectamente por #7 y #8. | [DATO REAL] |
-| 7 | FCC — Order and Authorization DA 24-224 (modificación) | Regulatoria (primaria, leída) | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | 16/11/2026 | Alta | Reduce la constelación de 3.236 a 3.232 (¶1) y redistribuye órbitas: 782 a 590 km/33°, 2 a 590 km/30°, 1.292 a 610 km/42°, 1.156 a 630 km/51,9° (¶4). Prohíbe desplegar directo a altitud operativa (¶43). Hitos en ¶52(b) (dice "July 20, 2029", ver contradicciones). Aviso de cumplimiento antes del 14/08/2026 (¶53). | [DATO REAL] |
-| 8 | FCC — Order DA 26-553 (waiver parcial del hito del 50%) | Regulatoria (primaria, leída) | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | 16/11/2026 | Alta | Hitos: 1.616 al 30/07/2026 y 3.232 al 30/07/2029 (¶3). Waiver **parcial**, no prórroga (¶11, ¶19). Pérdida de prioridad de espectro Ka/Ku (2020) y banda V (2021) hasta el 30/03/2028, o 30/10/2027 si certifica el 50% construido (¶15). Si falla 2029, la autorización se reduce a los operativos (¶12). **La fianza no se exime** (¶18). Amazon declaró 180 lanzados y proyectó ~700 al 30/07/2026 (¶8). | [DATO REAL] |
+| 6 | FCC — Order and Authorization FCC 20-102, 35 FCC Rcd 8324 (autorización original Project Kuiper) | Regulatoria (primaria) | https://www.fcc.gov/document/fcc-authorizes-kuiper-satellite-constellation (el sitio devolvió 403; reproducción parcial en TelecomTV) | 30/07/2020 (adoptada 29/07/2020) | 16/11/2026 | Alta | 3.236 satélites en 98 planos (590, 610 y 630 km); servicio desde los primeros 578. ⚠ Original no consultado: abrir el PDF desde un navegador. Hitos 2026/2029 confirmados indirectamente por #7 y #8. | [DATO REAL] |
+| 7 | FCC — Order and Authorization DA 24-224 (modificación) | Regulatoria (primaria, texto original consultado) | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | 16/11/2026 | Alta | Reduce la constelación de 3.236 a 3.232 (¶1) y redistribuye órbitas: 782 a 590 km/33°, 2 a 590 km/30°, 1.292 a 610 km/42°, 1.156 a 630 km/51,9° (¶4). Prohíbe desplegar directo a altitud operativa (¶43). Hitos en ¶52(b) (dice "July 20, 2029", ver contradicciones). Aviso de cumplimiento antes del 14/08/2026 (¶53). | [DATO REAL] |
+| 8 | FCC — Order DA 26-553 (waiver parcial del hito del 50%) | Regulatoria (primaria, texto original consultado) | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | 16/11/2026 | Alta | Hitos: 1.616 al 30/07/2026 y 3.232 al 30/07/2029 (¶3). Waiver **parcial**, no prórroga (¶11, ¶19). Pérdida de prioridad de espectro Ka/Ku (2020) y banda V (2021) hasta el 30/03/2028, o 30/10/2027 si certifica el 50% construido (¶15). Si falla 2029, la autorización se reduce a los operativos (¶12). **La fianza no se exime** (¶18). Amazon declaró 180 lanzados y proyectó ~700 al 30/07/2026 (¶8). | [DATO REAL] |
 
 ### C. Técnicas y de proveedores de lanzamiento
 
@@ -96,7 +96,7 @@ Lo que **no** es público importa tanto como lo que sí: define qué se reconstr
 | Dato buscado | Dónde se buscó | Conclusión |
 |---|---|---|
 | Inversión total comprometida por Amazon en Leo/Kuiper (USD) | Búsqueda web general; notas de rebrand e inversión | No surgió una cifra oficial consolidada. Buscar en reportes financieros de Amazon (10-K/10-Q, #5 SEC) o declaraciones a inversores. |
-| Órdenes FCC primarias (texto completo de DA 26-553, DA 24-224 y grant 2020) | Búsqueda web | Solo vía prensa hasta ahora. **Falta leer los documentos en fcc.gov/ECFS.** Condiciona #6, #7, #8. |
+| Órdenes FCC primarias (texto completo de DA 26-553, DA 24-224 y grant 2020) | Búsqueda web | Texto original consultado de DA 26-553 y DA 24-224. El grant de 2020 (FCC 20-102) no pudo consultarse en fcc.gov/ECFS. Condiciona #6. |
 | Costo unitario por satélite y costo por lanzamiento | Búsqueda web | No público. Deberá reconstruirse como [INFERENCIA DEL GRUPO] o [PROPUESTA DE GESTIÓN] con supuestos. |
 | Cronograma maestro interno / EDT del programa | Búsqueda web | No público (esperable en un proyecto privado). Es el núcleo a **reconstruir** por el equipo. |
 | Ubicaciones y estado concretos de las +300 estaciones terrestres | #17, #18 | Solo cifra agregada y casos sueltos (Kenia, Australia, Alemania). Falta un listado verificable. |
@@ -124,7 +124,7 @@ Las cifras de contratos cambiaron con el tiempo. **Siempre se citan con su fecha
 
 ## E. Fuentes incorporadas en I-2 (#21 a #47)
 
-Propuestas en `evidencia/hitos.md` §8 e incorporadas al registro el 16/11/2026 (rama `fix/04-cifras-contratos-y-fuentes`). **Quedan aprobadas cuando el equipo mergee el PR.** Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://www.aboutamazon.com`.
+Detalle en `evidencia/hitos.md` §8. Incorporadas al registro el 16/11/2026. Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://www.aboutamazon.com`.
 
 | # | Fuente | Ruta / URL | Publicada | Tipo | Confiabilidad |
 |---|---|---|---|---|---|

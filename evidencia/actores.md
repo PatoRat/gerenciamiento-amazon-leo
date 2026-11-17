@@ -97,7 +97,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 | NASA y Space Force | Coordinación de lanzamientos en Florida y Vandenberg; "partnership" mencionada por Amazon. Detalle: **NO VERIFICADO**. | #27, #23 |
 | Ministro de Comunicaciones de Sudáfrica (Solly Malatsi) | Aparece en la foto del anuncio con Herotel. Licencia de ICASA: **NO VERIFICADO**. | #33 |
 
-- **UIT, otros reguladores nacionales (Uzbekistán, Australia, Brasil, Francia, Kenia):** licencias **NO VERIFICADO**. Solo se vio la solicitud de Kenia por prensa (#18).
+- **UIT, otros reguladores nacionales (Uzbekistán, Australia, Brasil, Francia, Kenia):** licencias **NO VERIFICADO**. Solo consta la solicitud de Kenia, por prensa (#18).
 - **[DATO REAL]** Amazon dice tener "approval to deploy a second-generation system" (#23). La autoridad que lo concedió y los términos: **NO VERIFICADO** (ver `hitos.md`, inferencia 4).
 
 ---
@@ -142,4 +142,4 @@ Fabricación, terminales y operación son internos (#22), pero lanzamiento (prov
 - Naturaleza del acuerdo con Space Force, NASA y Space Florida.
 - Que ABL haya lanzado prototipos de Kuiper.
 - Interacción con IRIS² y con Eutelsat/OneWeb en 2026.
-- Fuentes no leídas por bloqueo: SpaceNews, Ars Technica, GeekWire, The Verge, NASASpaceflight, fcc.gov, leo.amazon.com. Reuters, Via Satellite (salvo #44), NYT y AP no se consultaron.
+- Fuentes a las que no se pudo acceder por bloqueo: SpaceNews, Ars Technica, GeekWire, The Verge, NASASpaceflight, fcc.gov, leo.amazon.com. Reuters, Via Satellite (salvo #44), NYT y AP no se consultaron.

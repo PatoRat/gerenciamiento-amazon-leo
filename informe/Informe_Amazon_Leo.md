@@ -141,7 +141,7 @@ Lo que no es público **no se inventa**: queda marcado como «No público» o co
 
 ## 3.2 Cómo se evaluó
 
-- **Prioridad:** primero las fuentes primarias. Las órdenes DA 24-224 y DA 26-553 de la FCC **se leyeron completas** (Anexo F).
+- **Prioridad:** primero las fuentes primarias. Las órdenes DA 24-224 y DA 26-553 de la FCC **se consultaron en su texto original** (Anexo F).
 - **Contradicciones:** se registraron como hallazgo y no se promediaron. Ejemplos: fecha final del hito (20 contra 30/07/2029), contratos de New Glenn (12 en 2022 contra 24 en 2026), capacidad de fábrica contra ritmo real.
 - **Correcciones:** la fila #5 se había catalogado como informe financiero y resultó ser el comunicado de compra de Globalstar; se corrigió.
 - **Fechas de corte:** las cifras que cambian (contratos, satélites) se citan siempre con fecha.
@@ -1033,7 +1033,7 @@ Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) 
 - Unidad y valores de avance (seguimiento y valor ganado): para usar los mismos satélites y el mismo índice.
 - EDT (alcance): para reflejar lo que cambia el alcance en R-04.
 
-**Naturaleza de las fuentes.** La mayor parte proviene de comunicados de Amazon, es decir de declaraciones de la propia empresa; las resoluciones de la FCC son documentos primarios leídos en su texto. El original de la orden FCC 20-102 (2020) no pudo leerse y se usó una reproducción parcial para los datos de esa fecha.
+**Naturaleza de las fuentes.** La mayor parte proviene de comunicados de Amazon, es decir de declaraciones de la propia empresa; las resoluciones de la FCC son documentos primarios, consultados en su texto original. El original de la orden FCC 20-102 (2020) no pudo consultarse y se usó una reproducción parcial para los datos de esa fecha.
 
 ### Apéndice R-A. Fuentes citadas
 
@@ -1041,8 +1041,8 @@ Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://ww
 
 | # | Fuente | Ruta o URL | Publicada | Tipo |
 |---|---|---|---|---|
-| DA 26-553 | FCC, Order sobre el waiver del hito | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | Primaria (leída) |
-| DA 24-224 | FCC, Order and Authorization | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | Primaria (leída) |
+| DA 26-553 | FCC, Order sobre el waiver del hito | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | Primaria (texto original consultado) |
+| DA 24-224 | FCC, Order and Authorization | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | Primaria (texto original consultado) |
 | 2 | Amazon, Mission updates | /news/innovation-at-amazon/project-kuiper-satellite-rocket-launch-progress-updates | actualizada 15/11/2026 | Primaria |
 | 3 | Amazon, primera misión Vulcan | /news/amazon-leo/amazon-leo-vulcan-satellites-launch | 09/11/2026 | Primaria |
 | 4 | Amazon, inversión en lanzamientos | /news/innovation-at-amazon/amazon-makes-historic-launch-investment-to-advance-project-kuiper | 05/04/2022 | Primaria |
@@ -1250,9 +1250,9 @@ Se completa en el checkpoint **I-1** (`/informe:fuentes`) y se amplía en los pa
 
 | # | Fuente (organización, título) | Tipo | URL | Publicado | Consultado | Confiabilidad | Qué dato aporta | Etiqueta |
 |---|---|---|---|---|---|---|---|---|
-| 6 | FCC — Order and Authorization FCC 20-102, 35 FCC Rcd 8324 (autorización original Project Kuiper) | Regulatoria (primaria) | https://www.fcc.gov/document/fcc-authorizes-kuiper-satellite-constellation (el sitio devolvió 403; reproducción parcial en TelecomTV) | 30/07/2020 (adoptada 29/07/2020) | 16/11/2026 | Alta | 3.236 satélites en 98 planos (590, 610 y 630 km); servicio desde los primeros 578. ⚠ Original sin leer: abrir el PDF desde un navegador. Hitos 2026/2029 confirmados indirectamente por #7 y #8. | [DATO REAL] |
-| 7 | FCC — Order and Authorization DA 24-224 (modificación) | Regulatoria (primaria, leída) | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | 16/11/2026 | Alta | Reduce la constelación de 3.236 a 3.232 (¶1) y redistribuye órbitas: 782 a 590 km/33°, 2 a 590 km/30°, 1.292 a 610 km/42°, 1.156 a 630 km/51,9° (¶4). Prohíbe desplegar directo a altitud operativa (¶43). Hitos en ¶52(b) (dice "July 20, 2029", ver contradicciones). Aviso de cumplimiento antes del 14/08/2026 (¶53). | [DATO REAL] |
-| 8 | FCC — Order DA 26-553 (waiver parcial del hito del 50%) | Regulatoria (primaria, leída) | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | 16/11/2026 | Alta | Hitos: 1.616 al 30/07/2026 y 3.232 al 30/07/2029 (¶3). Waiver **parcial**, no prórroga (¶11, ¶19). Pérdida de prioridad de espectro Ka/Ku (2020) y banda V (2021) hasta el 30/03/2028, o 30/10/2027 si certifica el 50% construido (¶15). Si falla 2029, la autorización se reduce a los operativos (¶12). **La fianza no se exime** (¶18). Amazon declaró 180 lanzados y proyectó ~700 al 30/07/2026 (¶8). | [DATO REAL] |
+| 6 | FCC — Order and Authorization FCC 20-102, 35 FCC Rcd 8324 (autorización original Project Kuiper) | Regulatoria (primaria) | https://www.fcc.gov/document/fcc-authorizes-kuiper-satellite-constellation (el sitio devolvió 403; reproducción parcial en TelecomTV) | 30/07/2020 (adoptada 29/07/2020) | 16/11/2026 | Alta | 3.236 satélites en 98 planos (590, 610 y 630 km); servicio desde los primeros 578. ⚠ Original no consultado: abrir el PDF desde un navegador. Hitos 2026/2029 confirmados indirectamente por #7 y #8. | [DATO REAL] |
+| 7 | FCC — Order and Authorization DA 24-224 (modificación) | Regulatoria (primaria, texto original consultado) | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | 16/11/2026 | Alta | Reduce la constelación de 3.236 a 3.232 (¶1) y redistribuye órbitas: 782 a 590 km/33°, 2 a 590 km/30°, 1.292 a 610 km/42°, 1.156 a 630 km/51,9° (¶4). Prohíbe desplegar directo a altitud operativa (¶43). Hitos en ¶52(b) (dice "July 20, 2029", ver contradicciones). Aviso de cumplimiento antes del 14/08/2026 (¶53). | [DATO REAL] |
+| 8 | FCC — Order DA 26-553 (waiver parcial del hito del 50%) | Regulatoria (primaria, texto original consultado) | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | 16/11/2026 | Alta | Hitos: 1.616 al 30/07/2026 y 3.232 al 30/07/2029 (¶3). Waiver **parcial**, no prórroga (¶11, ¶19). Pérdida de prioridad de espectro Ka/Ku (2020) y banda V (2021) hasta el 30/03/2028, o 30/10/2027 si certifica el 50% construido (¶15). Si falla 2029, la autorización se reduce a los operativos (¶12). **La fianza no se exime** (¶18). Amazon declaró 180 lanzados y proyectó ~700 al 30/07/2026 (¶8). | [DATO REAL] |
 
 #### C. Técnicas y de proveedores de lanzamiento
 
@@ -1303,7 +1303,7 @@ Lo que **no** es público importa tanto como lo que sí: define qué se reconstr
 | Dato buscado | Dónde se buscó | Conclusión |
 |---|---|---|
 | Inversión total comprometida por Amazon en Leo/Kuiper (USD) | Búsqueda web general; notas de rebrand e inversión | No surgió una cifra oficial consolidada. Buscar en reportes financieros de Amazon (10-K/10-Q, #5 SEC) o declaraciones a inversores. |
-| Órdenes FCC primarias (texto completo de DA 26-553, DA 24-224 y grant 2020) | Búsqueda web | Solo vía prensa hasta ahora. **Falta leer los documentos en fcc.gov/ECFS.** Condiciona #6, #7, #8. |
+| Órdenes FCC primarias (texto completo de DA 26-553, DA 24-224 y grant 2020) | Búsqueda web | Texto original consultado de DA 26-553 y DA 24-224. El grant de 2020 (FCC 20-102) no pudo consultarse en fcc.gov/ECFS. Condiciona #6. |
 | Costo unitario por satélite y costo por lanzamiento | Búsqueda web | No público. Deberá reconstruirse como [INFERENCIA DEL GRUPO] o [PROPUESTA DE GESTIÓN] con supuestos. |
 | Cronograma maestro interno / EDT del programa | Búsqueda web | No público (esperable en un proyecto privado). Es el núcleo a **reconstruir** por el equipo. |
 | Ubicaciones y estado concretos de las +300 estaciones terrestres | #17, #18 | Solo cifra agregada y casos sueltos (Kenia, Australia, Alemania). Falta un listado verificable. |
@@ -1331,7 +1331,7 @@ Las cifras de contratos cambiaron con el tiempo. **Siempre se citan con su fecha
 
 ### E. Fuentes incorporadas en I-2 (#21 a #47)
 
-Propuestas en `evidencia/hitos.md` §8 e incorporadas al registro el 16/11/2026 (rama `fix/04-cifras-contratos-y-fuentes`). **Quedan aprobadas cuando el equipo mergee el PR.** Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://www.aboutamazon.com`.
+Detalle en `evidencia/hitos.md` §8. Incorporadas al registro el 16/11/2026. Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://www.aboutamazon.com`.
 
 | # | Fuente | Ruta / URL | Publicada | Tipo | Confiabilidad |
 |---|---|---|---|---|---|
@@ -1404,7 +1404,7 @@ Fuente de toda la tabla: Amazon, *Mission updates* (#2). La página trae dos fec
 - **[DATO REAL]** Próxima misión publicada: **LE-04**, Ariane 64, 36 satélites, **no antes del 23/11/2026**, Kourou (#2). Amazon dice que la ventana exacta se informará más cerca de la fecha.
 - **[DATO REAL]** LV-02: Amazon decía que se esperaba "within weeks" de un LV-01 nominal (#3). Esa expectativa ya no aplica tal cual, pero Amazon no publicó una nueva fecha.
 
-**Protoflight (KuiperSat-1 y -2, Atlas V, 06/10/2023):** solo aparece en la tabla de Wikipedia. **NO VERIFICADO** en fuente primaria (ninguna página de Amazon leída lo menciona; Amazon numera desde KA-01 como misión n.º 1).
+**Protoflight (KuiperSat-1 y -2, Atlas V, 06/10/2023):** solo aparece en la tabla de Wikipedia. **NO VERIFICADO** en fuente primaria (ninguna página de Amazon consultada lo menciona; Amazon numera desde KA-01 como misión n.º 1).
 
 #### Lanzamientos contratados (lo que dice Amazon hoy)
 
@@ -1424,11 +1424,11 @@ Fuente de toda la tabla: Amazon, *Mission updates* (#2). La página trae dos fec
 | Fecha | Hito | Fuente | Tipo |
 |---|---|---|---|
 | 04/04/2019 | Se conoce el proyecto por presentaciones federales: 3.236 satélites. | #42 | Secundaria |
-| 30/07/2020 | FCC autoriza la constelación (3.236 satélites, banda Ka). Amazon lo comunicó el mismo día. Orden FCC 20-102, 35 FCC Rcd 8324. | #39; #6 | Primaria (Amazon); original FCC sin leer |
+| 30/07/2020 | FCC autoriza la constelación (3.236 satélites, banda Ka). Amazon lo comunicó el mismo día. Orden FCC 20-102, 35 FCC Rcd 8324. | #39; #6 | Primaria (Amazon); no se consultó el original de la FCC |
 | 09/02/2023 | FCC aprueba el plan actualizado de desechos orbitales (con reportes semestrales). | #44 | Secundaria |
-| 08/03/2024 | FCC reduce la constelación a 3.232 satélites y redistribuye órbitas. | #7 | Primaria (FCC, leída) |
-| 30/01/2026 | Amazon pide extender el hito del 50% (24 meses, hasta 30/07/2028) o un waiver. Dijo tener 180 satélites lanzados y proyectó ~700 al 30/07/2026. | #8 ¶8 | Primaria (FCC, leída) |
-| 05/06/2026 | FCC concede un waiver parcial del hito de 1.616 satélites al 30/07/2026; pérdida temporal de prioridad de espectro; hito de 3.232 al 30/07/2029 intacto; la fianza no se exime. | #8 | Primaria (FCC, leída) |
+| 08/03/2024 | FCC reduce la constelación a 3.232 satélites y redistribuye órbitas. | #7 | Primaria (FCC, texto original consultado) |
+| 30/01/2026 | Amazon pide extender el hito del 50% (24 meses, hasta 30/07/2028) o un waiver. Dijo tener 180 satélites lanzados y proyectó ~700 al 30/07/2026. | #8 ¶8 | Primaria (FCC, texto original consultado) |
+| 05/06/2026 | FCC concede un waiver parcial del hito de 1.616 satélites al 30/07/2026; pérdida temporal de prioridad de espectro; hito de 3.232 al 30/07/2029 intacto; la fianza no se exime. | #8 | Primaria (FCC, texto original consultado) |
 | 27/07/2026 | Amazon presenta a la FCC el sistema direct-to-device: hasta 5.105 satélites, despliegue desde 2028. Número de expediente **NO VERIFICADO**. | #34 | Primaria (Amazon) |
 
 ---
@@ -1500,7 +1500,7 @@ Suma de lo contratado según Amazon: 24 Ariane 6 + 38 Vulcan + 9 Atlas V + 24 Ne
 
 **[INFERENCIA DEL GRUPO] 4. Los "4.500 satélites adicionales" que menciona CNBC probablemente son Gen2 y Polar.**
 DA 26-553 ¶3 menciona Gen2 (3.212 satélites) y Polar (1.292). La suma es 4.504.
-→ Base: #8 ¶3, #43. Supuesto: la mención de CNBC se refiere a esos mismos sistemas. No se leyó la orden que los autoriza.
+→ Base: #8 ¶3, #43. Supuesto: la mención de CNBC se refiere a esos mismos sistemas. No se consultó la orden que los autoriza.
 
 **[INFERENCIA DEL GRUPO] 5. La falla de LV-01 y la caída de New Glenn concentran el riesgo en dos proveedores.**
 Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, y ambos tienen eventos de falla en 2026 (LV-01 el 15/11; explosión de New Glenn en su plataforma durante una prueba de encendido el 28/05/2026, #47).
@@ -1678,7 +1678,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 | NASA y Space Force | Coordinación de lanzamientos en Florida y Vandenberg; "partnership" mencionada por Amazon. Detalle: **NO VERIFICADO**. | #27, #23 |
 | Ministro de Comunicaciones de Sudáfrica (Solly Malatsi) | Aparece en la foto del anuncio con Herotel. Licencia de ICASA: **NO VERIFICADO**. | #33 |
 
-- **UIT, otros reguladores nacionales (Uzbekistán, Australia, Brasil, Francia, Kenia):** licencias **NO VERIFICADO**. Solo se vio la solicitud de Kenia por prensa (#18).
+- **UIT, otros reguladores nacionales (Uzbekistán, Australia, Brasil, Francia, Kenia):** licencias **NO VERIFICADO**. Solo consta la solicitud de Kenia, por prensa (#18).
 - **[DATO REAL]** Amazon dice tener "approval to deploy a second-generation system" (#23). La autoridad que lo concedió y los términos: **NO VERIFICADO** (ver `hitos.md`, inferencia 4).
 
 ---
@@ -1723,7 +1723,7 @@ Fabricación, terminales y operación son internos (#22), pero lanzamiento (prov
 - Naturaleza del acuerdo con Space Force, NASA y Space Florida.
 - Que ABL haya lanzado prototipos de Kuiper.
 - Interacción con IRIS² y con Eutelsat/OneWeb en 2026.
-- Fuentes no leídas por bloqueo: SpaceNews, Ars Technica, GeekWire, The Verge, NASASpaceflight, fcc.gov, leo.amazon.com. Reuters, Via Satellite (salvo #44), NYT y AP no se consultaron.
+- Fuentes a las que no se pudo acceder por bloqueo: SpaceNews, Ars Technica, GeekWire, The Verge, NASASpaceflight, fcc.gov, leo.amazon.com. Reuters, Via Satellite (salvo #44), NYT y AP no se consultaron.
 
 ---
 

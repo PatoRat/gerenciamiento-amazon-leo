@@ -16,7 +16,7 @@
 
 ## 3.2 Cómo se evaluó
 
-- **Prioridad:** primero las fuentes primarias. Las órdenes DA 24-224 y DA 26-553 de la FCC **se leyeron completas** (Anexo F).
+- **Prioridad:** primero las fuentes primarias. Las órdenes DA 24-224 y DA 26-553 de la FCC **se consultaron en su texto original** (Anexo F).
 - **Contradicciones:** se registraron como hallazgo y no se promediaron. Ejemplos: fecha final del hito (20 contra 30/07/2029), contratos de New Glenn (12 en 2022 contra 24 en 2026), capacidad de fábrica contra ritmo real.
 - **Correcciones:** la fila #5 se había catalogado como informe financiero y resultó ser el comunicado de compra de Globalstar; se corrigió.
 - **Fechas de corte:** las cifras que cambian (contratos, satélites) se citan siempre con fecha.

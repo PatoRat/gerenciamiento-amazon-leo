@@ -35,7 +35,7 @@ Fuente de toda la tabla: Amazon, *Mission updates* (#2). La página trae dos fec
 - **[DATO REAL]** Próxima misión publicada: **LE-04**, Ariane 64, 36 satélites, **no antes del 23/11/2026**, Kourou (#2). Amazon dice que la ventana exacta se informará más cerca de la fecha.
 - **[DATO REAL]** LV-02: Amazon decía que se esperaba "within weeks" de un LV-01 nominal (#3). Esa expectativa ya no aplica tal cual, pero Amazon no publicó una nueva fecha.
 
-**Protoflight (KuiperSat-1 y -2, Atlas V, 06/10/2023):** solo aparece en la tabla de Wikipedia. **NO VERIFICADO** en fuente primaria (ninguna página de Amazon leída lo menciona; Amazon numera desde KA-01 como misión n.º 1).
+**Protoflight (KuiperSat-1 y -2, Atlas V, 06/10/2023):** solo aparece en la tabla de Wikipedia. **NO VERIFICADO** en fuente primaria (ninguna página de Amazon consultada lo menciona; Amazon numera desde KA-01 como misión n.º 1).
 
 ### Lanzamientos contratados (lo que dice Amazon hoy)
 
@@ -55,11 +55,11 @@ Fuente de toda la tabla: Amazon, *Mission updates* (#2). La página trae dos fec
 | Fecha | Hito | Fuente | Tipo |
 |---|---|---|---|
 | 04/04/2019 | Se conoce el proyecto por presentaciones federales: 3.236 satélites. | #42 | Secundaria |
-| 30/07/2020 | FCC autoriza la constelación (3.236 satélites, banda Ka). Amazon lo comunicó el mismo día. Orden FCC 20-102, 35 FCC Rcd 8324. | #39; #6 | Primaria (Amazon); original FCC sin leer |
+| 30/07/2020 | FCC autoriza la constelación (3.236 satélites, banda Ka). Amazon lo comunicó el mismo día. Orden FCC 20-102, 35 FCC Rcd 8324. | #39; #6 | Primaria (Amazon); no se consultó el original de la FCC |
 | 09/02/2023 | FCC aprueba el plan actualizado de desechos orbitales (con reportes semestrales). | #44 | Secundaria |
-| 08/03/2024 | FCC reduce la constelación a 3.232 satélites y redistribuye órbitas. | #7 | Primaria (FCC, leída) |
-| 30/01/2026 | Amazon pide extender el hito del 50% (24 meses, hasta 30/07/2028) o un waiver. Dijo tener 180 satélites lanzados y proyectó ~700 al 30/07/2026. | #8 ¶8 | Primaria (FCC, leída) |
-| 05/06/2026 | FCC concede un waiver parcial del hito de 1.616 satélites al 30/07/2026; pérdida temporal de prioridad de espectro; hito de 3.232 al 30/07/2029 intacto; la fianza no se exime. | #8 | Primaria (FCC, leída) |
+| 08/03/2024 | FCC reduce la constelación a 3.232 satélites y redistribuye órbitas. | #7 | Primaria (FCC, texto original consultado) |
+| 30/01/2026 | Amazon pide extender el hito del 50% (24 meses, hasta 30/07/2028) o un waiver. Dijo tener 180 satélites lanzados y proyectó ~700 al 30/07/2026. | #8 ¶8 | Primaria (FCC, texto original consultado) |
+| 05/06/2026 | FCC concede un waiver parcial del hito de 1.616 satélites al 30/07/2026; pérdida temporal de prioridad de espectro; hito de 3.232 al 30/07/2029 intacto; la fianza no se exime. | #8 | Primaria (FCC, texto original consultado) |
 | 27/07/2026 | Amazon presenta a la FCC el sistema direct-to-device: hasta 5.105 satélites, despliegue desde 2028. Número de expediente **NO VERIFICADO**. | #34 | Primaria (Amazon) |
 
 ---
@@ -131,7 +131,7 @@ Suma de lo contratado según Amazon: 24 Ariane 6 + 38 Vulcan + 9 Atlas V + 24 Ne
 
 **[INFERENCIA DEL GRUPO] 4. Los "4.500 satélites adicionales" que menciona CNBC probablemente son Gen2 y Polar.**
 DA 26-553 ¶3 menciona Gen2 (3.212 satélites) y Polar (1.292). La suma es 4.504.
-→ Base: #8 ¶3, #43. Supuesto: la mención de CNBC se refiere a esos mismos sistemas. No se leyó la orden que los autoriza.
+→ Base: #8 ¶3, #43. Supuesto: la mención de CNBC se refiere a esos mismos sistemas. No se consultó la orden que los autoriza.
 
 **[INFERENCIA DEL GRUPO] 5. La falla de LV-01 y la caída de New Glenn concentran el riesgo en dos proveedores.**
 Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, y ambos tienen eventos de falla en 2026 (LV-01 el 15/11; explosión de New Glenn en su plataforma durante una prueba de encendido el 28/05/2026, #47).

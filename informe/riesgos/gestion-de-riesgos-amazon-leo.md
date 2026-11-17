@@ -388,7 +388,7 @@ Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) 
 - Unidad y valores de avance (seguimiento y valor ganado): para usar los mismos satélites y el mismo índice.
 - EDT (alcance): para reflejar lo que cambia el alcance en R-04.
 
-**Naturaleza de las fuentes.** La mayor parte proviene de comunicados de Amazon, es decir de declaraciones de la propia empresa; las resoluciones de la FCC son documentos primarios leídos en su texto. El original de la orden FCC 20-102 (2020) no pudo leerse y se usó una reproducción parcial para los datos de esa fecha.
+**Naturaleza de las fuentes.** La mayor parte proviene de comunicados de Amazon, es decir de declaraciones de la propia empresa; las resoluciones de la FCC son documentos primarios, consultados en su texto original. El original de la orden FCC 20-102 (2020) no pudo consultarse y se usó una reproducción parcial para los datos de esa fecha.
 
 ## Apéndice R-A. Fuentes citadas
 
@@ -396,8 +396,8 @@ Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://ww
 
 | # | Fuente | Ruta o URL | Publicada | Tipo |
 |---|---|---|---|---|
-| DA 26-553 | FCC, Order sobre el waiver del hito | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | Primaria (leída) |
-| DA 24-224 | FCC, Order and Authorization | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | Primaria (leída) |
+| DA 26-553 | FCC, Order sobre el waiver del hito | https://docs.fcc.gov/public/attachments/DA-26-553A1.txt | 05/06/2026 | Primaria (texto original consultado) |
+| DA 24-224 | FCC, Order and Authorization | https://docs.fcc.gov/public/attachments/DA-24-224A1.pdf | 08/03/2024 | Primaria (texto original consultado) |
 | 2 | Amazon, Mission updates | /news/innovation-at-amazon/project-kuiper-satellite-rocket-launch-progress-updates | actualizada 15/11/2026 | Primaria |
 | 3 | Amazon, primera misión Vulcan | /news/amazon-leo/amazon-leo-vulcan-satellites-launch | 09/11/2026 | Primaria |
 | 4 | Amazon, inversión en lanzamientos | /news/innovation-at-amazon/amazon-makes-historic-launch-investment-to-advance-project-kuiper | 05/04/2022 | Primaria |
