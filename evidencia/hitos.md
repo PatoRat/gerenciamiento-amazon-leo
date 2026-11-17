@@ -1,7 +1,7 @@
-# Hitos públicos de Amazon Leo (borrador I-2)
+# Hitos públicos de Amazon Leo
 
-**Estado: borrador local, sin revisión del equipo.** Fecha de corte y de consulta: **16/11/2026**.
-Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (#1 a #20 ya existen) o a las **fuentes nuevas propuestas (#21 en adelante)** de la sección 8, que el equipo debe aprobar antes de incorporarlas.
+Fecha de corte y de consulta: **16/11/2026**.
+Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (Anexo A). La sección 8 detalla las fuentes #21 a #47, ya incorporadas a ese registro.
 Convención: toda fila de las secciones 1 a 4 es `[DATO REAL]` y trae su fuente. Las secciones 5 y 6 contienen `[INFERENCIA DEL GRUPO]` con supuestos explícitos. La sección 7 lista lo que **no se pudo verificar**.
 "Primaria" = Amazon, FCC, ULA. "Secundaria" = medios. Casi todo lo de Amazon es declaración de la propia empresa: describe lo que Amazon dice, no necesariamente lo que ocurrió.
 
@@ -97,7 +97,7 @@ Fuente de toda la tabla: Amazon, *Mission updates* (#2). La página trae dos fec
 
 ---
 
-## 5. Inferencias del grupo (para revisar)
+## 5. Inferencias del grupo
 
 **[INFERENCIA DEL GRUPO] 1. El inicio del servicio se corrió año tras año.**
 Lo que Amazon dijo en cada momento sobre el inicio del servicio a clientes:
@@ -139,9 +139,9 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 ---
 
-## 6. Discrepancias detectadas (para el equipo)
+## 6. Discrepancias detectadas
 
-| Tema | Fuente A | Fuente B | Resolución propuesta |
+| Tema | Fuente A | Fuente B | Resolución |
 |---|---|---|---|
 | Fecha del rebrand | Amazon: 13/11/2025 (#21) | Wikipedia: 12/11/2025 | Usar 13/11/2025 (primaria). Cierra la contradicción del registro. |
 | Cargo de Rajeev Badyal | Amazon: "Vice President of Amazon Leo" (#21) | Wikipedia: "president" | Usar "Vice President". |
@@ -170,9 +170,9 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 ---
 
-## 8. Fuentes nuevas propuestas para el registro
+## 8. Fuentes incorporadas al registro
 
-> **16/11/2026:** estas fuentes se incorporaron a `evidencia/registro-fuentes.md` (sección E). La tabla queda acá como antecedente; la referencia oficial es el registro.
+> Estas fuentes están incorporadas a `evidencia/registro-fuentes.md` (sección E). La referencia oficial es el registro.
 
 Todas consultadas el 16/11/2026. Las URL de Amazon son `https://www.aboutamazon.com/...`.
 

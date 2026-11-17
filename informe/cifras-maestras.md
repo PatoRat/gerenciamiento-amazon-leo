@@ -4,10 +4,9 @@
 
 Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar documentos aislados") y para la defensa: cualquier número que se diga en voz alta tiene que coincidir con el informe y con el tablero.
 
-- **Fecha de corte:** 16/11/2026 (propuesta pendiente de aprobación; ver `PROGRESO.md`, "Decisiones pendientes").
+- **Fecha de corte:** 16/11/2026.
 - **Unidad de avance:** satélites **lanzados** como aproximación de **operativos** (Amazon no publica operativos; la FCC mide operativos). Todos los resultados derivados son optimistas.
 - Las referencias `#n` son filas de `evidencia/registro-fuentes.md`.
-- Estado: borrador elaborado con asistencia de IA a partir de la evidencia del repo; **requiere revisión del equipo**.
 
 ---
 

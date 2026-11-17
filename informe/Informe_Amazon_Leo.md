@@ -64,11 +64,7 @@ Lo que no es público **no se inventa**: queda marcado como «No público» o co
 - **Números:** todos salen de las cifras maestras (Anexo D). Si un número no está ahí, no está en el informe.
 - **Monedas y unidades:** explícitas (USD, satélites, misiones/mes).
 
-## 1.5 Declaración de uso de herramientas de IA
-
-La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo el 16/11/2026). Se usó Claude (Anthropic) para buscar y verificar fuentes, ordenar la evidencia, proponer la estructura, programar los cálculos (Monte Carlo y valor ganado), redactar borradores de las secciones y construir el dashboard. Las decisiones de gestión (objetivo prioritario, alcance, línea base, probabilidades e impactos, respuestas, KPIs) las revisó, ajustó y aprobó el equipo, que es quien las defiende. Todas las fuentes se citan para que cualquiera pueda comprobarlas; lo que no se pudo verificar está señalado.
-
-## 1.6 Limitaciones generales
+## 1.5 Limitaciones generales
 
 - Amazon es una empresa privada y no publica su cronograma, su WBS ni su presupuesto. Casi toda la información de la empresa es **declaración propia**.
 - Algunas fuentes no pudieron leerse por bloqueo o paywall (SpaceNews, fcc.gov en lectura automática, entre otras; ver Anexo A).
@@ -1238,7 +1234,7 @@ Se completa en el checkpoint **I-1** (`/informe:fuentes`) y se amplía en los pa
 
 ### Tabla de fuentes
 
-> **Nota sobre este primer barrido (I-1):** catálogo inicial para que el equipo arranque, con fecha de consulta 15/11/2026. Varias cifras provienen de **fuentes secundarias** (prensa) que citan documentos primarios (FCC, SEC, comunicados de Amazon): están marcadas con ⚠ y **deben verificarse contra el documento primario** antes de usarse como `[DATO REAL]` en el informe. Las columnas "Publicado" con `≈` son fechas aproximadas a confirmar.
+> **Nota:** las fuentes #1 a #20 se consultaron el 15/11/2026 y las #21 a #47, el 16/11/2026. Varias cifras provienen de **fuentes secundarias** (prensa) que citan documentos primarios (FCC, SEC, comunicados de Amazon): están marcadas con ⚠ y **deben verificarse contra el documento primario** antes de usarse como `[DATO REAL]` en el informe. Las columnas "Publicado" con `≈` son fechas aproximadas a confirmar.
 
 #### A. Oficiales de la organización (Amazon / proveedores)
 
@@ -1371,10 +1367,10 @@ Propuestas en `evidencia/hitos.md` §8 e incorporadas al registro el 16/11/2026 
 
 # Anexo B. Cronología de hitos
 
-## Hitos públicos de Amazon Leo (borrador I-2)
+## Hitos públicos de Amazon Leo
 
-**Estado: borrador local, sin revisión del equipo.** Fecha de corte y de consulta: **16/11/2026**.
-Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (#1 a #20 ya existen) o a las **fuentes nuevas propuestas (#21 en adelante)** de la sección 8, que el equipo debe aprobar antes de incorporarlas.
+Fecha de corte y de consulta: **16/11/2026**.
+Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (Anexo A). La sección 8 detalla las fuentes #21 a #47, ya incorporadas a ese registro.
 Convención: toda fila de las secciones 1 a 4 es `[DATO REAL]` y trae su fuente. Las secciones 5 y 6 contienen `[INFERENCIA DEL GRUPO]` con supuestos explícitos. La sección 7 lista lo que **no se pudo verificar**.
 "Primaria" = Amazon, FCC, ULA. "Secundaria" = medios. Casi todo lo de Amazon es declaración de la propia empresa: describe lo que Amazon dice, no necesariamente lo que ocurrió.
 
@@ -1470,7 +1466,7 @@ Fuente de toda la tabla: Amazon, *Mission updates* (#2). La página trae dos fec
 
 ---
 
-### 5. Inferencias del grupo (para revisar)
+### 5. Inferencias del grupo
 
 **[INFERENCIA DEL GRUPO] 1. El inicio del servicio se corrió año tras año.**
 Lo que Amazon dijo en cada momento sobre el inicio del servicio a clientes:
@@ -1512,9 +1508,9 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 ---
 
-### 6. Discrepancias detectadas (para el equipo)
+### 6. Discrepancias detectadas
 
-| Tema | Fuente A | Fuente B | Resolución propuesta |
+| Tema | Fuente A | Fuente B | Resolución |
 |---|---|---|---|
 | Fecha del rebrand | Amazon: 13/11/2025 (#21) | Wikipedia: 12/11/2025 | Usar 13/11/2025 (primaria). Cierra la contradicción del registro. |
 | Cargo de Rajeev Badyal | Amazon: "Vice President of Amazon Leo" (#21) | Wikipedia: "president" | Usar "Vice President". |
@@ -1543,9 +1539,9 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 ---
 
-### 8. Fuentes nuevas propuestas para el registro
+### 8. Fuentes incorporadas al registro
 
-> **16/11/2026:** estas fuentes se incorporaron a `evidencia/registro-fuentes.md` (sección E). La tabla queda acá como antecedente; la referencia oficial es el registro.
+> Estas fuentes están incorporadas a `evidencia/registro-fuentes.md` (sección E). La referencia oficial es el registro.
 
 Todas consultadas el 16/11/2026. Las URL de Amazon son `https://www.aboutamazon.com/...`.
 
@@ -1583,10 +1579,10 @@ Todas consultadas el 16/11/2026. Las URL de Amazon son `https://www.aboutamazon.
 
 # Anexo C. Mapa de actores
 
-## Mapa de actores de Amazon Leo (borrador I-2)
+## Mapa de actores de Amazon Leo
 
-**Estado: borrador local, sin revisión del equipo.** Fecha de corte y de consulta: **16/11/2026**.
-Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (#1 a #20) o a las fuentes nuevas propuestas en la sección 8 de `hitos.md` (#21 a #46). "Primaria" = Amazon, FCC, ULA; "Secundaria" = medios.
+Fecha de corte y de consulta: **16/11/2026**.
+Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (Anexo A). "Primaria" = Amazon, FCC, ULA; "Secundaria" = medios.
 Convención: toda fila es `[DATO REAL]` salvo que se marque. Las inferencias están en la sección 8 con sus supuestos. Lo que **no se pudo verificar** está en la sección 9 y no debe usarse en el informe.
 Casi todo lo de Amazon es declaración de la propia empresa.
 
@@ -1699,7 +1695,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 
 ---
 
-### 8. Inferencias del grupo (para revisar)
+### 8. Inferencias del grupo
 
 **[INFERENCIA DEL GRUPO] 1. SpaceX es a la vez competidor y proveedor.**
 SpaceX se opuso a Amazon ante la FCC (2019, #45) y es contratista de lanzamientos de Leo (#38, #23).
@@ -1739,10 +1735,9 @@ Fabricación, terminales y operación son internos (#22), pero lanzamiento (prov
 
 Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar documentos aislados") y para la defensa: cualquier número que se diga en voz alta tiene que coincidir con el informe y con el tablero.
 
-- **Fecha de corte:** 16/11/2026 (propuesta pendiente de aprobación; ver `PROGRESO.md`, "Decisiones pendientes").
+- **Fecha de corte:** 16/11/2026.
 - **Unidad de avance:** satélites **lanzados** como aproximación de **operativos** (Amazon no publica operativos; la FCC mide operativos). Todos los resultados derivados son optimistas.
 - Las referencias `#n` son filas de `evidencia/registro-fuentes.md`.
-- Estado: borrador elaborado con asistencia de IA a partir de la evidencia del repo; **requiere revisión del equipo**.
 
 ---
 

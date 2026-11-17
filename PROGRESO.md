@@ -132,7 +132,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 
 - **Marco teórico:** el de la cátedra (`catedra/`). No asumir PMBOK/ISO por defecto.
 - **Dashboard:** un único HTML local autónomo con botón de PDF.
-- **Uso de IA (16/11/2026):** habilitado por la cátedra. Claude redacta borradores; el equipo revisa, aprueba y defiende. Declaración en §1.5 del informe. No se inventan datos.
+- **Uso de IA (16/11/2026):** habilitado por la cátedra. Claude redacta borradores; el equipo revisa, aprueba y defiende. El equipo decidió el 17/11/2026 quitar la sección 1.5 (declaración de IA) del informe; la sección de Riesgos conserva su propia declaración. No se inventan datos.
 - **Flujo de trabajo (16/11/2026):** un commit/rama por cambio; integración por PR.
 
 ## Decisiones pendientes del equipo

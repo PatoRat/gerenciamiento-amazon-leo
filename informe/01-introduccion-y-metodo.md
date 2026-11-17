@@ -37,11 +37,7 @@ Lo que no es público **no se inventa**: queda marcado como «No público» o co
 - **Números:** todos salen de las cifras maestras (Anexo D). Si un número no está ahí, no está en el informe.
 - **Monedas y unidades:** explícitas (USD, satélites, misiones/mes).
 
-## 1.5 Declaración de uso de herramientas de IA
-
-La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo el 16/11/2026). Se usó Claude (Anthropic) para buscar y verificar fuentes, ordenar la evidencia, proponer la estructura, programar los cálculos (Monte Carlo y valor ganado), redactar borradores de las secciones y construir el dashboard. Las decisiones de gestión (objetivo prioritario, alcance, línea base, probabilidades e impactos, respuestas, KPIs) las revisó, ajustó y aprobó el equipo, que es quien las defiende. Todas las fuentes se citan para que cualquiera pueda comprobarlas; lo que no se pudo verificar está señalado.
-
-## 1.6 Limitaciones generales
+## 1.5 Limitaciones generales
 
 - Amazon es una empresa privada y no publica su cronograma, su WBS ni su presupuesto. Casi toda la información de la empresa es **declaración propia**.
 - Algunas fuentes no pudieron leerse por bloqueo o paywall (SpaceNews, fcc.gov en lectura automática, entre otras; ver Anexo A).

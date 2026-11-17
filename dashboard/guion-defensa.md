@@ -27,7 +27,7 @@ Recorrido sugerido del tablero: bloque 1 (396 de 3.232) → curva S → ritmo re
 | 13 | ¿Cuánto cuesta? | Compromiso inicial > USD 10.000 millones (#39); más de USD 340 millones en Florida; el resto no es público | — | §10 |
 | 14 | ¿Qué harían como gerentes mañana? | Línea base de recuperación (≈ 08/2031 + 4 meses de reserva), pedido de alivio con evidencia, priorizar Ariane 6 y Falcon 9, exigir la causa raíz a ULA | Curva S (línea verde) | §8.6, §13 |
 | 15 | ¿Qué falta en el acta real? | Un criterio verificable de inicio del servicio; por eso se corrió 4 veces | Promesas | §6 |
-| 16 | ¿Usaron IA? | Sí, habilitada por la cátedra; declarada; las decisiones son del equipo | — | §1.5 |
+| 16 | ¿Usaron IA? | Sí, habilitada por la cátedra; las decisiones son del equipo | — | Riesgos (declaración de uso de IA) |
 
 ## 3. Preguntas que **no** están bien respondidas (preparar)
 

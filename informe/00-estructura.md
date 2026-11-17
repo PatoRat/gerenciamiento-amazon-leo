@@ -29,7 +29,6 @@ Extensión total orientativa: **35 a 50 páginas** más anexos.
 | 12 | Seguimiento y valor ganado | ¿Está atrasado, cuánto y cuándo termina? | Serie de misiones | SPI, proyecciones | Instrumentos de seguimiento | guía `seguimiento-valor-ganado.md`, `valor_ganado.py` | `plantillas/informe-situacion.md` | 3–4 págs. | 🟡 guía y cálculo listos |
 | 13 | Integración y coherencia | Cómo se conectan las secciones (paso 4) | — | Cadena de causas | Mapa de coherencia | Esta estructura §"Mapa" | — | 1–2 págs. | ⬜ |
 | 14 | Conclusiones y limitaciones | Qué se puede afirmar, qué no y por qué | — | Conclusiones | Recomendaciones | Todo | — | 2 págs. | ⬜ |
-| — | Declaración de uso de IA | Qué hizo la herramienta y qué decidió el equipo | — | — | — | CLAUDE.md §3 | — | ½ pág. | ⬜ |
 
 ### Anexos
 

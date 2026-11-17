@@ -1,7 +1,7 @@
-# Mapa de actores de Amazon Leo (borrador I-2)
+# Mapa de actores de Amazon Leo
 
-**Estado: borrador local, sin revisión del equipo.** Fecha de corte y de consulta: **16/11/2026**.
-Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (#1 a #20) o a las fuentes nuevas propuestas en la sección 8 de `hitos.md` (#21 a #46). "Primaria" = Amazon, FCC, ULA; "Secundaria" = medios.
+Fecha de corte y de consulta: **16/11/2026**.
+Las referencias `#n` apuntan a `evidencia/registro-fuentes.md` (Anexo A). "Primaria" = Amazon, FCC, ULA; "Secundaria" = medios.
 Convención: toda fila es `[DATO REAL]` salvo que se marque. Las inferencias están en la sección 8 con sus supuestos. Lo que **no se pudo verificar** está en la sección 9 y no debe usarse en el informe.
 Casi todo lo de Amazon es declaración de la propia empresa.
 
@@ -114,7 +114,7 @@ Casi todo lo de Amazon es declaración de la propia empresa.
 
 ---
 
-## 8. Inferencias del grupo (para revisar)
+## 8. Inferencias del grupo
 
 **[INFERENCIA DEL GRUPO] 1. SpaceX es a la vez competidor y proveedor.**
 SpaceX se opuso a Amazon ante la FCC (2019, #45) y es contratista de lanzamientos de Leo (#38, #23).

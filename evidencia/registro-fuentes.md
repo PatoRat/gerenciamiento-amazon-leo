@@ -27,7 +27,7 @@ Se completa en el checkpoint **I-1** (`/informe:fuentes`) y se amplía en los pa
 
 ## Tabla de fuentes
 
-> **Nota sobre este primer barrido (I-1):** catálogo inicial para que el equipo arranque, con fecha de consulta 15/11/2026. Varias cifras provienen de **fuentes secundarias** (prensa) que citan documentos primarios (FCC, SEC, comunicados de Amazon): están marcadas con ⚠ y **deben verificarse contra el documento primario** antes de usarse como `[DATO REAL]` en el informe. Las columnas "Publicado" con `≈` son fechas aproximadas a confirmar.
+> **Nota:** las fuentes #1 a #20 se consultaron el 15/11/2026 y las #21 a #47, el 16/11/2026. Varias cifras provienen de **fuentes secundarias** (prensa) que citan documentos primarios (FCC, SEC, comunicados de Amazon): están marcadas con ⚠ y **deben verificarse contra el documento primario** antes de usarse como `[DATO REAL]` en el informe. Las columnas "Publicado" con `≈` son fechas aproximadas a confirmar.
 
 ### A. Oficiales de la organización (Amazon / proveedores)
 
