@@ -158,6 +158,8 @@ Vulcan (38 contratados) y New Glenn (24) suman 62 de ~108 lanzamientos, el 57%, 
 
 ## 8. Fuentes nuevas propuestas para el registro
 
+> **16/11/2026:** estas fuentes se incorporaron a `evidencia/registro-fuentes.md` (sección E). La tabla queda acá como antecedente; la referencia oficial es el registro.
+
 Todas consultadas el 16/11/2026. Las URL de Amazon son `https://www.aboutamazon.com/...`.
 
 | # | Fuente | Ruta / URL | Publicada | Tipo |

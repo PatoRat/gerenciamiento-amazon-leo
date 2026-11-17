@@ -35,7 +35,7 @@ Este documento es **material de revisión para el equipo**, no texto del informe
 
 **Novedades útiles para el informe** (no estaban en el registro):
 - Hubo un hold en T-20 s antes del lanzamiento. Su causa no se explicó y no se sabe si influyó.
-- Spaceflight Now menciona que Amazon depende además del regreso de **New Glenn** (que tuvo una explosión en plataforma en mayo de 2026). Esto afecta directamente los 12 lanzamientos New Glenn contratados (fila #4).
+- Spaceflight Now menciona que Amazon depende además del regreso de **New Glenn** (que tuvo una explosión en plataforma en mayo de 2026). Esto afecta directamente los lanzamientos New Glenn contratados: 12 firmes según la fila #4 (dato de 2022), **24 firmes según el dato vigente** (#23, 23/03/2026). *Corrección del 16/11/2026: el informe usa 24; ver "Cifras de contratos con fecha de corte" en el registro de fuentes.*
 - La misma página de Amazon anuncia un lanzamiento Ariane 6 con 36 satélites el 23/11/2026. Verificar que siga vigente.
 
 **Sin verificar:** NASASpaceflight (403), texto completo de SpaceNews (paywall), declaraciones de Amazon y de la Space Force sobre el calendario, impacto sobre el hito FCC.
