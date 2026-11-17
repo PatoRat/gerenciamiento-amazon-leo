@@ -15,7 +15,7 @@ Estados: `⬜ pendiente` · `🔄 en curso` · `🟡 esperando revisión` · `�
 | I-1 | Mapeo y evaluación de fuentes | `/informe:fuentes` | 🟡 | 15/11/2026 · verificado 16/11/2026 | — | `evidencia/registro-fuentes.md` (20 fuentes), `evidencia/verificacion-i1-2026-11-16.md` (confirma #7, #8 y #11 contra el primario; corrige #5) |
 | I-2 | Hitos públicos y mapa de actores | `/informe:hitos` | 🟡 borrador | 16/11/2026 | — | `evidencia/hitos.md`, `evidencia/actores.md` (proponen fuentes #21 a #47) |
 | I-3 | Estructura del informe y plantillas | `/informe:estructura` | ⬜ | — | — | — |
-| I-4 | Guías metodológicas por sección | `/informe:guia <sección>` | 🔄 parcial | 16/11/2026 | — | `informe/guias/riesgos.md`, `informe/guias/seguimiento-valor-ganado.md` |
+| I-4 | Guías metodológicas por sección | `/informe:guia <sección>` | 🔄 parcial | 16/11/2026 | — | `informe/guias/riesgos.md`, `informe/guias/seguimiento-valor-ganado.md`, `informe/guias/alcance-wbs.md` |
 | I-5 | Revisión de trazabilidad y coherencia | `/informe:revisar` | ⬜ | — | — | — |
 
 ### Secciones del informe
@@ -59,6 +59,7 @@ Cada rama sale de la anterior (están **apiladas**), así que se mergean a `main
 | 7 | `feat/07-promesas-inicio-servicio` | Sugerencia (valor) | `evidencia/hitos.md` §5: **línea de tiempo de las promesas de inicio del servicio** (2023 → 2026, ≈ 2 años de corrimiento) con previews parciales y una inferencia que conecta con R-03 (definir un criterio verificable de inicio). Lista para el informe y el dashboard. | 🟡 PR pendiente |
 | 8 | `feat/08-valor-ganado-satelites` | Sugerencia (valor) | Guía `informe/guias/seguimiento-valor-ganado.md` + script `informe/seguimiento/valor_ganado.py` (genera `ev_serie.csv`). Valor ganado **en satélites** (BAC 3.232): SPI 0,25 (línea base FCC), 0,57 (plan de Amazon), 0,22 al corte; proyección de fin ≈ 2031 (plan) / ≈ 2038 (ritmo observado). CPI no calculable (AC no público). Valida la serie EV contra la declaración de Amazon a la FCC (180 al 30/01/2026). | 🟡 PR pendiente |
 | 9 | `feat/09-kpis-sugeridos-dashboard` | Sugerencia (valor) | `dashboard/datos/kpis-sugeridos.md`: 16 KPIs **sugeridos** en 4 bloques (estado, atraso, riesgos, organización), cada uno con la pregunta de defensa que responde, valor al corte y visual. **No es D-1**: el equipo marca cuáles van y después se corre `/dashboard:kpis`. | 🟡 PR pendiente |
+| 10 | `feat/10-edt-flujo-fisico` | Sugerencia (valor) | Guía `informe/guias/alcance-wbs.md` (Clase 2): decisión de alcance (Gen1 dentro; Gen2, Polar, D2D y Globalstar fuera, por rolling wave), **WBS propuesta en 3 niveles por flujo físico** (fabricar → procesar → lanzar → órbita → tierra → terminales → servicio) con evidencia por elemento, diccionario a completar, cuello de botella en lanzamientos y mapa riesgo ↔ elemento. Se usa "WBS", la denominación de la cátedra. | 🟡 PR pendiente |
 
 ---
 
