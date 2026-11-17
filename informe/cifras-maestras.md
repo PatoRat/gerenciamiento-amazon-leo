@@ -20,7 +20,7 @@ Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar d
 | C-03 | Hito final (100%) | 3.232 al 30/07/2029 | `[DATO REAL]` | #8 ¶3 (DA 24-224 dice 20/07, ver contradicciones) | Todo |
 | C-04 | Proyección de Amazon a la FCC | ≈ 700 desplegados al 30/07/2026 | `[DATO REAL]` | #8 ¶8 (solicitud del 30/01/2026) | VG (línea base), Riesgos |
 | C-05 | Pérdida de prioridad de espectro | hasta 30/03/2028 (30/10/2027 si certifica 50% construido) | `[DATO REAL]` | #8 ¶15 | Riesgos R-05, Tiempos |
-| C-06 | Fianza (surety bond) | no eximida; monto no público | `[DATO REAL]` / `[[PENDIENTE: monto]]` | #8 ¶18 | Costos, Riesgos R-04 |
+| C-06 | Fianza (surety bond) | no eximida; monto no público | `[DATO REAL]` / monto no público | #8 ¶18 | Costos, Riesgos R-04 |
 
 ## 2. Despliegue (al 16/11/2026)
 
@@ -79,8 +79,8 @@ Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar d
 
 | Dato | Estado | Cómo se trata |
 |---|---|---|
-| Inversión total **actualizada** de Amazon en Leo (USD) | Compromiso inicial **verificado**: "more than $10 billion" (#39, 30/07/2020; ver C-35). En 2026 solo "multibillion-dollar" (#5). No hay cifra actualizada. | Usar C-35 como piso declarado en 2020; el total actual queda `[[PENDIENTE]]` |
+| Inversión total **actualizada** de Amazon en Leo (USD) | Compromiso inicial **verificado**: "more than $10 billion" (#39, 30/07/2020; ver C-35). En 2026 solo "multibillion-dollar" (#5). No hay cifra actualizada. | Usar C-35 como piso declarado en 2020; el total actual queda sin dato público |
 | Costo por satélite y por lanzamiento | No público | Supuesto explícito del grupo en Costos |
-| Monto de la fianza | No público | `[[PENDIENTE]]` |
+| Monto de la fianza | No público | Se declara como límite |
 | Satélites **operativos** | No público | Se usa lanzados (ver unidad de avance) |
 | Costo real incurrido (AC) | No público | El CPI no se puede calcular con datos reales |

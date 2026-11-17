@@ -1,6 +1,6 @@
 # 2. Ubicación del proyecto
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Fuentes: Anexo A; cronología completa: Anexo B.
+> Fuentes: Anexo A; cronología completa: Anexo B.
 
 ## 2.1 Qué problema u oportunidad aborda
 

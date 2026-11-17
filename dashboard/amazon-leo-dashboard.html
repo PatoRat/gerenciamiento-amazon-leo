@@ -437,7 +437,7 @@ $("temas").innerHTML=DATA.temas.map(t=>`<div><span class="badge"><i class="dot" 
 
 /* ---------- 4. cadena y pendientes ---------- */
 $("cadena").innerHTML=DATA.cadena.map((k,i,a)=>`<div class="paso ${k.etapa.startsWith("Lanzamiento")?"cuello":""}"><b>${k.etapa}</b>${k.dato}<div class="sub">${k.fuente}</div></div>${i<a.length-1?'<span class="flecha">→</span>':""}`).join("");
-$("pend").innerHTML="<b>[[PENDIENTE]]</b> — no se inventan valores:<ul>"+DATA.pendientes.map(p=>`<li>${p}</li>`).join("")+"</ul>";
+$("pend").innerHTML="<b>Sin dato público</b> — no se inventan valores:<ul>"+DATA.pendientes.map(p=>`<li>${p}</li>`).join("")+"</ul>";
 
 /* ---------- tema ---------- */
 $("tema").addEventListener("click",()=>{

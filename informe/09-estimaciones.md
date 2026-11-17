@@ -1,6 +1,6 @@
 # 9. Estimaciones
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 4 Estimaciones 1ra. Parte …html` (métodos, ventana, prejuicios) y `catedra/Clase 4 Estimaciones · Segunda Parte …html` (PERT por tres valores). Cálculo: `informe/estimaciones/pert_despliegue.py`.
+> Marco: `catedra/Clase 4 Estimaciones 1ra. Parte …html` (métodos, ventana, prejuicios) y `catedra/Clase 4 Estimaciones · Segunda Parte …html` (PERT por tres valores). Cálculo: `informe/estimaciones/pert_despliegue.py`.
 
 ## 9.1 Qué se estima y con qué método
 

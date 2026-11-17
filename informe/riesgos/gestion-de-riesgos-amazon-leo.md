@@ -390,7 +390,7 @@ Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) 
 
 **Naturaleza de las fuentes.** La mayor parte proviene de comunicados de Amazon, es decir de declaraciones de la propia empresa; las resoluciones de la FCC son documentos primarios leídos en su texto. El original de la orden FCC 20-102 (2020) no pudo leerse y se usó una reproducción parcial para los datos de esa fecha.
 
-## Anexo A. Fuentes citadas
+## Apéndice R-A. Fuentes citadas
 
 Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://www.aboutamazon.com`.
 
@@ -420,6 +420,6 @@ Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://ww
 | 40 | Amazon Australia, NBN Co | https://www.aboutamazon.com.au/news/innovation/project-kuiper-partners-with-nbn-co-to-bring-low-earth-orbit-satellite-broadband-to-rural-australia | 05/08/2025 | Primaria |
 | 47 | AP vía OPB, explosión de New Glenn en plataforma | https://www.opb.org/article/2026/05/29/blue-origin-rocket-explodes-on-the-launch-pad-during-an-engine-firing-test/ | 29/05/2026 | Prensa (confirmada por varios medios) |
 
-## Anexo B. Código del análisis cuantitativo
+## Apéndice R-B. Código del análisis cuantitativo
 
 El archivo `analisis_cuantitativo.py` (Python 3, sin dependencias externas) reproduce los resultados de la sección 5 con `python3 analisis_cuantitativo.py`. Usa una semilla fija, por lo que el resultado es repetible. Todos los supuestos están en las constantes del encabezado del archivo.

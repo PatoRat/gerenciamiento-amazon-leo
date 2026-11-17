@@ -1,6 +1,6 @@
 # 5. Caso de negocio (reconstruido)
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Estructura: `catedra/PMOInformatica Plantilla Caso de Negocio.pdf`. Marco: Paneo, tema 2 (el Business Case juzga si el proyecto es deseable, viable y alcanzable, y se actualiza en todo el ciclo de vida).
+> Estructura: `catedra/PMOInformatica Plantilla Caso de Negocio.pdf`. Marco: Paneo, tema 2 (el Business Case juzga si el proyecto es deseable, viable y alcanzable, y se actualiza en todo el ciclo de vida).
 
 **Proyecto:** Despliegue de la constelación Amazon Leo, primera generación (antes Project Kuiper) · **Organización:** Amazon.com, Inc. (Devices & Services) · **Fecha de la reconstrucción:** 16/11/2026 · **Patrocinador:** dirección de Devices & Services (rol) · **Etiqueta del documento:** `[PROPUESTA DE GESTIÓN]` con base `[DATO REAL]`.
 
@@ -22,7 +22,7 @@ Amazon busca entrar al mercado de banda ancha satelital en órbita baja para dar
 | Cumplir la autorización de la FCC | Satélites desplegados y operativos | 3.232 al 30/07/2029 (#8 ¶3) | `[DATO REAL]` |
 | Iniciar el servicio comercial | Criterio de inicio (cobertura, satélites, clientes pagos) | A definir y comunicar con margen | `[PROPUESTA DE GESTIÓN]` |
 | Monetizar acuerdos firmados | Socios con servicio activo | Aerolíneas: JetBlue 2027 (#36), Delta 2028 (#31); D2D 2028 (#22) | `[DATO REAL]` (fechas) |
-| Ingresos y suscriptores | Clientes; ingresos en USD | `[[PENDIENTE: no público]]` | — |
+| Ingresos y suscriptores | Clientes; ingresos en USD | No público | — |
 
 **Premisas** `[PROPUESTA DE GESTIÓN]`: los contratos de lanzamiento siguen vigentes; la fábrica alcanza su capacidad declarada; la demanda empresarial y de aviación se sostiene.
 **Restricciones** `[DATO REAL]`: hitos de la FCC y pérdida de la fianza si no se cumplen (#8 ¶3, ¶12, ¶18); prohibición de desplegar directamente a la órbita operativa (#7 ¶43); capacidad de lanzamiento de terceros.
@@ -46,7 +46,7 @@ Amazon no publica un plan estratégico de Leo: la alineación es lectura del gru
 | Compromiso de inversión inicial | > USD 10.000 millones | #39 (30/07/2020) |
 | Instalación de procesamiento en Kennedy Space Center | > USD 140 millones | #27 |
 | Instalaciones en Cabo Cañaveral (VIF-A, plataforma, barco) | > USD 200 millones | #23 |
-| Lanzamientos (≈ 108 contratados) | No público ("the largest commercial procurement of launch vehicles in history", #28) | `[[PENDIENTE]]` |
+| Lanzamientos (≈ 108 contratados) | No público ("the largest commercial procurement of launch vehicles in history", #28) | — |
 | Terminal estándar (costo de fabricación esperado) | < USD 400 por unidad | #30 (2023) |
 | Fianza ante la FCC | No pública; no eximida | #8 ¶18 |
 

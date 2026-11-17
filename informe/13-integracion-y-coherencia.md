@@ -1,6 +1,6 @@
 # 13. Integración y coherencia
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Responde al paso 4 de la consigna ("Conectar: evitar documentos aislados") y a la Integración del Paneo, tema 3 ("que alcance, tiempo, costo y riesgos no se manejen por separado").
+> Responde al paso 4 de la consigna ("Conectar: evitar documentos aislados") y a la Integración del Paneo, tema 3 ("que alcance, tiempo, costo y riesgos no se manejen por separado").
 
 ## 13.1 La cadena que conecta todo el informe
 

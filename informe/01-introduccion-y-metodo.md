@@ -1,7 +1,5 @@
 # 1. Introducción y método
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026 a partir de la evidencia del repositorio. Requiere revisión y aprobación del equipo.
-
 ## 1.1 Qué se investigó
 
 Este informe investiga **Amazon Leo** (hasta el 13/11/2025, *Project Kuiper*), el programa de Amazon para desplegar una constelación de satélites en órbita baja que da conectividad de banda ancha. El objetivo no es describir el proyecto, sino **reconstruir cómo podría organizarse su gestión** y sostener esas decisiones con evidencia, como pide la consigna del Trabajo Integrador.
@@ -30,7 +28,7 @@ Cada afirmación sustantiva lleva una etiqueta:
 - `[INFERENCIA DEL GRUPO]`: conclusión razonable a partir de la evidencia, con sus **supuestos escritos**.
 - `[PROPUESTA DE GESTIÓN]`: documento, estimación o decisión creada por el grupo para reconstruir la gestión, con su justificación.
 
-Lo que no es público **no se inventa**: queda marcado como `[[PENDIENTE]]` o como límite del análisis.
+Lo que no es público **no se inventa**: queda marcado como «No público» o como límite del análisis.
 
 ## 1.4 Convenciones
 

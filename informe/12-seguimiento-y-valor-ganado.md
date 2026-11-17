@@ -1,6 +1,6 @@
 # 12. Seguimiento y valor ganado
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 6 Seguimiento y Valor Ganado · Administración de Proyectos · UCA.html` y `catedra/Valor Agregado.html`. Cálculo: `informe/seguimiento/valor_ganado.py`. Desarrollo metodológico: `informe/guias/seguimiento-valor-ganado.md`.
+> Marco: `catedra/Clase 6 Seguimiento y Valor Ganado · Administración de Proyectos · UCA.html` y `catedra/Valor Agregado.html`. Cálculo: `informe/seguimiento/valor_ganado.py`. Desarrollo metodológico: `informe/guias/seguimiento-valor-ganado.md`.
 
 ## 12.1 Medir por el output
 
@@ -11,7 +11,7 @@ La cátedra pide medir el avance **por el output, no por el input** (Clase 6, p�
 | BAC | 3.232 satélites | `[DATO REAL]` #8 ¶3 |
 | PV | Línea base A (FCC): 1.616 al 30/07/2026 y 3.232 al 30/07/2029, interpolada linealmente entre hitos. Línea base B (plan de Amazon): ≈ 700 al 30/07/2026 | `[DATO REAL]` en los hitos (#8 ¶3, ¶8); interpolación `[PROPUESTA]` |
 | EV | Satélites lanzados acumulados | `[INFERENCIA DEL GRUPO]` (suma de #2) |
-| AC | No público | `[[PENDIENTE]]` |
+| AC | No público | — |
 
 **Control de consistencia:** la serie EV suma 180 satélites al 16/12/2025, y Amazon declaró ante la FCC "180 satélites lanzados" el 30/01/2026 (#8 ¶8).
 

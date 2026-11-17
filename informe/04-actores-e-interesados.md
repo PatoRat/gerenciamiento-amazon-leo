@@ -1,6 +1,6 @@
 # 4. Actores e interesados
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Detalle con fuentes: Anexo C (`evidencia/actores.md`).
+> Detalle con fuentes: Anexo C (`evidencia/actores.md`).
 
 ## 4.1 Mapa de actores
 

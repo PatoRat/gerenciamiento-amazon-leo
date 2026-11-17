@@ -1,6 +1,6 @@
 # 7. Alcance y WBS
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 2 Alcance.html`. Desarrollo metodológico y evidencia por elemento: `informe/guias/alcance-wbs.md`.
+> Marco: `catedra/Clase 2 Alcance.html`. Desarrollo metodológico y evidencia por elemento: `informe/guias/alcance-wbs.md`.
 
 ## 7.1 Declaración del alcance
 

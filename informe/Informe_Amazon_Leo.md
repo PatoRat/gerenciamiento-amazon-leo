@@ -1,7 +1,7 @@
 # Amazon Leo — Informe de investigación
 
 **Trabajo Integrador de Investigación · Dirección de Proyectos 2026 · Facultad de Ingeniería y Ciencias Agrarias (UCA)**
-Fecha de corte de la evidencia: 16/11/2026 · Versión: borrador para revisión del equipo
+Fecha de corte de la evidencia: 16/11/2026 · Versión del 17/11/2026
 
 ---
 
@@ -26,8 +26,6 @@ Amazon Leo (antes Project Kuiper) es el programa de Amazon para desplegar una co
 ---
 
 # 1. Introducción y método
-
-> **Borrador** redactado con asistencia de IA el 16/11/2026 a partir de la evidencia del repositorio. Requiere revisión y aprobación del equipo.
 
 ## 1.1 Qué se investigó
 
@@ -57,7 +55,7 @@ Cada afirmación sustantiva lleva una etiqueta:
 - `[INFERENCIA DEL GRUPO]`: conclusión razonable a partir de la evidencia, con sus **supuestos escritos**.
 - `[PROPUESTA DE GESTIÓN]`: documento, estimación o decisión creada por el grupo para reconstruir la gestión, con su justificación.
 
-Lo que no es público **no se inventa**: queda marcado como `[[PENDIENTE]]` o como límite del análisis.
+Lo que no es público **no se inventa**: queda marcado como «No público» o como límite del análisis.
 
 ## 1.4 Convenciones
 
@@ -80,7 +78,7 @@ La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo 
 
 # 2. Ubicación del proyecto
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Fuentes: Anexo A; cronología completa: Anexo B.
+> Fuentes: Anexo A; cronología completa: Anexo B.
 
 ## 2.1 Qué problema u oportunidad aborda
 
@@ -131,7 +129,7 @@ La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo 
 
 # 3. Evidencia y fuentes
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. El registro completo está en el Anexo A (`evidencia/registro-fuentes.md`) y la verificación contra los documentos primarios en el Anexo F.
+> El registro completo está en el Anexo A (`evidencia/registro-fuentes.md`) y la verificación contra los documentos primarios en el Anexo F.
 
 ## 3.1 Qué se usó
 
@@ -157,7 +155,7 @@ La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo 
 | Dato | Tratamiento |
 |---|---|
 | Inversión total actualizada | Se usa el compromiso inicial verificado (> USD 10.000 millones, #39) como piso declarado en 2020 |
-| Costo por satélite y por lanzamiento, monto de la fianza | `[[PENDIENTE]]`; estructura de costos sin montos inventados (sección 10) |
+| Costo por satélite y por lanzamiento, monto de la fianza | No público; estructura de costos sin montos inventados (sección 10) |
 | Cronograma interno, WBS, presupuesto | Se **reconstruyen** como propuesta de gestión (secciones 6 a 10) |
 | Satélites operativos | Se usan lanzados como aproximación (sección 1.4) |
 | Causa raíz de la falla de LV-01 | No publicada al corte; se registra como tema abierto (sección 11) |
@@ -168,7 +166,7 @@ La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo 
 
 # 4. Actores e interesados
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Detalle con fuentes: Anexo C (`evidencia/actores.md`).
+> Detalle con fuentes: Anexo C (`evidencia/actores.md`).
 
 ## 4.1 Mapa de actores
 
@@ -214,7 +212,7 @@ La cátedra habilitó el uso de IA para la redacción (confirmado por el equipo 
 
 # 5. Caso de negocio (reconstruido)
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Estructura: `catedra/PMOInformatica Plantilla Caso de Negocio.pdf`. Marco: Paneo, tema 2 (el Business Case juzga si el proyecto es deseable, viable y alcanzable, y se actualiza en todo el ciclo de vida).
+> Estructura: `catedra/PMOInformatica Plantilla Caso de Negocio.pdf`. Marco: Paneo, tema 2 (el Business Case juzga si el proyecto es deseable, viable y alcanzable, y se actualiza en todo el ciclo de vida).
 
 **Proyecto:** Despliegue de la constelación Amazon Leo, primera generación (antes Project Kuiper) · **Organización:** Amazon.com, Inc. (Devices & Services) · **Fecha de la reconstrucción:** 16/11/2026 · **Patrocinador:** dirección de Devices & Services (rol) · **Etiqueta del documento:** `[PROPUESTA DE GESTIÓN]` con base `[DATO REAL]`.
 
@@ -236,7 +234,7 @@ Amazon busca entrar al mercado de banda ancha satelital en órbita baja para dar
 | Cumplir la autorización de la FCC | Satélites desplegados y operativos | 3.232 al 30/07/2029 (#8 ¶3) | `[DATO REAL]` |
 | Iniciar el servicio comercial | Criterio de inicio (cobertura, satélites, clientes pagos) | A definir y comunicar con margen | `[PROPUESTA DE GESTIÓN]` |
 | Monetizar acuerdos firmados | Socios con servicio activo | Aerolíneas: JetBlue 2027 (#36), Delta 2028 (#31); D2D 2028 (#22) | `[DATO REAL]` (fechas) |
-| Ingresos y suscriptores | Clientes; ingresos en USD | `[[PENDIENTE: no público]]` | — |
+| Ingresos y suscriptores | Clientes; ingresos en USD | No público | — |
 
 **Premisas** `[PROPUESTA DE GESTIÓN]`: los contratos de lanzamiento siguen vigentes; la fábrica alcanza su capacidad declarada; la demanda empresarial y de aviación se sostiene.
 **Restricciones** `[DATO REAL]`: hitos de la FCC y pérdida de la fianza si no se cumplen (#8 ¶3, ¶12, ¶18); prohibición de desplegar directamente a la órbita operativa (#7 ¶43); capacidad de lanzamiento de terceros.
@@ -260,7 +258,7 @@ Amazon no publica un plan estratégico de Leo: la alineación es lectura del gru
 | Compromiso de inversión inicial | > USD 10.000 millones | #39 (30/07/2020) |
 | Instalación de procesamiento en Kennedy Space Center | > USD 140 millones | #27 |
 | Instalaciones en Cabo Cañaveral (VIF-A, plataforma, barco) | > USD 200 millones | #23 |
-| Lanzamientos (≈ 108 contratados) | No público ("the largest commercial procurement of launch vehicles in history", #28) | `[[PENDIENTE]]` |
+| Lanzamientos (≈ 108 contratados) | No público ("the largest commercial procurement of launch vehicles in history", #28) | — |
 | Terminal estándar (costo de fabricación esperado) | < USD 400 por unidad | #30 (2023) |
 | Fianza ante la FCC | No pública; no eximida | #8 ¶18 |
 
@@ -290,7 +288,7 @@ Amazon no publica un plan estratégico de Leo: la alineación es lectura del gru
 
 # 6. Acta de Constitución del Proyecto (reconstruida)
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Campos: laboratorio SAFIRO (`catedra/Caso_DOWN_Proyecto_SAFIRO_…html`) y `catedra/Proyectos_02 …Acta del Proyecto`. Etiqueta del documento: `[PROPUESTA DE GESTIÓN]`.
+> Campos: laboratorio SAFIRO (`catedra/Caso_DOWN_Proyecto_SAFIRO_…html`) y `catedra/Proyectos_02 …Acta del Proyecto`. Etiqueta del documento: `[PROPUESTA DE GESTIÓN]`.
 
 **Decisión del grupo sobre la fecha del acta:** se reconstruye el acta **al 30/07/2020**, el día en que la FCC autorizó la constelación y Amazon anunció la inversión (#6, #39). Es el momento en que el proyecto queda formalmente habilitado. El nombre de entonces es *Project Kuiper*; desde el 13/11/2025 se llama Amazon Leo (#21).
 
@@ -319,7 +317,7 @@ Amazon no publica un plan estratégico de Leo: la alineación es lectura del gru
 | Autoridad del gerente | Asignar presupuesto dentro de la línea base; contratar lanzamientos dentro del marco aprobado; priorizar el manifiesto; escalar a la dirección los cambios de alcance y los pedidos a la FCC | `[PROPUESTA DE GESTIÓN]` |
 | Stakeholders principales | FCC; proveedores de lanzamiento; dirección de Amazon; AWS; clientes y socios (sección 4) | `[DATO REAL]` |
 | Plazo de alto nivel | 30/07/2020 → 30/07/2029 (9 años), con hito intermedio el 30/07/2026 | `[DATO REAL]` |
-| Presupuesto de alto nivel | Compromiso > USD 10.000 millones (#39). Detalle `[[PENDIENTE: no público]]` | `[DATO REAL]` |
+| Presupuesto de alto nivel | Compromiso > USD 10.000 millones (#39). Detalle no público | `[DATO REAL]` |
 | Supuestos | Capacidad de lanzamiento disponible a tiempo; fábrica propia a escala; la FCC mantiene el marco regulatorio | `[PROPUESTA DE GESTIÓN]` |
 | Restricciones | Hitos FCC con sanción (reducción de la autorización y pérdida de la fianza); dependencia de lanzadores de terceros; coordinación de espectro | `[DATO REAL]` #8 |
 | Riesgos iniciales (vistos en 2020) | Disponibilidad y confiabilidad de lanzadores nuevos (Vulcan, New Glenn, Ariane 6); atraso regulatorio; oposición de competidores; escalado de la fabricación | `[INFERENCIA DEL GRUPO]` (se materializaron en 2025–2026: sección 11) |
@@ -342,7 +340,7 @@ Amazon no publica un plan estratégico de Leo: la alineación es lectura del gru
 
 # 7. Alcance y WBS
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 2 Alcance.html`. Desarrollo metodológico y evidencia por elemento: `informe/guias/alcance-wbs.md`.
+> Marco: `catedra/Clase 2 Alcance.html`. Desarrollo metodológico y evidencia por elemento: `informe/guias/alcance-wbs.md`.
 
 ## 7.1 Declaración del alcance
 
@@ -437,7 +435,7 @@ Amazon mismo dice que ajusta la producción a la disponibilidad de lanzadores (#
 
 # 8. Tiempos: cronograma maestro
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 3 Gestión de los Tiempos · UCA.html` (milestones, inch-pebbles, dependencias, Gantt, acortamiento, nivelación y "zona inalcanzable"). Serie de misiones: `informe/seguimiento/ev_serie.csv`.
+> Marco: `catedra/Clase 3 Gestión de los Tiempos · UCA.html` (milestones, inch-pebbles, dependencias, Gantt, acortamiento, nivelación y "zona inalcanzable"). Serie de misiones: `informe/seguimiento/ev_serie.csv`.
 
 ## 8.1 Milestones
 
@@ -450,7 +448,7 @@ Amazon mismo dice que ajusta la producción a la disponibilidad de lanzadores (#
 | M-05 | Instalación de KSC operativa | 24/07/2025 | Técnico | Cumplido | `[DATO REAL]` #27 |
 | M-06 | Preview empresarial | 24/11/2025 | Comercial | Cumplido | `[DATO REAL]` #29 |
 | M-07 | Hito FCC del 50% (1.616 operativos) | 30/07/2026 | Regulatorio | **No cumplido** (396) | `[DATO REAL]` #8 / estado `[INFERENCIA]` |
-| M-08 | Aviso de cumplimiento a la FCC | 14/08/2026 | Regulatorio | `[[PENDIENTE: no encontrado]]` | `[DATO REAL]` #7 ¶53 |
+| M-08 | Aviso de cumplimiento a la FCC | 14/08/2026 | Regulatorio | No encontrado | `[DATO REAL]` #7 ¶53 |
 | M-09 | Primer vuelo de Vulcan para Leo | 15/11/2026 | Técnico | **Fallido** (tema T-01) | `[DATO REAL]` #2, #11 |
 | M-10 | Inicio de servicio comercial | "later this year" (2026) | Comercial | Pendiente; sin criterio público | `[DATO REAL]` #3 / criterio `[PROPUESTA]` |
 | M-11 | Certificación del 50% construido (acorta la pérdida de espectro) | 30/10/2027 | Regulatorio | Futuro | `[DATO REAL]` #8 ¶15 |
@@ -528,7 +526,7 @@ La línea base R no cumple 2029, pero es el compromiso más exigente que tiene r
 
 # 9. Estimaciones
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 4 Estimaciones 1ra. Parte …html` (métodos, ventana, prejuicios) y `catedra/Clase 4 Estimaciones · Segunda Parte …html` (PERT por tres valores). Cálculo: `informe/estimaciones/pert_despliegue.py`.
+> Marco: `catedra/Clase 4 Estimaciones 1ra. Parte …html` (métodos, ventana, prejuicios) y `catedra/Clase 4 Estimaciones · Segunda Parte …html` (PERT por tres valores). Cálculo: `informe/estimaciones/pert_despliegue.py`.
 
 ## 9.1 Qué se estima y con qué método
 
@@ -582,9 +580,9 @@ Por eso el valor más probable (m) se tomó del **ritmo observado** y no del pla
 
 # 10. Costos y presupuesto
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 5 · Gestión de Costos de Proyectos.html` (estimar → presupuestar → controlar; costo ≠ gasto; directos/indirectos; fijos/variables; técnicas; reservas de contingencia y gerencial).
+> Marco: `catedra/Clase 5 · Gestión de Costos de Proyectos.html` (estimar → presupuestar → controlar; costo ≠ gasto; directos/indirectos; fijos/variables; técnicas; reservas de contingencia y gerencial).
 
-**Advertencia de método.** Amazon no publica su presupuesto ni sus costos unitarios. Esta sección reconstruye **la estructura y el método** de la gestión de costos. Solo se usan montos con fuente; donde no la hay, el campo queda `[[PENDIENTE]]`. **No se inventan cifras.**
+**Advertencia de método.** Amazon no publica su presupuesto ni sus costos unitarios. Esta sección reconstruye **la estructura y el método** de la gestión de costos. Solo se usan montos con fuente; donde no la hay, el campo dice «No público». **No se inventan cifras.**
 
 ## 10.1 Montos públicos
 
@@ -595,8 +593,8 @@ Por eso el valor más probable (m) se tomó del **ritmo observado** y no del pla
 | Instalación de procesamiento en KSC | > USD 140 millones | 24/07/2025 | `[DATO REAL]` #27 |
 | Instalaciones en Cabo Cañaveral | > USD 200 millones | 23/03/2026 | `[DATO REAL]` #23 |
 | Terminal estándar (costo de fabricación esperado) | < USD 400 por unidad | 14/03/2023 | `[DATO REAL]` #30 |
-| Lanzamientos | No público | — | `[[PENDIENTE]]` |
-| Costo por satélite | No público | — | `[[PENDIENTE]]` |
+| Lanzamientos | No público | — | Sin fuente pública |
+| Costo por satélite | No público | — | Sin fuente pública |
 | Fianza (surety bond) | No pública; no eximida | 05/06/2026 | `[DATO REAL]` #8 ¶18 |
 | Compra de Globalstar | USD 90 por acción o 0,3210 acciones de Amazon | 14/04/2026 | `[DATO REAL]` #5. **Fuera del alcance** (sección 7) |
 
@@ -608,16 +606,16 @@ Por eso el valor más probable (m) se tomó del **ritmo observado** y no del pla
 
 | Elemento WBS | Directo / indirecto | Fijo / variable | Técnica de estimación propuesta (Clase 5) | Monto |
 |---|---|---|---|---|
-| 1.1 Gestión del proyecto | Indirecto | Fijo | Analogía con programas similares | `[[PENDIENTE]]` |
-| 1.2 Cumplimiento regulatorio (incluye la fianza) | Directo | Fijo | Dato contractual (la fianza la fija la FCC) | `[[PENDIENTE]]` |
-| 1.3 Satélites: planta | Directo | **Fijo** | Ascendente (por instalación) | `[[PENDIENTE]]` |
-| 1.3 Satélites: unidades | Directo | **Variable** (por satélite) | Paramétrica: costo unitario × 3.232 | `[[PENDIENTE: costo unitario]]` |
+| 1.1 Gestión del proyecto | Indirecto | Fijo | Analogía con programas similares | No público |
+| 1.2 Cumplimiento regulatorio (incluye la fianza) | Directo | Fijo | Dato contractual (la fianza la fija la FCC) | No público |
+| 1.3 Satélites: planta | Directo | **Fijo** | Ascendente (por instalación) | No público |
+| 1.3 Satélites: unidades | Directo | **Variable** (por satélite) | Paramétrica: costo unitario × 3.232 | No público (costo unitario) |
 | 1.4 Procesamiento | Directo | Fijo | Dato público | > USD 340 millones (#27, #23) |
-| 1.5 Lanzamientos | Directo | **Variable** (por misión) | Paramétrica: precio por misión × ≈ 108; o tres valores por cohete | `[[PENDIENTE]]` |
-| 1.6 Operación de la constelación | Directo | Fijo + variable | Analogía | `[[PENDIENTE]]` |
-| 1.7 Segmento terrestre | Directo | Variable (por gateway) | Paramétrica: costo por gateway × > 300 (#17) | `[[PENDIENTE]]` |
-| 1.8 Terminales | Directo | Variable | Paramétrica | < USD 400 por unidad (#30) × unidades `[[PENDIENTE]]` |
-| 1.9 Servicio y socios | Directo | Variable | Analogía | `[[PENDIENTE]]` |
+| 1.5 Lanzamientos | Directo | **Variable** (por misión) | Paramétrica: precio por misión × ≈ 108; o tres valores por cohete | No público |
+| 1.6 Operación de la constelación | Directo | Fijo + variable | Analogía | No público |
+| 1.7 Segmento terrestre | Directo | Variable (por gateway) | Paramétrica: costo por gateway × > 300 (#17) | No público |
+| 1.8 Terminales | Directo | Variable | Paramétrica | < USD 400 por unidad (#30) × unidades (no público) |
+| 1.9 Servicio y socios | Directo | Variable | Analogía | No público |
 
 **[INFERENCIA DEL GRUPO]** Los costos con mayor peso esperado son **variables por unidad** (satélites y lanzamientos). Por eso perder una misión (T-01) cuesta dos veces: los 40 satélites y el lanzamiento. Y por eso **acelerar la cadencia no abarata**: adelanta costos variables. Los fijos (planta, instalaciones) ya están incurridos.
 → Supuesto: el costo por satélite y por lanzamiento son de un orden de magnitud que domina el total, como ocurre en constelaciones comparables. Es un supuesto, sin cifra.
@@ -629,10 +627,10 @@ Por eso el valor más probable (m) se tomó del **ritmo observado** y no del pla
 | Componente | Monto | Base |
 |---|---|---|
 | Costos estimados (10.2) | ≥ USD 10.000 millones (compromiso declarado como piso) | #39 |
-| Reserva de contingencia | `[[PENDIENTE]]`. Se compone de: reposición de 40 satélites (R-01/T-01); fianza (R-04); lanzamientos adicionales de recuperación (R-02, OP-1) | Riesgos §6 |
-| = Línea base de costos | `[[PENDIENTE]]` | |
+| Reserva de contingencia | No calculable sin montos. Se compone de: reposición de 40 satélites (R-01/T-01); fianza (R-04); lanzamientos adicionales de recuperación (R-02, OP-1) | Riesgos §6 |
+| = Línea base de costos | No calculable | |
 | Reserva gerencial | Porcentaje a fijar por el sponsor | Clase 5 |
-| = Presupuesto total | `[[PENDIENTE]]` | |
+| = Presupuesto total | No calculable | |
 
 ## 10.4 Control de costos
 
@@ -1041,7 +1039,7 @@ Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) 
 
 **Naturaleza de las fuentes.** La mayor parte proviene de comunicados de Amazon, es decir de declaraciones de la propia empresa; las resoluciones de la FCC son documentos primarios leídos en su texto. El original de la orden FCC 20-102 (2020) no pudo leerse y se usó una reproducción parcial para los datos de esa fecha.
 
-### Anexo A. Fuentes citadas
+### Apéndice R-A. Fuentes citadas
 
 Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://www.aboutamazon.com`.
 
@@ -1071,7 +1069,7 @@ Todas consultadas el 16/11/2026. Las rutas de Amazon son relativas a `https://ww
 | 40 | Amazon Australia, NBN Co | https://www.aboutamazon.com.au/news/innovation/project-kuiper-partners-with-nbn-co-to-bring-low-earth-orbit-satellite-broadband-to-rural-australia | 05/08/2025 | Primaria |
 | 47 | AP vía OPB, explosión de New Glenn en plataforma | https://www.opb.org/article/2026/05/29/blue-origin-rocket-explodes-on-the-launch-pad-during-an-engine-firing-test/ | 29/05/2026 | Prensa (confirmada por varios medios) |
 
-### Anexo B. Código del análisis cuantitativo
+### Apéndice R-B. Código del análisis cuantitativo
 
 El archivo `analisis_cuantitativo.py` (Python 3, sin dependencias externas) reproduce los resultados de la sección 5 con `python3 analisis_cuantitativo.py`. Usa una semilla fija, por lo que el resultado es repetible. Todos los supuestos están en las constantes del encabezado del archivo.
 
@@ -1079,7 +1077,7 @@ El archivo `analisis_cuantitativo.py` (Python 3, sin dependencias externas) repr
 
 # 12. Seguimiento y valor ganado
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 6 Seguimiento y Valor Ganado · Administración de Proyectos · UCA.html` y `catedra/Valor Agregado.html`. Cálculo: `informe/seguimiento/valor_ganado.py`. Desarrollo metodológico: `informe/guias/seguimiento-valor-ganado.md`.
+> Marco: `catedra/Clase 6 Seguimiento y Valor Ganado · Administración de Proyectos · UCA.html` y `catedra/Valor Agregado.html`. Cálculo: `informe/seguimiento/valor_ganado.py`. Desarrollo metodológico: `informe/guias/seguimiento-valor-ganado.md`.
 
 ## 12.1 Medir por el output
 
@@ -1090,7 +1088,7 @@ La cátedra pide medir el avance **por el output, no por el input** (Clase 6, p�
 | BAC | 3.232 satélites | `[DATO REAL]` #8 ¶3 |
 | PV | Línea base A (FCC): 1.616 al 30/07/2026 y 3.232 al 30/07/2029, interpolada linealmente entre hitos. Línea base B (plan de Amazon): ≈ 700 al 30/07/2026 | `[DATO REAL]` en los hitos (#8 ¶3, ¶8); interpolación `[PROPUESTA]` |
 | EV | Satélites lanzados acumulados | `[INFERENCIA DEL GRUPO]` (suma de #2) |
-| AC | No público | `[[PENDIENTE]]` |
+| AC | No público | — |
 
 **Control de consistencia:** la serie EV suma 180 satélites al 16/12/2025, y Amazon declaró ante la FCC "180 satélites lanzados" el 30/01/2026 (#8 ¶8).
 
@@ -1139,7 +1137,7 @@ El **CPI = EV ÷ AC** y la **Vco = EV − AC** requieren el costo real, que no e
 
 # 13. Integración y coherencia
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Responde al paso 4 de la consigna ("Conectar: evitar documentos aislados") y a la Integración del Paneo, tema 3 ("que alcance, tiempo, costo y riesgos no se manejen por separado").
+> Responde al paso 4 de la consigna ("Conectar: evitar documentos aislados") y a la Integración del Paneo, tema 3 ("que alcance, tiempo, costo y riesgos no se manejen por separado").
 
 ## 13.1 La cadena que conecta todo el informe
 
@@ -1184,8 +1182,6 @@ La cátedra señala que "para relacionar temas, la llave es la **elaboración pr
 ---
 
 # 14. Conclusiones y limitaciones
-
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo: **las conclusiones son las que el equipo debe estar dispuesto a defender oralmente.**
 
 ## 14.1 Conclusiones
 
@@ -1759,7 +1755,7 @@ Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar d
 | C-03 | Hito final (100%) | 3.232 al 30/07/2029 | `[DATO REAL]` | #8 ¶3 (DA 24-224 dice 20/07, ver contradicciones) | Todo |
 | C-04 | Proyección de Amazon a la FCC | ≈ 700 desplegados al 30/07/2026 | `[DATO REAL]` | #8 ¶8 (solicitud del 30/01/2026) | VG (línea base), Riesgos |
 | C-05 | Pérdida de prioridad de espectro | hasta 30/03/2028 (30/10/2027 si certifica 50% construido) | `[DATO REAL]` | #8 ¶15 | Riesgos R-05, Tiempos |
-| C-06 | Fianza (surety bond) | no eximida; monto no público | `[DATO REAL]` / `[[PENDIENTE: monto]]` | #8 ¶18 | Costos, Riesgos R-04 |
+| C-06 | Fianza (surety bond) | no eximida; monto no público | `[DATO REAL]` / monto no público | #8 ¶18 | Costos, Riesgos R-04 |
 
 ### 2. Despliegue (al 16/11/2026)
 
@@ -1818,9 +1814,9 @@ Es la herramienta para cumplir el paso 4 de la consigna (**Conectar**: "evitar d
 
 | Dato | Estado | Cómo se trata |
 |---|---|---|
-| Inversión total **actualizada** de Amazon en Leo (USD) | Compromiso inicial **verificado**: "more than $10 billion" (#39, 30/07/2020; ver C-35). En 2026 solo "multibillion-dollar" (#5). No hay cifra actualizada. | Usar C-35 como piso declarado en 2020; el total actual queda `[[PENDIENTE]]` |
+| Inversión total **actualizada** de Amazon en Leo (USD) | Compromiso inicial **verificado**: "more than $10 billion" (#39, 30/07/2020; ver C-35). En 2026 solo "multibillion-dollar" (#5). No hay cifra actualizada. | Usar C-35 como piso declarado en 2020; el total actual queda sin dato público |
 | Costo por satélite y por lanzamiento | No público | Supuesto explícito del grupo en Costos |
-| Monto de la fianza | No público | `[[PENDIENTE]]` |
+| Monto de la fianza | No público | Se declara como límite |
 | Satélites **operativos** | No público | Se usa lanzados (ver unidad de avance) |
 | Costo real incurrido (AC) | No público | El CPI no se puede calcular con datos reales |
 

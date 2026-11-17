@@ -1,7 +1,5 @@
 # 14. Conclusiones y limitaciones
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo: **las conclusiones son las que el equipo debe estar dispuesto a defender oralmente.**
-
 ## 14.1 Conclusiones
 
 1. **El cuello de botella es el lanzamiento, no la fábrica.** Amazon declara capacidad para hasta 30 satélites por semana y llegó a 1.000 fabricados, pero desplegó 396 a un ritmo de ≈ 21 por mes (secciones 7.4 y 8). `[INFERENCIA DEL GRUPO]`

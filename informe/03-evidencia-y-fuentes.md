@@ -1,6 +1,6 @@
 # 3. Evidencia y fuentes
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. El registro completo está en el Anexo A (`evidencia/registro-fuentes.md`) y la verificación contra los documentos primarios en el Anexo F.
+> El registro completo está en el Anexo A (`evidencia/registro-fuentes.md`) y la verificación contra los documentos primarios en el Anexo F.
 
 ## 3.1 Qué se usó
 
@@ -26,7 +26,7 @@
 | Dato | Tratamiento |
 |---|---|
 | Inversión total actualizada | Se usa el compromiso inicial verificado (> USD 10.000 millones, #39) como piso declarado en 2020 |
-| Costo por satélite y por lanzamiento, monto de la fianza | `[[PENDIENTE]]`; estructura de costos sin montos inventados (sección 10) |
+| Costo por satélite y por lanzamiento, monto de la fianza | No público; estructura de costos sin montos inventados (sección 10) |
 | Cronograma interno, WBS, presupuesto | Se **reconstruyen** como propuesta de gestión (secciones 6 a 10) |
 | Satélites operativos | Se usan lanzados como aproximación (sección 1.4) |
 | Causa raíz de la falla de LV-01 | No publicada al corte; se registra como tema abierto (sección 11) |

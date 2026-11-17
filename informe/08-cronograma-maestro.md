@@ -1,6 +1,6 @@
 # 8. Tiempos: cronograma maestro
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Marco: `catedra/Clase 3 Gestión de los Tiempos · UCA.html` (milestones, inch-pebbles, dependencias, Gantt, acortamiento, nivelación y "zona inalcanzable"). Serie de misiones: `informe/seguimiento/ev_serie.csv`.
+> Marco: `catedra/Clase 3 Gestión de los Tiempos · UCA.html` (milestones, inch-pebbles, dependencias, Gantt, acortamiento, nivelación y "zona inalcanzable"). Serie de misiones: `informe/seguimiento/ev_serie.csv`.
 
 ## 8.1 Milestones
 
@@ -13,7 +13,7 @@
 | M-05 | Instalación de KSC operativa | 24/07/2025 | Técnico | Cumplido | `[DATO REAL]` #27 |
 | M-06 | Preview empresarial | 24/11/2025 | Comercial | Cumplido | `[DATO REAL]` #29 |
 | M-07 | Hito FCC del 50% (1.616 operativos) | 30/07/2026 | Regulatorio | **No cumplido** (396) | `[DATO REAL]` #8 / estado `[INFERENCIA]` |
-| M-08 | Aviso de cumplimiento a la FCC | 14/08/2026 | Regulatorio | `[[PENDIENTE: no encontrado]]` | `[DATO REAL]` #7 ¶53 |
+| M-08 | Aviso de cumplimiento a la FCC | 14/08/2026 | Regulatorio | No encontrado | `[DATO REAL]` #7 ¶53 |
 | M-09 | Primer vuelo de Vulcan para Leo | 15/11/2026 | Técnico | **Fallido** (tema T-01) | `[DATO REAL]` #2, #11 |
 | M-10 | Inicio de servicio comercial | "later this year" (2026) | Comercial | Pendiente; sin criterio público | `[DATO REAL]` #3 / criterio `[PROPUESTA]` |
 | M-11 | Certificación del 50% construido (acorta la pérdida de espectro) | 30/10/2027 | Regulatorio | Futuro | `[DATO REAL]` #8 ¶15 |

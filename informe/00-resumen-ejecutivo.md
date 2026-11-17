@@ -1,7 +1,7 @@
 # Amazon Leo — Informe de investigación
 
 **Trabajo Integrador de Investigación · Dirección de Proyectos 2026 · Facultad de Ingeniería y Ciencias Agrarias (UCA)**
-Fecha de corte de la evidencia: 16/11/2026 · Versión: borrador para revisión del equipo
+Fecha de corte de la evidencia: 16/11/2026 · Versión del 17/11/2026
 
 ---
 

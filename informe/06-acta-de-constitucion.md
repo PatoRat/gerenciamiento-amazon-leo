@@ -1,6 +1,6 @@
 # 6. Acta de Constitución del Proyecto (reconstruida)
 
-> **Borrador** redactado con asistencia de IA el 16/11/2026. Requiere revisión del equipo. Campos: laboratorio SAFIRO (`catedra/Caso_DOWN_Proyecto_SAFIRO_…html`) y `catedra/Proyectos_02 …Acta del Proyecto`. Etiqueta del documento: `[PROPUESTA DE GESTIÓN]`.
+> Campos: laboratorio SAFIRO (`catedra/Caso_DOWN_Proyecto_SAFIRO_…html`) y `catedra/Proyectos_02 …Acta del Proyecto`. Etiqueta del documento: `[PROPUESTA DE GESTIÓN]`.
 
 **Decisión del grupo sobre la fecha del acta:** se reconstruye el acta **al 30/07/2020**, el día en que la FCC autorizó la constelación y Amazon anunció la inversión (#6, #39). Es el momento en que el proyecto queda formalmente habilitado. El nombre de entonces es *Project Kuiper*; desde el 13/11/2025 se llama Amazon Leo (#21).
 
@@ -29,7 +29,7 @@
 | Autoridad del gerente | Asignar presupuesto dentro de la línea base; contratar lanzamientos dentro del marco aprobado; priorizar el manifiesto; escalar a la dirección los cambios de alcance y los pedidos a la FCC | `[PROPUESTA DE GESTIÓN]` |
 | Stakeholders principales | FCC; proveedores de lanzamiento; dirección de Amazon; AWS; clientes y socios (sección 4) | `[DATO REAL]` |
 | Plazo de alto nivel | 30/07/2020 → 30/07/2029 (9 años), con hito intermedio el 30/07/2026 | `[DATO REAL]` |
-| Presupuesto de alto nivel | Compromiso > USD 10.000 millones (#39). Detalle `[[PENDIENTE: no público]]` | `[DATO REAL]` |
+| Presupuesto de alto nivel | Compromiso > USD 10.000 millones (#39). Detalle no público | `[DATO REAL]` |
 | Supuestos | Capacidad de lanzamiento disponible a tiempo; fábrica propia a escala; la FCC mantiene el marco regulatorio | `[PROPUESTA DE GESTIÓN]` |
 | Restricciones | Hitos FCC con sanción (reducción de la autorización y pérdida de la fianza); dependencia de lanzadores de terceros; coordinación de espectro | `[DATO REAL]` #8 |
 | Riesgos iniciales (vistos en 2020) | Disponibilidad y confiabilidad de lanzadores nuevos (Vulcan, New Glenn, Ariane 6); atraso regulatorio; oposición de competidores; escalado de la fabricación | `[INFERENCIA DEL GRUPO]` (se materializaron en 2025–2026: sección 11) |
