@@ -6,9 +6,9 @@ Trabajo Integrador de Investigación · Dirección de Proyectos 2026 · Fecha de
 
 Esta sección reconstruye cómo podrían gestionarse los riesgos del despliegue de la constelación Amazon Leo, con el método de la cátedra (Clase 10, Gestión de Riesgos). El grupo eligió el **plazo** como objetivo a proteger con prioridad, porque la FCC fijó hitos con fecha cuyo incumplimiento tiene consecuencias concretas sobre el espectro, la fianza y la cantidad de satélites autorizados.
 
-El registro tiene **cuatro riesgos desarrollados**, **tres en lista de seguimiento** y **dos oportunidades**. Uno de ellos ya ocurrió: la pérdida de 40 satélites en la misión Vulcan del 15/11/2026 (R-01), que se gestiona como tema abierto (T-01) mientras R-01 sigue midiendo que se repita. Hay dos riesgos en rojo: no cumplir el hito de la FCC de 2029 (exposición 0,28) y que un lanzador clave quede en tierra (0,20). Forman una cadena: un lanzador en tierra frena la cadencia, eso retrasa el servicio y, si se prolonga, compromete el hito final.
+El registro tiene **cuatro riesgos desarrollados**, **tres en lista de seguimiento** y **dos oportunidades**. Uno de ellos ya ocurrió: la pérdida de 40 satélites en la misión Vulcan del 15/11/2026 (R-01), que se gestiona como tema abierto (T-01) mientras R-01 sigue midiendo que se repita. Hay dos riesgos en rojo: que la FCC no conceda un nuevo alivio del hito de 2029 (exposición 0,28) y que un lanzador clave quede en tierra (0,20). Forman una cadena: un lanzador en tierra frena la cadencia, eso retrasa el servicio y agranda la brecha con el hito final, lo que deja a Amazon dependiendo de la decisión del regulador.
 
-El análisis cuantitativo muestra que, con la cadencia observada o con la del propio plan de Amazon, llegar a los 3.232 satélites antes del 30/07/2029 es prácticamente imposible. Por eso la incertidumbre del riesgo principal está en si la FCC concede un nuevo alivio, no en la cadencia.
+El análisis cuantitativo muestra que, con la cadencia observada o con la del propio plan de Amazon, llegar a los 3.232 satélites antes del 30/07/2029 es prácticamente imposible. Por eso no llegar se trata como una condición prevista y no como un riesgo, y el riesgo principal se formula sobre lo que sí es incierto: si la FCC concede un nuevo alivio.
 
 ## 1. Alcance, método y trazabilidad
 
@@ -109,7 +109,7 @@ Se partió de un análisis de supuestos del plan de despliegue y de los hechos r
 | R-01 | Pérdida de satélites por falla de un lanzador (recurrencia; **ocurrió el 15/11/2026 → tema T-01**) | Técnico → Lanzamiento | Desarrollado |
 | R-02 | Lanzador clave en tierra, con manifiesto concentrado | Gestión → Proveedores | Desarrollado |
 | R-03 | Desvío del cronograma de despliegue y del inicio del servicio | Gestión → Cronograma | Desarrollado |
-| R-04 | No cumplir el hito de la FCC de 2029 | Externo → Regulación | Desarrollado |
+| R-04 | Que la FCC no conceda un nuevo alivio del hito de 2029 (no llegar por cadencia es una condición prevista, sección 5) | Externo → Regulación | Desarrollado |
 | R-05 | Pérdida temporal de prioridad de espectro | Externo → Regulación | Seguimiento |
 | R-06 | Dependencia de socios locales | Organización | Seguimiento |
 | R-07 | Aprobaciones regulatorias externas | Externo → Regulación | Seguimiento |
@@ -132,21 +132,26 @@ Estas cuentas se usan en varias fichas. Todas son `[INFERENCIA DEL GRUPO]`.
 
 ### 4.2 Riesgos desarrollados
 
-#### R-04 — No cumplir el hito de la FCC de 2029
+#### R-04 — Que la FCC no conceda un nuevo alivio del hito de 2029
+
+**Por qué se reformuló.** En la primera versión el evento era "no cumplir el hito de 2029" con P = 0,70, pero el análisis cuantitativo (sección 5) da una probabilidad de no llegar a 3.232 por cadencia de ≈ 100%. Un evento casi seguro no es un riesgo: es una **condición prevista** que el plan tiene que absorber. La incertidumbre real está en la respuesta del regulador. Por eso el evento ahora es que la FCC **no** conceda una prórroga o un waiver. La probabilidad de 0,70 que eligió el grupo mide eso directamente: ≈ 30% de que haya un nuevo alivio, como en 2026 (DA 26-553).
+
+**[INFERENCIA DEL GRUPO] Condición prevista (no riesgo):** con la cadencia observada o planificada, Amazon llegaría al 30/07/2029 con ≈ 1.140–2.050 satélites (P10–P90, sección 5), lejos de 3.232. Esta brecha se trata como supuesto de planificación del cronograma maestro y del caso de negocio, no como evento incierto.
+→ Base: sección 5; DA 26-553 ¶3. Supuestos: los de la sección 5.
 
 | Campo | Contenido |
 |---|---|
 | Categoría y tipo | Externo → Regulación. Amenaza. Objetivo afectado: alcance (principal) y costo (fianza). |
-| Descripción | Debido a que a ≈ 20 misiones por año Amazon desplegaría unos 2.000 de los 3.232 satélites antes del 30/07/2029, puede ocurrir que no alcance el hito final, lo que reduciría la autorización a los satélites operativos ese día y expondría la pérdida de la fianza. |
-| Base | `[DATO REAL]` Hito final de 3.232 satélites al 30/07/2029; si falla, la autorización se reduce al número operativo (DA 26-553 ¶3, ¶12); el incumplimiento de un hito implica pérdida de la fianza (DA 24-224 ¶53; DA 26-553 ¶18). `[DATO REAL]` Amazon planifica "20+ misiones" en el "año dos del despliegue" y dice haber estado en camino a 11 lanzamientos en el primer año (#23); el texto no fecha esos años (se infiere que el año uno empieza con la misión KA-01, el 28/04/2025). `[INFERENCIA DEL GRUPO]` A 20 misiones por año durante 32,5 meses, con ≈ 30 satélites por misión, se agregarían ≈ 1.600–1.700 satélites y se llegaría a ≈ 2.050 (≈ 63% de 3.232). Desde el 28/04/2026 hubo 6 misiones en ≈ 6,5 meses (≈ 11 por año), la mitad de lo planificado (#2). Supuestos: se sostiene el ritmo planificado desde hoy; ≈ 30 satélites por misión (rango 24–40); la FCC no concede otro waiver. |
-| Probabilidad | **0,70** `[PROPUESTA DE GESTIÓN]`. Para llegar a 3.232 hacen falta ≈ 35 misiones por año; el plan de Amazon es de más de 20 en el año dos (brecha de ≈ 15) y el ritmo observado es de ≈ 11 por año (brecha de ≈ 24) (#23, #2). No se sube a 0,90 porque quedan ≈ 32,5 meses para acelerar y Amazon declara capacidad de fábrica de hasta 30 satélites por semana, aunque dice que la limita según la disponibilidad de lanzadores (#23); y porque la FCC concedió un waiver parcial en 2026, aunque eso no garantiza que lo repita (DA 26-553 ¶11). El análisis cuantitativo (sección 5) indica que con la cadencia observada o planificada la probabilidad de llegar a 3.232 es ≈ 0%; por eso 0,70 equivale a suponer ≈ 30% de probabilidad de un nuevo alivio de la FCC, supuesto que no tiene respaldo en un dato. |
+| Descripción | Debido a que Amazon llegaría al 30/07/2029 con unos 1.500 a 2.000 de los 3.232 satélites (condición prevista), puede ocurrir que la FCC no conceda una nueva prórroga o waiver, lo que reduciría la autorización a los satélites operativos ese día y expondría la pérdida de la fianza. |
+| Base | `[DATO REAL]` Hito final de 3.232 satélites al 30/07/2029; si falla, la autorización se reduce al número operativo (DA 26-553 ¶3, ¶12); el incumplimiento de un hito implica pérdida de la fianza (DA 24-224 ¶53; DA 26-553 ¶18). `[DATO REAL]` Amazon planifica "20+ misiones" en el "año dos del despliegue" y dice haber estado en camino a 11 lanzamientos en el primer año (#23); el texto no fecha esos años (se infiere que el año uno empieza con la misión KA-01, el 28/04/2025). `[INFERENCIA DEL GRUPO]` A 20 misiones por año durante 32,5 meses, con ≈ 30 satélites por misión, se agregarían ≈ 1.600–1.700 satélites y se llegaría a ≈ 2.050 (≈ 63% de 3.232). Desde el 28/04/2026 hubo 6 misiones en ≈ 6,5 meses (≈ 11 por año), la mitad de lo planificado (#2). Supuestos: se sostiene el ritmo planificado desde hoy; ≈ 30 satélites por misión (rango 24–40). |
+| Probabilidad | **0,70** `[PROPUESTA DE GESTIÓN]`: probabilidad de que la FCC **no** conceda un nuevo alivio. A favor de un alivio (≈ 30%): la FCC ya concedió un waiver parcial en 2026 (DA 26-553 ¶11); Amazon tiene capacidad de fábrica declarada de hasta 30 satélites por semana, limitada por los lanzadores (#23), y más de 100 misiones contratadas (#23), que sirven de evidencia de esfuerzo. En contra (≈ 70%): el waiver de 2026 fue **parcial** y la FCC mantuvo intacto el hito de 2029 y la fianza (DA 26-553 ¶11, ¶18); la brecha a cubrir es grande (hacen falta ≈ 35 misiones por año contra un plan de 20 y un ritmo observado de ≈ 11, #23, #2). Supuesto declarado: no hay un dato que permita estimar la conducta futura de la FCC; el 30% es juicio del grupo basado en el único precedente. |
 | Impacto | **0,40 (alto)** `[PROPUESTA DE GESTIÓN]`. Quedar en ≈ 2.050 significaría perder ≈ 1.180 satélites autorizados (≈ 37%). En la escala de alcance, "inaceptable" = 0,40. Amazon dijo que cumpliría el 100% para el 30/07/2029 y pidió un waiver en vez de resignar satélites (DA 26-553 ¶8, ¶11) `[DATO REAL]`; de ahí se infiere que no consideraría aceptable una constelación parcial `[INFERENCIA DEL GRUPO]`, aunque Amazon no lo dice. |
 | Exposición | 0,70 × 0,40 = **0,28. Rojo.** |
 | Estrategia | **Mitigar** `[PROPUESTA DE GESTIÓN]`. Evitar implicaría resignar alcance, que Amazon dijo no aceptar; transferir no aplica a un hito regulatorio; aceptar no corresponde con una exposición de 0,28 (la cátedra la reserva para cuando responder cuesta más que el daño). |
-| Respuesta | (1) Llevar la cadencia a ≥ 35 misiones por año. (2) Presentar a tiempo un nuevo pedido de extensión con evidencia de avance. (3) Reportar a la FCC la capacidad construida y los lanzamientos contratados. |
+| Respuesta | (1) Preparar y presentar a tiempo un nuevo pedido de extensión o waiver, con evidencia de avance (respuesta principal: actúa sobre la probabilidad). (2) Acelerar la cadencia todo lo posible: no alcanza para llegar a 3.232, pero achica la brecha y fortalece el pedido. (3) Reportar a la FCC la capacidad construida y los lanzamientos contratados. |
 | Propietario | Chief Global Affairs and Legal Officer de Amazon (rol que figura en #33). Propuesta del grupo. |
-| Disparador | La cadencia de los últimos 6 meses queda por debajo de la necesaria; nuevo atraso de un lanzador (R-02); la FCC cambia la política de hitos. |
-| Después de responder | P 0,50 × C 0,40 = **0,20. Sigue en rojo:** la brecha de cadencia es grande y la mitigación no la cierra sola. |
+| Disparador | La cadencia de los últimos 6 meses queda por debajo de la necesaria; nuevo atraso de un lanzador (R-02); la FCC cambia la política de hitos o rechaza un pedido de otro operador. |
+| Después de responder | P 0,50 × C 0,40 = **0,20. Sigue en rojo:** un pedido bien fundado puede mejorar las chances, pero la decisión es del regulador y la brecha de cadencia sigue siendo grande. |
 | Residual y secundario | Residual: la brecha de cadencia. Secundario: acelerar aumenta el riesgo técnico (R-01) y presiona la fabricación. |
 | Costo de la respuesta y reserva | No calculable: el monto de la fianza y el costo de ampliar la cadencia no son públicos. |
 
@@ -277,7 +282,7 @@ Con un máximo de cadencia de 3,5 misiones por mes (más del triple del ritmo ob
 **[INFERENCIA DEL GRUPO]** Con la cadencia observada o con la del propio plan de Amazon, llegar a 3.232 satélites antes del 30/07/2029 es prácticamente imposible. Llegar exigiría ≈ 35 misiones por año: 3 veces el ritmo observado y casi el doble del plan.
 → Limitaciones: el modelo ignora una posible aceleración gradual; usa un promedio de satélites por misión; no incluye fallas de lanzamiento (que empeorarían el resultado); las distribuciones son supuestos del grupo.
 
-**Consecuencia para R-04:** como la probabilidad de no llegar es ≈ 1, la incertidumbre del riesgo principal está en si la FCC concede otro alivio. Este análisis no calcula reservas de costo porque falta el presupuesto.
+**Consecuencia para R-04:** como la probabilidad de no llegar es ≈ 1, no llegar se trata como condición prevista y R-04 se formula sobre la decisión de la FCC (sección 4.2). Este análisis no calcula reservas de costo porque falta el presupuesto.
 
 ## 6. Respuestas, reservas y efecto
 
@@ -356,11 +361,12 @@ Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) 
 |---|---|---|
 | Los 38 Vulcan y los 24 New Glenn siguen contratados | R-01, R-02 | Amazon cancela o reasigna contratos |
 | ≈ 30 satélites por misión | R-04, sección 5 | Cambia el tamaño de los lotes |
-| La FCC no concede otro waiver | R-04 | La FCC otorga una prórroga |
+| Sin aceleración fuerte, la cadencia no alcanza para 3.232 (condición prevista) | R-04, sección 5 | La cadencia de 6 meses supera ≈ 17 misiones |
+| ≈ 30% de chances de un nuevo alivio de la FCC | R-04 | La FCC se pronuncia sobre un pedido de Amazon o de otro operador |
 | El hito de 2026 no se cumplió | R-05 | Amazon demuestra otro conteo |
 | Las frases sobre el inicio del servicio se refieren al mismo hito | R-03 | Amazon define dos hitos distintos |
 
-**Criterios de cierre** `[PROPUESTA DE GESTIÓN]`: R-02 se cierra cuando Vulcan y New Glenn completen dos misiones consecutivas sin anomalías cada uno; R-03 al lanzarse el servicio comercial; R-04 al alcanzar 3.232 satélites operativos o el 30/07/2029; R-05 el 30/03/2028 (o antes si Amazon alcanza el 50% operativo); los demás si el disparador no se activa durante un año.
+**Criterios de cierre** `[PROPUESTA DE GESTIÓN]`: R-02 se cierra cuando Vulcan y New Glenn completen dos misiones consecutivas sin anomalías cada uno; R-03 al lanzarse el servicio comercial; R-04 cuando la FCC resuelva un pedido de alivio, cuando Amazon alcance 3.232 satélites operativos o el 30/07/2029, lo que ocurra primero; R-05 el 30/03/2028 (o antes si Amazon alcanza el 50% operativo); los demás si el disparador no se activa durante un año.
 
 **Conexión con seguimiento y valor ganado** `[INFERENCIA DEL GRUPO]`: si el avance se mide en satélites operativos, Amazon proyectó ≈ 700 al 30/07/2026 (DA 26-553 ¶8) y había ≈ 396; el índice de desempeño del cronograma (SPI) sería ≈ 0,57 (396 ÷ 700). Supuestos: los satélites operativos son una medida de avance válida; ≈ 700 fue el plan de Amazon para esa fecha; no hubo lanzamientos entre el 02/07 y el 15/11 (#2).
 

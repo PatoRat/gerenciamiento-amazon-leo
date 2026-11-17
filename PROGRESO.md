@@ -52,6 +52,7 @@ Cada rama sale de la anterior (están **apiladas**), así que se mergean a `main
 |---|---|---|---|---|
 | 1 | `fix/01-uso-ia-y-progreso` | Corrección urgente | Registra que la cátedra habilitó el uso de IA (CLAUDE.md §3, declaración de la sección de Riesgos, LEEME); actualiza este archivo al estado real; agrega la regla "una rama por cambio". | 🟡 PR pendiente |
 | 2 | `fix/02-r01-riesgo-materializado` | Corrección urgente | R-01 ocurrió el 15/11/2026 (LV-01): se registra como **tema T-01** con el formulario de Resolución de Temas de la Clase 6 (nueva sección 7.1); R-01 pasa a medir la recurrencia y se justifica por qué queda en azul (el daño grave, cohete en tierra, está en R-02). Los valores P/I del equipo no se cambiaron. | 🟡 PR pendiente |
+| 3 | `fix/03-r04-reformulacion` | Corrección urgente | R-04 tenía P = 0,70 de "no cumplir el hito de 2029", pero el Monte Carlo da ≈ 100%. Se reformula: no llegar por cadencia es **condición prevista**; el riesgo es que **la FCC no conceda un nuevo alivio** (P = 0,70 = ≈ 30% de alivio). Respuesta principal: pedido de extensión con evidencia. Se ajustan resumen, sección 3, sección 5, supuestos y criterio de cierre. ER sin cambios (0,28 → 0,20). | 🟡 PR pendiente |
 
 ---
 
