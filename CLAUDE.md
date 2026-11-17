@@ -46,8 +46,17 @@ No se busca una descripción periodística ni una recopilación de noticias.
 
 ## 3. Reparto de trabajo humano / IA — REGLA DURA
 
-La cátedra establece: **«No se aceptará presentar como real un documento creado por una herramienta de IA.»**
-El equipo redacta. Claude investiga, ordena, enseña, revisa y construye el dashboard.
+La consigna establece: **«No se aceptará presentar como real un documento creado por una herramienta de IA.»**
+
+**Actualización 16/11/2026:** la cátedra **habilitó el uso de IA para la redacción** (confirmado por el equipo). Desde esa fecha:
+
+- Claude **puede redactar borradores** de secciones del informe y de los documentos de gestión reconstruidos, a pedido del equipo.
+- Todo borrador redactado con IA queda **marcado como borrador** hasta que un integrante lo revise y lo apruebe (vía Pull Request o anotación en `PROGRESO.md`).
+- Cada sección del informe lleva una **declaración de uso de IA** (qué hizo la herramienta y qué decidió el equipo).
+- Las **decisiones de gestión** (probabilidades, impactos, estrategias, prioridades, KPIs) las toma y defiende el equipo. Claude las propone marcadas como propuesta y explica el criterio.
+- Siguen vigentes sin cambios: **no inventar datos**, trazabilidad obligatoria (§4) y marcadores `[[PENDIENTE]]`.
+
+Lo que sigue en esta sección describe el reparto original; donde contradiga esta actualización, manda la actualización.
 
 ### Claude SÍ hace
 
@@ -146,6 +155,7 @@ El marco metodológico es **el de la cátedra**, no un estándar genérico.
 2. Al terminar cada checkpoint: **detenerse, informar qué se produjo y esperar revisión manual de un miembro del equipo.** No encadenar checkpoints en una misma corrida.
 3. Al cerrar un checkpoint, **actualizar `PROGRESO.md`** (estado, fecha, archivos generados).
 4. Si el equipo pide avanzar varios pasos de una vez: hacer solo el primero y recordar la regla.
+5. **Una rama por cambio.** Cada cambio va en su propia rama (`fix/NN-…` para correcciones, `feat/NN-…` para agregados), apilada sobre la anterior, y se integra a `main` por Pull Request, en orden. El PR es la instancia de revisión manual. Cada rama registra lo que hizo en la sección "Ramas y cambios" de `PROGRESO.md`.
 
 ### Instancia 1 — Informe
 
