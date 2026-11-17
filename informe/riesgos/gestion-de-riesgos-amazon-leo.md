@@ -6,7 +6,7 @@ Trabajo Integrador de Investigación · Dirección de Proyectos 2026 · Fecha de
 
 Esta sección reconstruye cómo podrían gestionarse los riesgos del despliegue de la constelación Amazon Leo, con el método de la cátedra (Clase 10, Gestión de Riesgos). El grupo eligió el **plazo** como objetivo a proteger con prioridad, porque la FCC fijó hitos con fecha cuyo incumplimiento tiene consecuencias concretas sobre el espectro, la fianza y la cantidad de satélites autorizados.
 
-El registro tiene **cuatro riesgos desarrollados**, **tres en lista de seguimiento** y **dos oportunidades**. Hay dos riesgos en rojo: no cumplir el hito de la FCC de 2029 (exposición 0,28) y que un lanzador clave quede en tierra (0,20). Forman una cadena: un lanzador en tierra frena la cadencia, eso retrasa el servicio y, si se prolonga, compromete el hito final.
+El registro tiene **cuatro riesgos desarrollados**, **tres en lista de seguimiento** y **dos oportunidades**. Uno de ellos ya ocurrió: la pérdida de 40 satélites en la misión Vulcan del 15/11/2026 (R-01), que se gestiona como tema abierto (T-01) mientras R-01 sigue midiendo que se repita. Hay dos riesgos en rojo: no cumplir el hito de la FCC de 2029 (exposición 0,28) y que un lanzador clave quede en tierra (0,20). Forman una cadena: un lanzador en tierra frena la cadencia, eso retrasa el servicio y, si se prolonga, compromete el hito final.
 
 El análisis cuantitativo muestra que, con la cadencia observada o con la del propio plan de Amazon, llegar a los 3.232 satélites antes del 30/07/2029 es prácticamente imposible. Por eso la incertidumbre del riesgo principal está en si la FCC concede un nuevo alivio, no en la cadencia.
 
@@ -106,7 +106,7 @@ Se partió de un análisis de supuestos del plan de despliegue y de los hechos r
 
 | ID | Riesgo | Categoría | Tratamiento |
 |---|---|---|---|
-| R-01 | Pérdida de satélites por falla de un lanzador | Técnico → Lanzamiento | Desarrollado |
+| R-01 | Pérdida de satélites por falla de un lanzador (recurrencia; **ocurrió el 15/11/2026 → tema T-01**) | Técnico → Lanzamiento | Desarrollado |
 | R-02 | Lanzador clave en tierra, con manifiesto concentrado | Gestión → Proveedores | Desarrollado |
 | R-03 | Desvío del cronograma de despliegue y del inicio del servicio | Gestión → Cronograma | Desarrollado |
 | R-04 | No cumplir el hito de la FCC de 2029 | Externo → Regulación | Desarrollado |
@@ -185,11 +185,17 @@ Estas cuentas se usan en varias fichas. Todas son `[INFERENCIA DEL GRUPO]`.
 | Después de responder | P 0,70 × C 0,10 = **0,07. Verde.** El inicio parcial reduce el impacto de una demora total. |
 | Residual y secundario | Residual: el servicio inicial tendría cobertura limitada. Secundario: lanzar con poca cobertura puede dañar la reputación del servicio. |
 
-#### R-01 — Pérdida de satélites por falla de un lanzador
+#### R-01 — Pérdida de satélites por falla de un lanzador (recurrencia)
+
+**El evento ya ocurrió una vez.** El 15/11/2026 la misión LV-01 falló y se perdieron 40 satélites (#2, #11). Lo que ocurrió deja de ser un riesgo y pasa a ser un **tema** (problema a resolver), que se gestiona en el registro de Resolución de Temas de la sección 7.1 (tema T-01), según la Clase 6 de la cátedra. Esta ficha mide desde ahora la **recurrencia**: que vuelva a pasar en las misiones siguientes.
+
+**[INFERENCIA DEL GRUPO] Por qué R-01 queda en azul aunque se haya materializado.** La consecuencia grave de la falla no son los 40 satélites, sino que el cohete quede en tierra y frene la cadencia. Ese daño se mide en R-02, que está en rojo. Si se sumara también acá, se contaría dos veces. Lo que mide R-01 es la reposición de los satélites perdidos, y en plazo eso equivale a ≈ 1,3 semanas de fábrica (ver Impacto). La ficha tiene un punto débil, que el grupo debe poder defender: el costo de un satélite no es público. Con un costo unitario alto, el impacto en costo subiría a moderado (0,20), la exposición a 0,06 y R-01 pasaría a verde.
+→ Base: #2, #11, #23. Supuesto: la separación entre R-01 (pérdida de carga) y R-02 (cohete en tierra) se mantiene en todo el registro.
 
 | Campo | Contenido |
 |---|---|
 | Categoría y tipo | Técnico → Lanzamiento. Amenaza. Objetivo afectado: costo (principal) y plazo (secundario; el plazo por paralización del cohete se trata en R-02). |
+| Estado | **Materializado una vez (15/11/2026) → tema T-01 abierto.** El riesgo de recurrencia sigue activo. |
 | Descripción | Debido a que la causa raíz de la falla del 15/11/2026 no es pública y que Vulcan tiene aún 37 lanzamientos contratados con Amazon, puede ocurrir una nueva falla en otra misión, lo que provocaría la pérdida de los satélites a bordo (unos 40 por misión) y obligaría a reponerlos. |
 | Base | `[DATO REAL]` El 15/11/2026 el Vulcan falló unos 10 minutos tras el despegue y se perdieron 40 satélites; causa raíz no publicada (#11, #2). Los 37 restantes son un supuesto: que los 38 Vulcan contratados (#3) siguen vigentes. |
 | Probabilidad | **0,30 por misión Vulcan** `[PROPUESTA DE GESTIÓN]`. Se estima P = 0,30 porque la frecuencia observada es 0,20 (1 en 5 vuelos, #11), pero con una muestra tan chica de apenas cinco lanzamientos la tasa empírica es poco confiable, y al no haberse resuelto aún la causa raíz persiste una incertidumbre técnica que aumenta el riesgo de recurrencia hasta que se aplique una corrección. |
@@ -300,6 +306,30 @@ Con un máximo de cadencia de 3,5 misiones por mes (más del triple del ritmo ob
 **Índice de riesgo y apalancamiento.** La cátedra los define como Σ ER ÷ costo total del proyecto y como (ER antes − ER después) ÷ costo de la alternativa. No se pueden calcular: el impacto está en escala, no en dólares, y no existe un presupuesto público ni el costo de las alternativas.
 
 ## 7. Seguimiento y control
+
+### 7.1 Riesgos materializados: registro de Resolución de Temas
+
+Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) y se gestiona con el formulario de Resolución de Temas y el Log de temas pendientes de la cátedra (`catedra/Clase 6 Seguimiento y Valor Ganado`, PPT págs. 12–13).
+
+**Tema T-01 — Pérdida de la misión LV-01 (Vulcan, 40 satélites)** `[PROPUESTA DE GESTIÓN]` con base `[DATO REAL]`
+
+| Campo (cátedra) | Contenido |
+|---|---|
+| N.° · Título · Fecha | T-01 · Pérdida de LV-01 · 15/11/2026 |
+| Fuente | Riesgo R-01 del registro, materializado. `[DATO REAL]` ULA informó una anomalía ≈ 10 minutos después del despegue y Amazon confirmó que "the payload was lost" (#2, #11). |
+| Descripción | Se perdieron 40 satélites en el primer vuelo de Vulcan para Amazon (1 de 38 contratados). Causa raíz no publicada al 16/11/2026 (#11). |
+| Evaluación y recomendaciones | `[INFERENCIA DEL GRUPO]` El daño directo (40 satélites, ≈ 1,2% de 3.232) es acotado. El daño indirecto es el cohete en tierra, que activa el disparador de R-02 y agrava R-03 y R-04. Se recomienda ejecutar el plan de contingencia de R-01 y la respuesta de R-02 al mismo tiempo. |
+| Impacto | Satélites en órbita sin cambios (≈ 396); se pierde la misión que los llevaba a ≈ 436 (#11). Cadencia: Vulcan sin fecha de retorno (#11). |
+| Decisión | `[PROPUESTA DE GESTIÓN]` (1) Reponer los 40 satélites con producción de Kirkland. (2) Reasignar las próximas misiones a Ariane 6 y Falcon 9 (LE-04 sigue programada para no antes del 23/11/2026, #2). (3) Exigir a ULA el informe de causa raíz antes de volver a cargar satélites en Vulcan. (4) Reevaluar R-01, R-02, R-03 y R-04 con cada novedad de ULA (sección 7.2, "Reevaluación"). |
+| Aprobó · Responsable · Estado | Responsable propuesto: director/a de sistemas de lanzamiento de Amazon Leo (rol en #3). Estado: **abierto**. Se cierra cuando ULA publique la causa raíz y Vulcan vuelva a volar sin anomalías. |
+
+**Log de temas pendientes** `[PROPUESTA DE GESTIÓN]`
+
+| N.° | Tema | Abierto | Responsable | Próxima acción | Estado |
+|---|---|---|---|---|---|
+| T-01 | Pérdida de LV-01 | 15/11/2026 | Sistemas de lanzamiento | Causa raíz de ULA; reasignación del manifiesto | Abierto |
+
+### 7.2 Indicadores a vigilar
 
 **Indicadores a vigilar** `[PROPUESTA DE GESTIÓN]`:
 
