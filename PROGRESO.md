@@ -123,7 +123,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 | 16/11/2026 | Entrega (rama 12) | Pedido del equipo: avanzar todo lo posible y unificar en un PR. Se redactaron las secciones 0–14 (borradores), se agregó la estimación PERT (fin ≈ 11/2035; P ≈ 0,07% de cumplir 2029), se verificó en el primario la inversión de 2020 (> USD 10.000 millones, #39) y se construyó el dashboard con KPIs provisorios y guion de defensa. |
 | 17/11/2026 | PR #1 y PR #2 | Se mergean a `main` los PR #1 y #2, sin reviews registradas. |
 | 17/11/2026 | Limpieza de entrega | Directo a `main`: se quitan los carteles de borrador y las marcas `[[PENDIENTE]]` del informe, se renombran los anexos de Riesgos a Apéndice R-A y R-B y se regenera el `.docx`. |
-| 17/11/2026 | Dashboard | Se quita el cartel "Borrador" y se corrigen dos desbordes de texto. |
+| 17/11/2026 | Dashboard | Se quita el cartel "Borrador", se corrigen dos desbordes de texto y se renombra el tablero a "Tablero ejecutivo" (sin referencias a la defensa). |
 | 17/11/2026 | Reparto de la defensa | El grupo propone 4 bloques de ≈ 5 min (ver "Reparto de la defensa"). Quedan sin asignar las personas. |
 
 ---

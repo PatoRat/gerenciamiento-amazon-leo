@@ -4,7 +4,7 @@ Principio: **cada bloque responde una pregunta previsible de la defensa** (consi
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│ Amazon Leo — Tablero de defensa   corte 16/11/2026   [Tema] [PDF]    │
+│ Amazon Leo — Tablero ejecutivo   corte 16/11/2026   [Tema] [PDF]    │
 │ nav: Estado · Atraso · Riesgos · Organización                        │
 ├──────────────────────────────────────────────────────────────────────┤
 │ ⚠ Borrador: KPIs provisorios · cifras de cifras-maestras.md           │
