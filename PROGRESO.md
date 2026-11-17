@@ -54,6 +54,7 @@ Cada rama sale de la anterior (están **apiladas**), así que se mergean a `main
 | 2 | `fix/02-r01-riesgo-materializado` | Corrección urgente | R-01 ocurrió el 15/11/2026 (LV-01): se registra como **tema T-01** con el formulario de Resolución de Temas de la Clase 6 (nueva sección 7.1); R-01 pasa a medir la recurrencia y se justifica por qué queda en azul (el daño grave, cohete en tierra, está en R-02). Los valores P/I del equipo no se cambiaron. | 🟡 PR pendiente |
 | 3 | `fix/03-r04-reformulacion` | Corrección urgente | R-04 tenía P = 0,70 de "no cumplir el hito de 2029", pero el Monte Carlo da ≈ 100%. Se reformula: no llegar por cadencia es **condición prevista**; el riesgo es que **la FCC no conceda un nuevo alivio** (P = 0,70 = ≈ 30% de alivio). Respuesta principal: pedido de extensión con evidencia. Se ajustan resumen, sección 3, sección 5, supuestos y criterio de cierre. ER sin cambios (0,28 → 0,20). | 🟡 PR pendiente |
 | 4 | `fix/04-cifras-contratos-y-fuentes` | Corrección urgente | Registro de fuentes: aplica las correcciones de la verificación (#3, #5 no es un informe financiero, #6, #7, #8 con párrafos de la FCC), cierra 3 contradicciones resueltas y agrega 2 (fecha 20 vs 30/07/2029; New Glenn 12 vs 24), suma 2 vacíos, incorpora las fuentes **#21 a #47** (sección E) y agrega la tabla **"Cifras de contratos con fecha de corte"** (vigente: 108 lanzamientos; New Glenn = 24). Corrige el "12 New Glenn" de la verificación. | 🟡 PR pendiente |
+| 5 | `fix/05-operativos-y-fecha-de-corte` | Corrección urgente | Riesgos §4.1 y §5: explicita que se usan satélites **lanzados** como aproximación de **operativos** (la FCC mide operativos) y que por eso los resultados son optimistas; agrega el supuesto a la tabla de §7. Propone una **fecha de corte única** (16/11/2026) en "Decisiones pendientes". Regenera el `.docx` de Riesgos con las ramas 1 a 5. | 🟡 PR pendiente |
 
 ---
 
@@ -76,6 +77,11 @@ Cada rama sale de la anterior (están **apiladas**), así que se mergean a `main
 - **Uso de IA (16/11/2026):** habilitado por la cátedra para la redacción. Claude puede redactar borradores; el equipo revisa, aprueba y defiende las decisiones. Cada sección lleva declaración de uso de IA. No se inventan datos.
 - **Flujo de trabajo (16/11/2026):** una rama por cambio, apiladas, integradas por PR en orden.
 - **Los KPIs los elige el equipo.**
+
+## Decisiones pendientes del equipo
+
+- **Fecha de corte única del informe y del dashboard.** Propuesta: **16/11/2026** (la que ya usan las fuentes, hitos, actores y Riesgos). Todo hecho posterior (por ejemplo LE-04, Ariane 64 con 36 satélites, prevista para no antes del 23/11/2026) **no se mezcla**: o se deja afuera, o se mueve la fecha de corte de **todo** el trabajo y se actualizan juntas las cifras afectadas (satélites en órbita, cadencia, Monte Carlo, SPI). Sugerencia: congelar la fecha de corte una semana antes de la entrega y hacer una sola actualización.
+- **Unidad de avance:** satélites lanzados como aproximación de operativos (Amazon no publica operativos). Ya está explicitado en Riesgos §4.1; debe usarse igual en Tiempos, Costos y Valor Ganado.
 
 ## Pendientes del equipo
 

@@ -120,6 +120,9 @@ Se partió de un análisis de supuestos del plan de despliegue y de los hechos r
 
 ### 4.1 Cuentas de base
 
+**Unidad de medida: satélites lanzados como aproximación de satélites operativos.** La FCC mide los hitos en satélites **"deployed and operating"** (DA 26-553 ¶3) `[DATO REAL]`. Amazon informa satélites **lanzados** ("nearly 400", #2) y no publica cuántos están operativos `[DATO REAL]`. Todas las cuentas de este documento usan lanzados (≈ 396) como aproximación de operativos `[INFERENCIA DEL GRUPO]`.
+→ Supuesto: todos los satélites lanzados llegan a su órbita y operan. Consecuencia: como operativos ≤ lanzados, **todos los resultados son optimistas** para Amazon. La brecha real con los hitos es igual o mayor que la calculada, y la conclusión de R-04 se refuerza, no se debilita.
+
 Estas cuentas se usan en varias fichas. Todas son `[INFERENCIA DEL GRUPO]`.
 
 | Cuenta | Resultado | Base y supuestos |
@@ -251,7 +254,7 @@ Matriz de la cátedra con los cortes de la sección 2.4. [R] rojo, [A] amarillo,
 
 La cátedra propone la simulación de Monte Carlo para estimar la probabilidad de cumplir un objetivo. Amazon no publica su red de actividades ni sus duraciones, así que no se puede simular el cronograma interno. Con datos públicos sí se puede simular **la cantidad de satélites operativos al 30/07/2029**, que es la medida del hito de R-04. El código está en el anexo B y es reproducible.
 
-**Datos de entrada** `[DATO REAL]`: 396 satélites lanzados antes de LV-01 (#2); hito final de 3.232 (DA 26-553 ¶3); 32,5 meses hasta el 30/07/2029.
+**Datos de entrada** `[DATO REAL]`: 396 satélites lanzados antes de LV-01 (#2); hito final de 3.232 (DA 26-553 ¶3); 32,5 meses hasta el 30/07/2029. Se usan lanzados como aproximación de operativos (sección 4.1), así que el resultado es un techo optimista.
 
 **Supuestos** `[PROPUESTA DE GESTIÓN]`:
 - Cadencia en misiones por mes, distribución triangular: mínimo 0,5 (lanzadores clave en tierra buena parte del período), moda 0,92 (ritmo observado desde el 28/04/2026, ≈ 11 por año) y máximo 2,0 (el plan de "20+ misiones" y algo más).
@@ -361,6 +364,7 @@ Cuando un riesgo ocurre deja de ser incierto: pasa a ser un **tema** (problema) 
 |---|---|---|
 | Los 38 Vulcan y los 24 New Glenn siguen contratados | R-01, R-02 | Amazon cancela o reasigna contratos |
 | ≈ 30 satélites por misión | R-04, sección 5 | Cambia el tamaño de los lotes |
+| Lanzados ≈ operativos | Todos | Amazon o la FCC publican un conteo de operativos menor |
 | Sin aceleración fuerte, la cadencia no alcanza para 3.232 (condición prevista) | R-04, sección 5 | La cadencia de 6 meses supera ≈ 17 misiones |
 | ≈ 30% de chances de un nuevo alivio de la FCC | R-04 | La FCC se pronuncia sobre un pedido de Amazon o de otro operador |
 | El hito de 2026 no se cumplió | R-05 | Amazon demuestra otro conteo |
