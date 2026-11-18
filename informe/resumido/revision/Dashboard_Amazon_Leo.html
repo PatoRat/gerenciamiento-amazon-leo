@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon Leo — Tablero ejecutivo</title>
+<script>
+try{
+  if(location.hash==="#imprimir"){document.documentElement.dataset.theme="light";}
+  else{const t=localStorage.getItem("tema-leo");if(t)document.documentElement.dataset.theme=t;}
+}catch(e){}
+</script>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f4f3f0; --surface:#fcfcfb; --border:#e2e0da; --grid:#ebe9e4;
+  --text:#0b0b0b; --text2:#52514e; --muted:#7a7873;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
+  --rojo:#d03b3b; --amarillo:#fab219; --verde:#0ca30c; --azul:#86b6ef;
+  --pend-bg:#fff4d6; --pend-border:#eda100;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121211; --surface:#1a1a19; --border:#2e2e2b; --grid:#2a2a27;
+    --text:#f0efec; --text2:#c3c2b7; --muted:#8f8e86;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181;
+    --azul:#3987e5; --pend-bg:#3a2f12; --pend-border:#c98500;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211; --surface:#1a1a19; --border:#2e2e2b; --grid:#2a2a27;
+  --text:#f0efec; --text2:#c3c2b7; --muted:#8f8e86;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181;
+  --azul:#3987e5; --pend-bg:#3a2f12; --pend-border:#c98500;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+header h1{font-size:18px;margin:0;flex:1 1 260px}
+header .meta{color:var(--text2);font-size:12px}
+nav{display:flex;flex-wrap:wrap;gap:6px}
+nav a{color:var(--text2);text-decoration:none;font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:999px}
+nav a:hover{color:var(--text)}
+button{font:inherit;font-size:12px;padding:6px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer}
+button.primario{background:var(--s1);border-color:var(--s1);color:#fff}
+main{max-width:1200px;margin:0 auto;padding:16px}
+section{margin-bottom:24px}
+section>h2{font-size:15px;margin:0 0 8px;color:var(--text2);text-transform:uppercase;letter-spacing:.04em}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;break-inside:avoid;min-width:0}
+.card.ancho{grid-column:1/-1}
+.card h3{font-size:14px;margin:0 0 2px}
+.pregunta{color:var(--text2);font-size:12px;margin:0 0 10px}
+.fuente{color:var(--muted);font-size:11px;margin-top:8px}
+.big{font-size:34px;font-weight:650;line-height:1.1;font-variant-numeric:tabular-nums}
+.sub{color:var(--text2);font-size:12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{border-left:3px solid var(--border);padding-left:10px}
+.badge{display:inline-flex;gap:4px;align-items:center;font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--text)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{fill:var(--text2);font-size:12px}
+svg .val{fill:var(--text);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--text2);margin-bottom:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:10px;border-radius:2px;display:inline-block}
+.sw.line{height:2px}
+.sw.dash{height:0;border-top:2px dashed var(--text2);background:none!important}
+details{margin-top:8px;font-size:12px}
+summary{cursor:pointer;color:var(--text2)}
+table{border-collapse:collapse;width:100%;font-size:12px;margin-top:6px}
+th,td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--grid);vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.matriz{display:grid;grid-template-columns:44px repeat(5,1fr);gap:2px;font-size:11px}
+.matriz div{min-height:44px;border-radius:4px;padding:3px;display:flex;flex-wrap:wrap;gap:2px;align-content:flex-start}
+.matriz .eje{background:none;color:var(--text2);justify-content:center;align-items:center;min-height:auto}
+.z-rojo{background:color-mix(in srgb,var(--rojo) 26%,var(--surface))}
+.z-amarillo{background:color-mix(in srgb,var(--amarillo) 28%,var(--surface))}
+.z-verde{background:color-mix(in srgb,var(--verde) 20%,var(--surface))}
+.z-azul{background:color-mix(in srgb,var(--azul) 26%,var(--surface))}
+.chip{background:var(--surface);border:1px solid var(--text2);border-radius:4px;padding:0 4px;font-weight:600;color:var(--text);cursor:default}
+.flujo{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.paso{flex:1 1 150px;border:1px solid var(--border);border-radius:8px;padding:8px;font-size:12px}
+.paso b{display:block;font-size:13px}
+.paso.cuello{border:2px solid var(--rojo)}
+.flecha{align-self:center;color:var(--muted)}
+.promesas{list-style:none;margin:0;padding:0;border-left:2px solid var(--border)}
+.promesas li{position:relative;padding:0 0 10px 14px;font-size:12px}
+.promesas li::before{content:"";position:absolute;left:-6px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--surface);border:2px solid var(--text2)}
+.promesas li.ult::before{border-color:var(--rojo);background:var(--rojo)}
+.pend{background:var(--pend-bg);border:1px dashed var(--pend-border);border-radius:8px;padding:8px;font-size:12px}
+#tip{position:fixed;pointer-events:none;z-index:20;background:var(--text);color:var(--surface);font-size:12px;padding:6px 8px;border-radius:6px;max-width:260px;opacity:0;transition:opacity .08s}
+.hit{fill:transparent;cursor:crosshair}
+@media print{
+  @page{size:A4 landscape;margin:10mm}
+  :root{color-scheme:light}
+  body{background:#fff;font-size:11px}
+  header{position:static}
+  nav,button,#tip{display:none!important}
+  details{display:none}
+  .card{border-color:#ccc}
+  section{break-inside:auto}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Amazon Leo — Tablero ejecutivo</h1>
+  <span class="meta" id="meta"></span>
+  <nav>
+    <a href="#estado">Estado</a><a href="#atraso">Atraso</a><a href="#riesgos">Riesgos</a><a href="#organizacion">Organización</a>
+  </nav>
+  <button id="tema" type="button" aria-label="Cambiar tema">Tema</button>
+  <button class="primario" type="button" id="pdf">Descargar PDF</button>
+</header>
+<main>
+
+  <section id="estado">
+    <h2>1 · ¿Dónde está el proyecto?</h2>
+    <div class="grid">
+      <div class="card ancho">
+        <h3>Satélites desplegados contra los plazos de la FCC</h3>
+        <p class="pregunta">¿Cuánto avanzó el despliegue y cumplió el plazo de 2026?</p>
+        <div class="tiles" id="tiles-avance"></div>
+        <div id="barra-avance" style="margin-top:14px"></div>
+        <p class="fuente" id="f-avance"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="atraso">
+    <h2>2 · ¿Está atrasado? ¿Cuándo termina?</h2>
+    <div class="grid">
+      <div class="card ancho">
+        <h3>Curva S: satélites desplegados contra la línea base</h3>
+        <p class="pregunta">¿Cuánto se separó del plan, desde cuándo, y qué pasa si sigue así?</p>
+        <div class="legend" id="lg-curva"></div>
+        <div id="curva"></div>
+        <details><summary>Ver tabla</summary><div id="t-curva"></div></details>
+        <p class="fuente">Fuente: lista de misiones de Amazon (#2), plazos de la FCC (#8), línea base de recuperación (sección 8.5). Proyecciones = propuesta del grupo.</p>
+      </div>
+      <div class="card">
+        <h3>SPI (EV / PV)</h3>
+        <p class="pregunta">¿Qué tan eficiente es el uso del tiempo? (umbral = 1,0)</p>
+        <div id="spi"></div>
+        <p class="fuente">Clase 6 · valor ganado en satélites (sección 12)</p>
+      </div>
+      <div class="card">
+        <h3>Ritmo: real contra necesario (satélites/mes)</h3>
+        <p class="pregunta">¿Puede llegar a 2029 a este ritmo? ¿Dónde está el cuello de botella?</p>
+        <div id="cadencia"></div>
+        <details><summary>Ver tabla</summary><div id="t-cadencia"></div></details>
+        <p class="fuente">Anexo C: ritmo observado y necesario, plan de Amazon y capacidad de fábrica</p>
+      </div>
+      <div class="card">
+        <h3>Fin proyectado del despliegue</h3>
+        <p class="pregunta">¿Cuándo terminaría? Tres herramientas, una conclusión.</p>
+        <div id="fin"></div>
+        <details><summary>Ver tabla</summary><div id="t-fin"></div></details>
+      </div>
+      <div class="card">
+        <h3>Promesas de inicio del servicio</h3>
+        <p class="pregunta">¿Amazon cumple sus fechas?</p>
+        <ul class="promesas" id="promesas"></ul>
+        <p class="fuente">Sección 8.1</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="riesgos">
+    <h2>3 · ¿Qué puede salir mal?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Matriz de probabilidad e impacto</h3>
+        <p class="pregunta">¿Cuáles son los riesgos principales y por qué?</p>
+        <div class="matriz" id="matriz"></div>
+        <div class="legend" style="margin-top:8px" id="lg-matriz"></div>
+        <p class="fuente">Riesgos 11.7: matriz de la cátedra; cortes del grupo</p>
+      </div>
+      <div class="card">
+        <h3>Exposición antes y después de responder</h3>
+        <p class="pregunta">¿Sirven las respuestas propuestas?</p>
+        <div class="legend" id="lg-expo"></div>
+        <div id="expo"></div>
+        <details><summary>Ver tabla</summary><div id="t-expo"></div></details>
+      </div>
+      <div class="card">
+        <h3>Monte Carlo: satélites al 30/07/2029</h3>
+        <p class="pregunta">¿Es posible cumplir el plazo final?</p>
+        <div id="mc"></div>
+        <p class="fuente">100.000 simulaciones · simulación propia · Riesgos 11.8</p>
+      </div>
+      <div class="card">
+        <h3>¿De quién depende? Lanzamientos restantes</h3>
+        <p class="pregunta">¿Qué tan concentrados están los lanzamientos que quedan?</p>
+        <div class="legend" id="lg-mani"></div>
+        <div id="mani"></div>
+        <details><summary>Ver tabla</summary><div id="t-mani"></div></details>
+        <p class="fuente">Contratos de lanzamiento: Anexo A (#2, #3, #4, #23, #24, #38) y Anexo C</p>
+      </div>
+      <div class="card">
+        <h3>Temas abiertos</h3>
+        <p class="pregunta">¿Qué problema está activo hoy?</p>
+        <div id="temas"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="organizacion">
+    <h2>4 · ¿Cómo se conectan fabricación, lanzamientos y operación?</h2>
+    <div class="grid">
+      <div class="card ancho">
+        <h3>Cadena física del despliegue (WBS, paquetes 3 a 7)</h3>
+        <p class="pregunta">¿Dónde se traba el flujo?</p>
+        <div class="flujo" id="cadena"></div>
+        <p class="fuente">Sección 7.3</p>
+      </div>
+      <div class="card ancho">
+        <h3>Costos: lo que sí se sabe</h3>
+        <p class="pregunta">¿Cuánto cuesta?</p>
+        <div id="costos"></div>
+        <p class="fuente">Sección 10 (#39, #27, #23, #30)</p>
+      </div>
+      <div class="card ancho">
+        <h3>Lo que el tablero no muestra (y por qué)</h3>
+        <div class="pend" id="pend"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="tip" role="tooltip"></div>
+
+<script>
+const DATA = {"meta": {"titulo": "Amazon Leo — Tablero ejecutivo", "corte": "16/11/2026", "estado": "Tablero ejecutivo al corte del 16/11/2026", "fuente_cifras": "Anexo C", "unidad": "Satélites lanzados como aproximación de operativos (resultados optimistas)"}, "avance": {"desplegados": 396, "hito50": 1616, "hito50_fecha": "30/07/2026", "hito_final": 3232, "hito_final_fecha": "30/07/2029", "perdidos": 40, "fabricados": 1000, "misiones": 15, "misiones_fallidas": 1, "origen": "Anexo C"}, "spi": [{"linea": "Contra el plan de Amazon (≈ 700 al 30/07/2026)", "valor": 0.57, "pv": 700, "ev": 396, "origen": "#8 ¶8; sección 12"}, {"linea": "Contra el plazo de la FCC del 50% (30/07/2026)", "valor": 0.25, "pv": 1616, "ev": 396, "origen": "#8 ¶3; sección 12"}, {"linea": "Contra la línea base FCC al corte (16/11/2026)", "valor": 0.22, "pv": 1777, "ev": 396, "origen": "línea recta entre los dos plazos (propuesta del grupo); sección 12"}], "curva_s": {"ev": [["2025-04-28", 27], ["2025-06-23", 54], ["2025-07-16", 78], ["2025-08-11", 102], ["2025-09-25", 129], ["2025-10-14", 153], ["2025-12-16", 180], ["2026-02-12", 212], ["2026-04-04", 241], ["2026-04-28", 270], ["2026-04-30", 302], ["2026-05-29", 331], ["2026-06-17", 367], ["2026-07-02", 396], ["2026-11-16", 396]], "pv_fcc": [["2026-07-30", 1616], ["2029-07-30", 3232]], "plan_amazon_2026": ["2026-07-30", 700], "recuperacion": [["2026-11-16", 396], ["2031-08-01", 3232]], "observado": [["2026-11-16", 396], ["2031-12-31", 1700]], "origen": "lista de misiones de Amazon (#2); secciones 8.5 y 12"}, "cadencia": [{"nombre": "Ritmo observado", "valor": 21.3, "origen": "Anexo C"}, {"nombre": "Plan de Amazon (20 misiones/año)", "valor": 50, "origen": "Anexo C (20 misiones × 30 satélites)"}, {"nombre": "Necesario para el plazo de 2029", "valor": 87.5, "origen": "Anexo C"}, {"nombre": "Capacidad declarada de fábrica", "valor": 130, "origen": "Anexo C (30 por semana)"}], "fin": [{"nombre": "Plazo de la FCC", "fecha": "2029-07-30", "texto": "30/07/2029", "origen": "#8 ¶3"}, {"nombre": "Plan de Amazon (línea base de recuperación)", "fecha": "2031-08-01", "texto": "≈ 08/2031", "origen": "sección 12"}, {"nombre": "PERT (te)", "fecha": "2035-11-01", "texto": "≈ 11/2035", "origen": "sección 9"}, {"nombre": "Ritmo observado", "fecha": "2038-01-01", "texto": "≈ 2038", "origen": "sección 12"}], "montecarlo": {"p10": 1141, "p50": 1513, "p90": 2046, "objetivo": 3232, "prob_llegar": "≈ 0%", "corridas": 100000, "origen": "Riesgos 11.8"}, "riesgos": [{"id": "R-04", "nombre": "La FCC no concede un nuevo alivio del plazo de 2029", "p": 0.7, "i": 0.4, "antes": 0.28, "despues": 0.2, "zona": "rojo"}, {"id": "R-02", "nombre": "Lanzador clave en tierra (Vulcan / New Glenn)", "p": 0.5, "i": 0.4, "antes": 0.2, "despues": 0.1, "zona": "rojo"}, {"id": "R-03", "nombre": "Desvío del cronograma y del inicio del servicio", "p": 0.7, "i": 0.2, "antes": 0.14, "despues": 0.07, "zona": "amarillo"}, {"id": "R-05", "nombre": "Pérdida temporal de prioridad de espectro", "p": 0.3, "i": 0.2, "antes": 0.06, "despues": 0.03, "zona": "verde"}, {"id": "R-07", "nombre": "Aprobaciones regulatorias externas", "p": 0.3, "i": 0.2, "antes": 0.06, "despues": 0.04, "zona": "verde"}, {"id": "R-06", "nombre": "Dependencia de socios locales", "p": 0.5, "i": 0.1, "antes": 0.05, "despues": 0.03, "zona": "verde"}, {"id": "R-01", "nombre": "Pérdida de satélites por falla (recurrencia; ocurrió → T-01)", "p": 0.3, "i": 0.1, "antes": 0.03, "despues": 0.03, "zona": "azul"}], "exposicion_total": {"antes": 0.82, "despues": 0.5}, "manifiesto_restante": [{"cohete": "Vulcan (ULA)", "n": 37}, {"cohete": "New Glenn (Blue Origin)", "n": 24}, {"cohete": "Ariane 6 (Arianespace)", "n": 21}, {"cohete": "Falcon 9 (SpaceX)", "n": 10}, {"cohete": "Atlas V (ULA)", "n": 1}], "promesas": [{"fecha": "14/03/2023", "dijo": "primeros clientes \"later that year\"", "anio": "2024", "fuente": "#30"}, {"fecha": "27/06/2024", "dijo": "servicio \"next year\"", "anio": "2025", "fuente": "#26"}, {"fecha": "24/11/2025", "dijo": "prueba con empresas; \"broader rollout next year\"", "anio": "2026", "fuente": "#29"}, {"fecha": "09/11/2026", "dijo": "\"initial service rollout later this year\"", "anio": "2026", "fuente": "#3"}, {"fecha": "16/11/2026", "dijo": "sin anuncio de servicio comercial", "anio": "—", "fuente": "#3, #24, #35"}], "cadena": [{"etapa": "Fabricación (Kirkland)", "dato": "hasta 30/semana · 1.000 fabricados", "fuente": "#23, #3"}, {"etapa": "Procesamiento (Kennedy Space Center)", "dato": "> 100/mes · 3 campañas simultáneas", "fuente": "#27"}, {"etapa": "Lanzamiento (4 proveedores)", "dato": "≈ 21/mes desplegados · cuello de botella", "fuente": "Anexo C"}, {"etapa": "Constelación en órbita", "dato": "396 de 3.232 (12,3%)", "fuente": "Anexo C"}, {"etapa": "Red terrestre", "dato": "> 300 estaciones terrestres planificadas", "fuente": "#17"}], "temas": [{"id": "T-01", "tema": "Pérdida de LV-01 (Vulcan, 40 satélites)", "abierto": "15/11/2026", "estado": "Abierto: sin causa raíz publicada"}], "costos": [{"concepto": "Compromiso de inversión inicial (2020)", "monto": "Más de USD 10.000 millones (un piso, no el total)", "fuente": "#39"}, {"concepto": "Instalaciones en Florida", "monto": "Más de USD 340 millones (más de 140 en Kennedy Space Center y más de 200 en Cabo Cañaveral)", "fuente": "#27, #23"}, {"concepto": "Terminal estándar", "monto": "Menos de USD 400 por unidad (costo de fabricación esperado)", "fuente": "#30"}, {"concepto": "Lanzamientos, costo por satélite y fianza", "monto": "No público", "fuente": "—"}, {"concepto": "Lo que más pesa en el total", "monto": "Lo variable por unidad: satélites y lanzamientos (inferencia del grupo)", "fuente": "Sección 10.2"}], "pendientes": ["CPI y costo real (AC): no públicos", "Costo por satélite, por lanzamiento y monto de la fianza: no públicos", "Satélites operativos: no públicos (se muestran lanzados)"]};
+
+/* ---------- utilidades ---------- */
+const $ = id => document.getElementById(id);
+const NS = "http://www.w3.org/2000/svg";
+const fmt = n => n.toLocaleString("es-AR");
+const fmt2 = n => n.toLocaleString("es-AR",{minimumFractionDigits:2,maximumFractionDigits:2});
+function el(tag, attrs={}, parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+function svg(w,h,parent){const s=el("svg",{viewBox:`0 0 ${w} ${h}`,role:"img"});parent.appendChild(s);return s;}
+const tip=$("tip");
+function showTip(ev,html){tip.innerHTML=html;tip.style.opacity=1;const x=Math.min(ev.clientX+12,innerWidth-270);tip.style.left=x+"px";tip.style.top=(ev.clientY+12)+"px";}
+function hideTip(){tip.style.opacity=0;}
+function hover(node,html){node.addEventListener("mousemove",e=>showTip(e,html));node.addEventListener("mouseleave",hideTip);}
+function tabla(cont,cols,rows){let h="<table><thead><tr>"+cols.map(c=>`<th class="${c.n?'n':''}">${c.t}</th>`).join("")+"</tr></thead><tbody>";for(const r of rows)h+="<tr>"+r.map((v,i)=>`<td class="${cols[i].n?'n':''}">${v}</td>`).join("")+"</tr>";cont.innerHTML=h+"</tbody></table>";}
+function legend(cont,items){cont.innerHTML=items.map(i=>`<span><i class="sw ${i.cls||''}" style="background:${i.c}"></i>${i.t}</span>`).join("");}
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+/* ---------- cabecera ---------- */
+$("meta").textContent = `Fecha de corte ${DATA.meta.corte} · ${DATA.meta.unidad}`;
+
+/* ---------- 1. avance ---------- */
+(function(){
+  const a=DATA.avance;
+  const tiles=[
+    {big:fmt(a.desplegados),sub:`de ${fmt(a.hito_final)} (${(a.desplegados/a.hito_final*100).toFixed(1).replace(".",",")}%)`,lab:"Satélites desplegados",c:"var(--s1)"},
+    {big:(a.desplegados/a.hito50*100).toFixed(1).replace(".",",")+"%",sub:`del plazo de ${fmt(a.hito50)} al ${a.hito50_fecha}`,lab:"⛔ Plazo del 50%: no cumplido",c:"var(--rojo)"},
+    {big:`${a.misiones}`,sub:`${a.misiones_fallidas} fallida · ${a.perdidos} satélites perdidos`,lab:"Misiones",c:"var(--border)"},
+    {big:fmt(a.fabricados),sub:"fabricados (inicios de 09/2026)",lab:"Producción",c:"var(--border)"}
+  ];
+  $("tiles-avance").innerHTML=tiles.map(t=>`<div class="tile" style="border-color:${t.c}"><div class="sub">${t.lab}</div><div class="big">${t.big}</div><div class="sub">${t.sub}</div></div>`).join("");
+  const W=1000,H=58,s=svg(W,H,$("barra-avance")),x=v=>v/a.hito_final*W;
+  el("rect",{x:0,y:14,width:W,height:16,rx:4,fill:css("--grid")},s);
+  const r=el("rect",{x:0,y:14,width:x(a.desplegados),height:16,rx:4,fill:css("--s1")},s);
+  hover(r,`<b>${fmt(a.desplegados)}</b> satélites desplegados`);
+  for(const [v,t] of [[a.hito50,`Plazo del 50% · ${fmt(a.hito50)} · ${a.hito50_fecha}`],[a.hito_final,`Plazo final · ${fmt(a.hito_final)} · ${a.hito_final_fecha}`]]){
+    el("line",{x1:x(v),x2:x(v),y1:8,y2:36,stroke:css("--text"),"stroke-width":2},s);
+    const tx=el("text",{x:x(v)-4,y:50,"text-anchor":"end"},s);tx.textContent=t;
+  }
+  const t0=el("text",{x:x(a.desplegados)+6,y:27,class:"val"},s);t0.textContent=fmt(a.desplegados);
+  $("f-avance").textContent="Fuente: #2, #3, #8, #11 · Anexo C (cifras maestras)";
+})();
+
+/* ---------- 2a. curva S ---------- */
+(function(){
+  const c=DATA.curva_s, W=1000,H=320,m={l:52,r:16,t:12,b:30};
+  const t=d=>new Date(d+"T00:00:00").getTime();
+  const x0=t("2025-04-01"),x1=t("2031-12-31"),y1=3400;
+  const X=d=>m.l+(t(d)-x0)/(x1-x0)*(W-m.l-m.r), Y=v=>H-m.b-v/y1*(H-m.t-m.b);
+  const s=svg(W,H,$("curva"));
+  for(let v=0;v<=3200;v+=800){el("line",{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),stroke:css("--grid")},s);const tx=el("text",{x:m.l-6,y:Y(v)+4,"text-anchor":"end"},s);tx.textContent=fmt(v);}
+  for(let a=2026;a<=2031;a++){const tx=el("text",{x:X(a+"-01-01"),y:H-10,"text-anchor":"middle"},s);tx.textContent=a;}
+  const ref=el("text",{x:W-m.r,y:Y(3232)-6,"text-anchor":"end"},s);ref.textContent="BAC 3.232";
+  el("line",{x1:m.l,x2:W-m.r,y1:Y(3232),y2:Y(3232),stroke:css("--muted"),"stroke-dasharray":"2 4"},s);
+  // EV escalonada
+  let p=`M${X(c.ev[0][0])},${Y(0)}`;let prev=0;
+  for(const [d,v] of c.ev){p+=` L${X(d)},${Y(prev)} L${X(d)},${Y(v)}`;prev=v;}
+  el("path",{d:p,fill:"none",stroke:css("--s1"),"stroke-width":2},s);
+  // PV FCC
+  el("path",{d:`M${X(c.pv_fcc[0][0])},${Y(c.pv_fcc[0][1])} L${X(c.pv_fcc[1][0])},${Y(c.pv_fcc[1][1])}`,fill:"none",stroke:css("--s2"),"stroke-width":2},s);
+  // recuperación y observado (proyecciones)
+  el("path",{d:`M${X(c.recuperacion[0][0])},${Y(c.recuperacion[0][1])} L${X(c.recuperacion[1][0])},${Y(c.recuperacion[1][1])}`,fill:"none",stroke:css("--s3"),"stroke-width":2,"stroke-dasharray":"6 4"},s);
+  el("path",{d:`M${X(c.observado[0][0])},${Y(c.observado[0][1])} L${X(c.observado[1][0])},${Y(c.observado[1][1])}`,fill:"none",stroke:css("--text2"),"stroke-width":2,"stroke-dasharray":"2 4"},s);
+  // puntos clave
+  const pts=[
+    [c.pv_fcc[0][0],c.pv_fcc[0][1],"--s2",`Plazo de la FCC del 50%: <b>1.616</b> al 30/07/2026`],
+    [c.pv_fcc[1][0],c.pv_fcc[1][1],"--s2",`Plazo final de la FCC: <b>3.232</b> al 30/07/2029`],
+    [c.plan_amazon_2026[0],c.plan_amazon_2026[1],"--s4",`Plan presentado por Amazon: <b>≈ 700</b> al 30/07/2026 (#8 ¶8)`],
+    ["2026-07-02",396,"--s1",`Último despliegue exitoso (LA-08): <b>396</b>`],
+    ["2026-11-15",396,"--rojo",`LV-01 falló: 40 satélites perdidos (T-01)`],
+    [c.recuperacion[1][0],c.recuperacion[1][1],"--s3",`Línea base de recuperación: <b>3.232</b> ≈ 08/2031`]
+  ];
+  for(const [d,v,col,h] of pts){
+    el("circle",{cx:X(d),cy:Y(v),r:5,fill:css(col),stroke:css("--surface"),"stroke-width":2},s);
+    const hit=el("circle",{cx:X(d),cy:Y(v),r:14,class:"hit"},s);hover(hit,h);
+  }
+  const lb=el("text",{x:X("2026-07-30")+8,y:Y(1616)-8},s);lb.textContent="plazo del 50%";
+  const lv=el("text",{x:X("2026-11-15")+8,y:Y(396)+16,class:"val"},s);lv.textContent="LV-01 ✕";
+  // crosshair
+  const vline=el("line",{y1:m.t,y2:H-m.b,stroke:css("--muted"),opacity:0},s);
+  const ov=el("rect",{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,class:"hit"},s);
+  ov.addEventListener("mousemove",e=>{
+    const r=s.getBoundingClientRect(), px=(e.clientX-r.left)/r.width*W;
+    const tt=x0+(px-m.l)/(W-m.l-m.r)*(x1-x0); vline.setAttribute("x1",px);vline.setAttribute("x2",px);vline.setAttribute("opacity",1);
+    let ev=0;for(const [d,v] of c.ev){if(t(d)<=tt)ev=v;}
+    const lerp=(a,b)=>tt<t(a[0])||tt>t(b[0])?null:a[1]+(b[1]-a[1])*(tt-t(a[0]))/(t(b[0])-t(a[0]));
+    const pv=lerp(...c.pv_fcc), rec=lerp(...c.recuperacion);
+    const f=new Date(tt).toLocaleDateString("es-AR",{month:"short",year:"numeric"});
+    let h=`<b>${f}</b><br>EV desplegados: ${tt<=t("2026-11-16")?fmt(ev):"—"}`;
+    if(pv!=null)h+=`<br>PV línea base FCC: ${fmt(Math.round(pv))}`; if(rec!=null)h+=`<br>Recuperación (propuesta): ${fmt(Math.round(rec))}`;
+    showTip(e,h);
+  });
+  ov.addEventListener("mouseleave",()=>{vline.setAttribute("opacity",0);hideTip();});
+  legend($("lg-curva"),[{c:css("--s1"),t:"EV: desplegados (real)",cls:"line"},{c:css("--s2"),t:"PV: línea base FCC",cls:"line"},{c:css("--s4"),t:"Plan de Amazon 2026 (punto)"},{c:css("--s3"),t:"Recuperación propuesta (8.5)",cls:"line"},{c:"",t:"Ritmo observado (proyección)",cls:"dash"}]);
+  tabla($("t-curva"),[{t:"Fecha"},{t:"EV acumulado",n:1}],c.ev.map(([d,v])=>[d.split("-").reverse().join("/"),fmt(v)]));
+})();
+
+/* ---------- 2b. SPI ---------- */
+(function(){
+  $("spi").innerHTML=DATA.spi.map(k=>{
+    const w=Math.min(k.valor,1)*100;
+    return `<div style="margin-bottom:10px"><div class="sub">${k.linea}</div>
+      <div style="display:flex;align-items:center;gap:8px"><span class="big" style="font-size:26px">${fmt2(k.valor)}</span>
+      <span class="badge"><i class="dot" style="background:var(--rojo)"></i>Atrasado</span></div>
+      <div style="position:relative;height:8px;background:var(--grid);border-radius:4px;margin-top:4px">
+        <div style="width:${w}%;height:8px;background:var(--s1);border-radius:4px"></div>
+        <div title="SPI = 1" style="position:absolute;right:0;top:-3px;height:14px;border-left:2px solid var(--text)"></div></div>
+      <div class="sub">EV ${fmt(k.ev)} / PV ${fmt(k.pv)}</div></div>`;}).join("");
+})();
+
+/* ---------- 2c. cadencia ---------- */
+(function(){
+  const d=DATA.cadencia, W=360,row=40,H=d.length*row, max=140, l=4;
+  const s=svg(W,H,$("cadencia")), X=v=>v/max*(W-60);
+  d.forEach((k,i)=>{
+    const y=i*row;const t=el("text",{x:l,y:y+11},s);t.textContent=k.nombre;
+    const col= i===0?css("--s1"): i===2?css("--rojo"): css("--muted");
+    const r=el("rect",{x:l,y:y+16,width:X(k.valor),height:14,rx:4,fill:col},s);
+    hover(r,`${k.nombre}: <b>${fmt(k.valor)}</b> satélites/mes (${k.origen})`);
+    const v=el("text",{x:l+X(k.valor)+6,y:y+27,class:"val"},s);v.textContent=fmt(k.valor);
+  });
+  tabla($("t-cadencia"),[{t:"Ritmo"},{t:"Satélites/mes",n:1},{t:"Origen"}],d.map(k=>[k.nombre,fmt(k.valor),k.origen]));
+})();
+
+/* ---------- 2d. fin proyectado ---------- */
+(function(){
+  /* filas: una por escenario sobre un eje común 2029–2039 (sin etiquetas superpuestas) */
+  const d=DATA.fin,W=360,row=40,top=4,H=d.length*row+24,l=4, t=s=>new Date(s+"T00:00:00").getTime();
+  const x0=t("2029-01-01"),x1=t("2039-01-01"),m=18,X=s=>m+(t(s)-x0)/(x1-x0)*(W-m-20);
+  const s=svg(W,H,$("fin")), base=X("2029-07-30");
+  for(let a=2029;a<=2039;a+=2){const gx=X(a+"-01-01");el("line",{x1:gx,x2:gx,y1:top,y2:H-20,stroke:css("--grid")},s);const tx=el("text",{x:gx,y:H-4,"text-anchor":"middle"},s);tx.textContent=a;}
+  d.forEach((k,i)=>{
+    const y=top+i*row, cx=X(k.fecha), cy=y+26;
+    const lb=el("text",{x:l,y:y+12},s);lb.textContent=k.nombre;
+    if(i>0)el("line",{x1:base,x2:cx,y1:cy,y2:cy,stroke:css("--muted"),"stroke-width":2},s);
+    el("circle",{cx,cy,r:6,fill:i===0?css("--rojo"):css("--s1"),stroke:css("--surface"),"stroke-width":2},s);
+    const ult=i===d.length-1;
+    const v=el("text",{x:ult?cx:cx+10,y:ult?cy-9:cy+4,"text-anchor":ult?"end":"start",class:"val"},s);v.textContent=k.texto;
+    const hit=el("circle",{cx,cy,r:14,class:"hit"},s);hover(hit,`${k.nombre}: <b>${k.texto}</b> (${k.origen})`);
+  });
+  tabla($("t-fin"),[{t:"Escenario"},{t:"Fin"},{t:"Origen"}],d.map(k=>[k.nombre,k.texto,k.origen]));
+})();
+
+/* ---------- 2e. promesas ---------- */
+$("promesas").innerHTML=DATA.promesas.map((p,i,a)=>`<li class="${i===a.length-1?'ult':''}"><b>${p.fecha}</b> — ${p.dijo} ${p.anio!=="—"?`→ inicio <b>${p.anio}</b>`:""} <span class="sub">(${p.fuente})</span></li>`).join("");
+
+/* ---------- 3a. matriz ---------- */
+(function(){
+  const P=[0.9,0.7,0.5,0.3,0.1], I=[0.05,0.1,0.2,0.4,0.8];
+  const zona=er=>er>=0.2?"rojo":er>=0.1?"amarillo":er>=0.05?"verde":"azul";
+  let h="";
+  for(const p of P){h+=`<div class="eje">${fmt2(p)}</div>`;
+    for(const i of I){const er=Math.round(p*i*100)/100;const rs=DATA.riesgos.filter(r=>r.p===p&&r.i===i);
+      h+=`<div class="z-${zona(er)}" title="ER ${fmt2(er)}">${rs.map(r=>`<span class="chip" data-r="${r.id}">${r.id}</span>`).join("")}</div>`;}}
+  h+=`<div class="eje">P \\ I</div>`+I.map(i=>`<div class="eje">${fmt2(i)}</div>`).join("");
+  $("matriz").innerHTML=h;
+  document.querySelectorAll("#matriz .chip").forEach(c=>{const r=DATA.riesgos.find(x=>x.id===c.dataset.r);hover(c,`<b>${r.id}</b> ${r.nombre}<br>P ${fmt2(r.p)} × I ${fmt2(r.i)} = ER <b>${fmt2(r.antes)}</b> (${r.zona})`);});
+  $("lg-matriz").innerHTML=[["rojo","Rojo ≥ 0,20"],["amarillo","Amarillo 0,10–0,19"],["verde","Verde 0,05–0,09"],["azul","Azul < 0,05"]].map(([z,t])=>`<span><i class="sw z-${z}" style="border:1px solid var(--border)"></i>${t}</span>`).join("");
+})();
+
+/* ---------- 3b. exposición ---------- */
+(function(){
+  const d=DATA.riesgos,W=360,row=34,H=d.length*row+4,l=44,max=0.3,X=v=>v/max*(W-l-40);
+  const s=svg(W,H,$("expo"));
+  d.forEach((r,i)=>{const y=i*row;const t=el("text",{x:0,y:y+17},s);t.textContent=r.id;
+    const a=el("rect",{x:l,y:y+4,width:X(r.antes),height:11,rx:3,fill:css("--s2")},s);
+    const b=el("rect",{x:l,y:y+17,width:X(r.despues),height:11,rx:3,fill:css("--s1")},s);
+    hover(a,`${r.id} antes: <b>${fmt2(r.antes)}</b>`);hover(b,`${r.id} después: <b>${fmt2(r.despues)}</b>`);
+    const v=el("text",{x:l+X(r.antes)+4,y:y+14},s);v.textContent=fmt2(r.antes);
+    const v2=el("text",{x:l+X(r.despues)+4,y:y+27},s);v2.textContent=fmt2(r.despues);});
+  legend($("lg-expo"),[{c:css("--s2"),t:`Antes (total ${fmt2(DATA.exposicion_total.antes)})`},{c:css("--s1"),t:`Después (total ${fmt2(DATA.exposicion_total.despues)})`}]);
+  tabla($("t-expo"),[{t:"Riesgo"},{t:"Antes",n:1},{t:"Después",n:1}],d.map(r=>[`${r.id} ${r.nombre}`,fmt2(r.antes),fmt2(r.despues)]));
+})();
+
+/* ---------- 3c. Monte Carlo ---------- */
+(function(){
+  const k=DATA.montecarlo,W=360,H=96,m=10,max=3500,X=v=>m+v/max*(W-2*m);
+  const s=svg(W,H,$("mc"));
+  el("line",{x1:m,x2:W-m,y1:40,y2:40,stroke:css("--grid"),"stroke-width":2},s);
+  const band=el("rect",{x:X(k.p10),y:30,width:X(k.p90)-X(k.p10),height:20,rx:4,fill:css("--s1"),opacity:.35},s);
+  hover(band,`80% de las simulaciones entre <b>${fmt(k.p10)}</b> y <b>${fmt(k.p90)}</b>`);
+  el("line",{x1:X(k.p50),x2:X(k.p50),y1:26,y2:54,stroke:css("--s1"),"stroke-width":3},s);
+  el("line",{x1:X(k.objetivo),x2:X(k.objetivo),y1:18,y2:62,stroke:css("--rojo"),"stroke-width":2},s);
+  const labs=[[k.p10,"P10 "+fmt(k.p10),74,"middle"],[k.p50,"P50 "+fmt(k.p50),20,"middle"],[k.p90,"P90 "+fmt(k.p90),74,"middle"],[k.objetivo,"Plazo "+fmt(k.objetivo),80,"end"]];
+  for(const [v,t,y,a] of labs){const tx=el("text",{x:X(v),y,"text-anchor":a,class:"val"},s);tx.textContent=t;}
+  $("mc").insertAdjacentHTML("beforeend",`<div class="sub" style="margin-top:4px">Probabilidad de llegar a ${fmt(k.objetivo)}: <b>${k.prob_llegar}</b> · PERT: ≈ 0,07%<br>El ≈ 0% depende de los supuestos: con un ritmo máximo mayor sube a ≈ 7%.</div>`);
+})();
+
+/* ---------- 3d. manifiesto ---------- */
+(function(){
+  const d=DATA.manifiesto_restante, tot=d.reduce((a,k)=>a+k.n,0), cols=["--s1","--s2","--s3","--s4","--s5"];
+  const W=360,H=56,s=svg(W,H,$("mani"));let x=0;const gap=2,Wd=W-gap*(d.length-1);
+  d.forEach((k,i)=>{const w=k.n/tot*Wd;const r=el("rect",{x,y:8,width:w,height:24,rx:i===0||i===d.length-1?4:0,fill:css(cols[i])},s);
+    hover(r,`${k.cohete}: <b>${k.n}</b> de ${tot} (${Math.round(k.n/tot*100)}%)`);
+    if(w>30){const t=el("text",{x:x+w/2,y:50,"text-anchor":"middle",class:"val"},s);t.textContent=k.n;}x+=w+gap;});
+  const share=Math.round((d[0].n+d[1].n)/tot*100);
+  $("mani").insertAdjacentHTML("beforeend",`<div class="sub" style="margin-top:2px">Vulcan + New Glenn = ${d[0].n+d[1].n} de ${tot} (${share}%) · ambos con incidentes en 2026</div>`);
+  legend($("lg-mani"),d.map((k,i)=>({c:css(cols[i]),t:`${k.cohete} (${k.n})`})));
+  tabla($("t-mani"),[{t:"Cohete"},{t:"Restantes",n:1},{t:"%",n:1}],d.map(k=>[k.cohete,k.n,Math.round(k.n/tot*100)+"%"]));
+})();
+
+/* ---------- 3e. temas ---------- */
+$("temas").innerHTML=DATA.temas.map(t=>`<div><span class="badge"><i class="dot" style="background:var(--rojo)"></i>${t.id} · abierto</span>
+  <p style="margin:6px 0 0"><b>${t.tema}</b><br><span class="sub">Desde ${t.abierto}. ${t.estado}. Gestión: formulario de Resolución de Temas (Clase 6) · Riesgos 11.10.</span></p></div>`).join("");
+
+/* ---------- 4. cadena y pendientes ---------- */
+$("cadena").innerHTML=DATA.cadena.map((k,i,a)=>`<div class="paso ${k.etapa.startsWith("Lanzamiento")?"cuello":""}"><b>${k.etapa}</b>${k.dato}<div class="sub">${k.fuente}</div></div>${i<a.length-1?'<span class="flecha">→</span>':""}`).join("");
+tabla($("costos"),[{t:"Concepto"},{t:"Monto"},{t:"Fuente"}],DATA.costos.map(k=>[k.concepto,k.monto,k.fuente]));
+$("pend").innerHTML="<b>Sin dato público</b> — no se inventan valores:<ul>"+DATA.pendientes.map(p=>`<li>${p}</li>`).join("")+"</ul>";
+
+/* ---------- tema ---------- */
+$("tema").addEventListener("click",()=>{
+  const r=document.documentElement, oscuro=r.dataset.theme? r.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme=oscuro?"light":"dark"; try{localStorage.setItem("tema-leo",r.dataset.theme);}catch(e){} location.reload();
+});
+/* PDF: siempre en tema claro (los gráficos toman los colores al dibujarse) */
+$("pdf").addEventListener("click",()=>{
+  if(css("--surface")==="#fcfcfb"){window.print();}
+  else{location.hash="imprimir";location.reload();}
+});
+if(location.hash==="#imprimir"){
+  addEventListener("afterprint",()=>{history.replaceState(null,"",location.pathname);location.reload();});
+  setTimeout(()=>window.print(),300);
+}
+</script>
+</body>
+</html>
