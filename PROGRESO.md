@@ -125,6 +125,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 | 17/11/2026 | Limpieza de entrega | Directo a `main`: se quitan los carteles de borrador y las marcas `[[PENDIENTE]]` del informe, se renombran los anexos de Riesgos a Apéndice R-A y R-B y se regenera el `.docx`. |
 | 17/11/2026 | Dashboard | Se quita el cartel "Borrador", se corrigen dos desbordes de texto y se renombra el tablero a "Tablero ejecutivo" (sin referencias a la defensa). |
 | 17/11/2026 | Informe y anexos | Directo a `main`, por pedido de un integrante: anexos sin notas de revisión, se quita la sección 1.5 y las menciones a herramientas de IA (también en Riesgos), y "leída" / "se leyeron" pasan a "texto original consultado" para no atribuir lecturas a un lector no identificado. Se regenera el `.docx`. |
+| 17/11/2026 | Versión resumida | Se agrega `informe/resumido/` con una versión del informe de ≈ 10.000 palabras (≈ 27 páginas según un PDF de prueba; en Word hay que contarlas), para revisión del equipo. No reemplaza al informe completo, que no se tocó. Incluye `ajustar_word.py` para reproducir el formato del Word. |
 | 17/11/2026 | Reparto de la defensa | El grupo propone 4 bloques de ≈ 5 min (ver "Reparto de la defensa"). Quedan sin asignar las personas. |
 
 ---
