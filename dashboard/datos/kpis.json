@@ -3,7 +3,7 @@
     "titulo": "Amazon Leo — Tablero ejecutivo",
     "corte": "16/11/2026",
     "estado": "Tablero ejecutivo al corte del 16/11/2026",
-    "fuente_cifras": "informe/cifras-maestras.md",
+    "fuente_cifras": "informe/cifras-maestras.md (Anexo C del informe resumido)",
     "unidad": "Satélites lanzados como aproximación de operativos (resultados optimistas)"
   },
   "avance": {
@@ -28,7 +28,7 @@
     "plan_amazon_2026": ["2026-07-30", 700],
     "recuperacion": [["2026-11-16", 396], ["2031-08-01", 3232]],
     "observado": [["2026-11-16", 396], ["2031-12-31", 1700]],
-    "origen": "informe/seguimiento/ev_serie.csv; secciones 8.6 y 12"
+    "origen": "informe/seguimiento/ev_serie.csv; secciones 8.5 y 12 (completo: 8.6 y 12)"
   },
   "cadencia": [
     {"nombre": "Ritmo observado", "valor": 21.3, "origen": "C-21"},

@@ -363,7 +363,7 @@ Sumamos una reserva de unos 4 meses por el riesgo R-02 (un lanzador en tierra), 
 
 | Herramienta | Resultado | Por qué difiere |
 |---|---|---|
-| Monte Carlo (sección 11) | Mediana de ≈ 1.510 satélites al 30/07/2029; llegar a 3.232, ≈ 0% | Distribución triangular sobre el ritmo |
+| Monte Carlo (sección 11) | Mediana de ≈ 1.513 satélites al 30/07/2029; llegar a 3.232, ≈ 0% | Distribución triangular sobre el ritmo |
 | PERT (esta sección) | Fin ≈ 11/2035; ≈ 0,07% | Los casos pesimistas pesan más, porque la duración es inversa al ritmo |
 | Valor ganado (sección 12) | Fin ≈ 2031 (plan) o ≈ 2038 (ritmo observado) | Proyección lineal de un solo escenario |
 
@@ -524,7 +524,7 @@ Amazon no publica su red de actividades, así que no se puede simular su cronogr
 | Plan de Amazon | 20 | ≈ 2.020 | 63% |
 | Ritmo necesario | 35 | ≈ 3.240 | 100% |
 
-La simulación da P10 ≈ 1.140 (35%), **mediana ≈ 1.510 (47%)** y P90 ≈ 2.050 (63%). La probabilidad de llegar a 3.232 es ≈ 0% **[inferencia del grupo]**: haría falta tres veces el ritmo observado y casi el doble del plan.
+La simulación da P10 ≈ 1.141 (35%), **mediana ≈ 1.513 (47%)** y P90 ≈ 2.046 (63%). La probabilidad de llegar a 3.232 es ≈ 0% **[inferencia del grupo]**: haría falta tres veces el ritmo observado y casi el doble del plan.
 
 **Cuánto depende de nuestros supuestos.** El "≈ 0%" no es una medición: depende de los rangos que elegimos. Con un ritmo máximo de 3,5 misiones por mes, más del triple del observado, la probabilidad sube solo a ≈ 7%, y la conclusión no cambia. El modelo además ignora una aceleración gradual y las fallas de lanzamiento, que empeorarían el resultado.
 
@@ -757,7 +757,7 @@ Todas las secciones toman sus números de esta tabla. Fecha de corte: 16/11/2026
 | Lanzamientos contratados | ≈ 108 (24 Ariane 6, 38 Vulcan, 9 Atlas V, 24 New Glenn, 13 Falcon 9) | [inferencia del grupo] |
 | Lanzamientos que quedan | ≈ 93 (21 Ariane 6, 10 Falcon 9, 1 Atlas V, 37 Vulcan, 24 New Glenn) | [inferencia del grupo] |
 | Dependencia de Vulcan y New Glenn | 61 de 93 (≈ 66%) | [inferencia del grupo] |
-| Monte Carlo, satélites al 30/07/2029 | P10 ≈ 1.140, P50 ≈ 1.510, P90 ≈ 2.050; llegar a 3.232: ≈ 0% | [inferencia del grupo] sobre supuestos propios |
+| Monte Carlo, satélites al 30/07/2029 | P10 ≈ 1.141, P50 ≈ 1.513, P90 ≈ 2.046; llegar a 3.232: ≈ 0% | [inferencia del grupo] sobre supuestos propios |
 | PERT | Fin ≈ 11/2035; probabilidad de llegar a tiempo ≈ 0,07% | [inferencia del grupo] |
 | SPI | 0,57 (plan de Amazon), 0,25 (FCC), 0,22 (a la fecha de corte) | [inferencia del grupo] |
 | Exposición total al riesgo | 0,82 antes y 0,50 después de responder | [propuesta de gestión] |
