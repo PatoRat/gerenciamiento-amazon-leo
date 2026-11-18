@@ -221,6 +221,12 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
         <p class="fuente">Sección 7.3 (completo 7.4)</p>
       </div>
       <div class="card ancho">
+        <h3>Costos: lo que sí se sabe</h3>
+        <p class="pregunta">¿Cuánto cuesta?</p>
+        <div id="costos"></div>
+        <p class="fuente">Sección 10 (#39, #27, #23, #30)</p>
+      </div>
+      <div class="card ancho">
         <h3>Lo que el tablero no muestra (y por qué)</h3>
         <div class="pend" id="pend"></div>
       </div>
@@ -437,6 +443,7 @@ $("temas").innerHTML=DATA.temas.map(t=>`<div><span class="badge"><i class="dot" 
 
 /* ---------- 4. cadena y pendientes ---------- */
 $("cadena").innerHTML=DATA.cadena.map((k,i,a)=>`<div class="paso ${k.etapa.startsWith("Lanzamiento")?"cuello":""}"><b>${k.etapa}</b>${k.dato}<div class="sub">${k.fuente}</div></div>${i<a.length-1?'<span class="flecha">→</span>':""}`).join("");
+tabla($("costos"),[{t:"Concepto"},{t:"Monto"},{t:"Fuente"}],DATA.costos.map(k=>[k.concepto,k.monto,k.fuente]));
 $("pend").innerHTML="<b>Sin dato público</b> — no se inventan valores:<ul>"+DATA.pendientes.map(p=>`<li>${p}</li>`).join("")+"</ul>";
 
 /* ---------- tema ---------- */

@@ -127,6 +127,7 @@ Las 11 ramas apiladas del 16/11/2026 se **unificaron** en `entrega/informe-y-das
 | 17/11/2026 | Informe y anexos | Directo a `main`, por pedido de un integrante: anexos sin notas de revisión, se quita la sección 1.5 y las menciones a herramientas de IA (también en Riesgos), y "leída" / "se leyeron" pasan a "texto original consultado" para no atribuir lecturas a un lector no identificado. Se regenera el `.docx`. |
 | 17/11/2026 | Versión resumida | Se agrega `informe/resumido/` con una versión del informe de ≈ 10.000 palabras (≈ 27 páginas según un PDF de prueba; en Word hay que contarlas), para revisión del equipo. No reemplaza al informe completo, que no se tocó. Incluye `ajustar_word.py` para reproducir el formato del Word. |
 | 17/11/2026 | Tablero y cifras | En el tablero se actualizan las referencias al informe (ahora con la numeración del resumido y, entre paréntesis, la del completo) y se aclara que el ≈ 0% del Monte Carlo depende de los supuestos (≈ 7% con más ritmo). El resumido pasa a mostrar los mismos valores del Monte Carlo que el tablero (P10 ≈ 1.141, P50 ≈ 1.513, P90 ≈ 2.046). |
+| 17/11/2026 | Tablero: costos | Se agrega la tarjeta "Costos: lo que sí se sabe" en el bloque Organización, con lo público de la sección 10 (los datos están en `kpis.json`, clave `costos`). |
 | 17/11/2026 | Reparto de la defensa | El grupo propone 4 bloques de ≈ 5 min (ver "Reparto de la defensa"). Quedan sin asignar las personas. |
 
 ---
